@@ -8,7 +8,7 @@ event = {
 	immediate = {
 		every_playable_country = {
 			limit = { has_origin = origin_tfc }
-			country_event = { id = tfc_origin.1 }
+			country_event = { id = tfc_origin.0 }
 		}
 	}
 }

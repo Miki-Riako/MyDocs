@@ -1,7 +1,7 @@
 namespace = tfc_origin
 
 country_event = {
-	id = tfc_origin.1
+	id = tfc_origin.0
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -15,32 +15,36 @@ country_event = {
 		set_country_flag = is_tfc
 		owner = {
 			country_event = {
-				id = tfc_origin.2
+				id = tfc_origin.1
 				days = 42
+			}
+			country_event = {
+				id = tfc_graygoo.1
+				days = 7
 			}
 		}
 	}
 }
 
 country_event = {
-	id = tfc_origin.2
+	id = tfc_origin.1
 	is_triggered_only = yes
-	title = tfc_origin.2.name
-	desc = tfc_origin.2.desc
+	title = tfc_origin.1.name
+	desc = tfc_origin.1.desc
 	picture = GFX_evt_sapient_AI
 	trigger = { has_country_flag = is_tfc }
 
 	# immediate = {
 	# 	owner = {
 	# 		country_event = {
-	# 			id = tfc_origin.3
+	# 			id = tfc_origin.2
 	# 			days = 42
 	# 		}
 	# 	}
 	# }
 
 	option = {
-		name = tfc_origin.2.a
+		name = tfc_origin.1.a
 		hidden_effect = {
 			set_country_flag = has_tfc_precursor
 		}
@@ -52,6 +56,6 @@ country_event = {
 		# }
 	}
 	option = {
-		name = tfc_origin.2.b
+		name = tfc_origin.1.b
 	}
 }

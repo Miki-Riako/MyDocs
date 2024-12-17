@@ -23,7 +23,7 @@ def copy_and_modify_files():
                 lines = file.readlines()
             if lines:
                 lines[0] = 'l_english:\n'
-            with open(dest_file_path, 'w', encoding='utf-8') as file:
+            with open(dest_file_path, 'w', encoding='utf-8-sig') as file:
                 file.writelines(lines)
             print(f"Modified first line of: {dest_file_path}")
 
