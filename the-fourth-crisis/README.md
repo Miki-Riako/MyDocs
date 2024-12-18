@@ -41,6 +41,7 @@
 
 ### Modified original file
 **排序**：如果需要本mod优先生效则排序在后，需要其他mod优先生效则排序在前。由于本mod对游戏性内容修改较少，只对原版文件修改了发生概率，所以建议在前。
+[特殊星系](common\solar_system_initializers)：修改了原版的特殊星系，必定会生成
 [异常](common\anomalies\00_anomaly_categories.txt)：删除了气态巨行星达斯纳克事件需要的异常，使得事件必定不会发生
 
 ### Python script
