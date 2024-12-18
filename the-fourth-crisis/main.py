@@ -24,7 +24,7 @@ def modify_file(file_path, modifications):
 
 def main():
     defines_file = './common/defines/defines_.txt'
-    species_archetypes_file = './common/species_archetypes/00_species_archetypes.txt'
+    species_archetypes_file = './common/species_archetypes/species_archetypes_.txt'
 
     while True:
         print("\nWhat would you like to modify?")

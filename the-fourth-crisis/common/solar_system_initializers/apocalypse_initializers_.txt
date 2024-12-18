@@ -3,9 +3,7 @@
 # Abandoned Gateways
 abandoned_gateways_01 = {
 	class = "rl_standard_stars"
-
 	flags = { abandoned_gateway }
-
 	usage = misc_system_init
 	usage_odds = {
 		base = 100
@@ -46,9 +44,7 @@ abandoned_gateways_01 = {
 		count = { min = 2 max = 10 }
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
-
 		change_orbit = @base_moon_distance
-
 		moon = {
 			count = { min = 0 max = 1 }
 			orbit_angle = { min = 90 max = 270 }
@@ -64,4 +60,3 @@ abandoned_gateways_01 = {
 		}
 	}
 }
-

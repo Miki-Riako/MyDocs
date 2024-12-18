@@ -1,12 +1,9 @@
-# Utopia Initializers
-
 @base_moon_distance = 10
 
 # Ruined Dyson Sphere
 dyson_sphere_init_01 = {
 	class = "rl_standard_stars"
 	usage = misc_system_init
-
 	flags = { ruined_dyson_system }
 
 	usage_odds = {
@@ -351,7 +348,6 @@ dyson_sphere_init_01 = {
 science_nexus_init_01 = {
 	class = sc_black_hole
 	usage = misc_system_init
-
 	flags = { ruined_nexus_system }
 
 	usage_odds = {
@@ -375,7 +371,6 @@ science_nexus_init_01 = {
 	planet = {
 		class = "pc_broken"
 		size = { min = 10 max = 15 }
-
 		init_effect = { prevent_anomaly = yes }
 	}
 
@@ -385,7 +380,6 @@ science_nexus_init_01 = {
 		class = "pc_gas_giant"
 		orbit_angle = { min = 90 max = 270 }
 		size = 40
-
 		init_effect = {
 			save_event_target_as = nexus_planet
 		}
@@ -458,7 +452,6 @@ science_nexus_init_01 = {
 sentry_array_init_01 = {
 	class = "rl_standard_stars"
 	usage = misc_system_init
-
 	flags = { ruined_sentry_system }
 
 	usage_odds = {
@@ -482,7 +475,6 @@ sentry_array_init_01 = {
 	planet = {
 		class = "pc_nuked"
 		size = 16
-
 		init_effect = {
 			add_deposit = d_metal_boneyard
 		}
@@ -647,7 +639,6 @@ sentry_array_init_01 = {
 			orbit_distance = 6
 			orbit_angle = { min = 90 max = 270 }
 			has_ring = no
-
 			init_effect = {
 				save_event_target_as = sentry_planet
 			}
@@ -831,7 +822,6 @@ sentry_array_init_01 = {
 ring_world_init_01 = {
 	class = "rl_standard_stars"
 	usage = misc_system_init
-
 	flags = { ruined_ring_system }
 
 	usage_odds = {
