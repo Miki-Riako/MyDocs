@@ -464,10 +464,12 @@ import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
-			is_subject = no
-			is_colonial_nation = no
-			is_client_nation = no
+		FROM = {
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
 		}
 	}
 	build_trigger = {
@@ -559,10 +561,12 @@ stop_import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
-			is_subject = no
-			is_colonial_nation = no
-			is_client_nation = no
+		FROM = {
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
 		}
 	}
 	

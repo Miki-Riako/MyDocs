@@ -106,10 +106,6 @@ marketplace = {
 			factor = 30
 			province_has_center_of_trade_of_level = 3
 		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
-		}
 	}
 }
 
@@ -160,11 +156,6 @@ workshop = {
 		}
 		#FROM AUTONOMY
 		modifier = {
-			factor = 0.25
-			num_free_building_slots = 2
-			NOT = { xorme_has_any_manufactory_trigger = yes }
-		}
-		modifier = {
 			factor = 0.4
 			local_autonomy = 75
 		}
@@ -188,31 +179,6 @@ workshop = {
 		modifier = {
 			factor = 9.0
 			base_production = 8
-		}
-		#FROM TRADE GOODS
-		modifier = {
-			factor = 5.0
-			xorme_lowest_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 10.0
-			xorme_low_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 15.0
-			xorme_medium_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 20.0
-			xorme_high_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 25.0
-			xorme_province_with_special_goods_produced_trigger = yes
-		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
 		}
 		#FROM CASH
 		modifier = {
@@ -380,13 +346,6 @@ temple = {
 		}
 		#FROM AUTONOMY
 		modifier = {
-			factor = 0.05
-			OR = {
-				NOT = { num_free_building_slots = 2 }
-				xorme_has_production_buildings_trigger = no
-			}
-		}
-		modifier = {
 			factor = 0.4
 			local_autonomy = 75
 		}
@@ -412,30 +371,6 @@ temple = {
 			base_tax = 8
 		}
 		#FROM TRADE GOODS
-		modifier = {
-			factor = 5.0
-			xorme_province_with_special_goods_produced_trigger = yes
-		}
-		modifier = {
-			factor = 10.0
-			xorme_high_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 15.0
-			xorme_medium_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 20.0
-			xorme_low_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 25.0
-			xorme_lowest_quality_trade_goods_trigger = yes
-		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
-		}
 		modifier = {
 			factor = 100.0
 			num_free_building_slots = 3
@@ -584,13 +519,6 @@ barracks = {
 		}
 		#FROM AUTONOMY
 		modifier = {
-			factor = 0.05
-			OR = {
-				NOT = { num_free_building_slots = 2 }
-				xorme_has_production_buildings_trigger = no
-			}
-		}
-		modifier = {
 			factor = 0.4
 			local_autonomy = 75
 		}
@@ -615,23 +543,9 @@ barracks = {
 			factor = 9.0
 			base_manpower = 8
 		}
-		#FROM TRADE GOODS
-		modifier = {
-			factor = 10.0
-			xorme_additional_manpower_goods_trigger = yes
-		}
-		#BUILDINGS
-		modifier = {
-			factor = 10.0
-			xorme_has_production_buildings_trigger = yes
-		}
 		modifier = {
 			factor = 100.0
 			num_free_building_slots = 3
-		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
 		}
 		#FROM CASH
 		modifier = {
@@ -703,13 +617,6 @@ shipyard = {
 			}
 		}
 		modifier = {
-			factor = 0.05
-			OR = {
-				NOT = { num_free_building_slots = 2 }
-				xorme_has_production_buildings_trigger = no
-			}
-		}
-		modifier = {
 			factor = 0.4
 			local_autonomy = 75
 		}
@@ -739,14 +646,6 @@ shipyard = {
 			NOT = { development = 7 }
 		}
 		#BUILDINGS
-		modifier = {
-			factor = 10.0
-			xorme_has_production_buildings_trigger = yes
-		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
-		}
 		modifier = {
 			factor = 100.0
 			num_free_building_slots = 4
@@ -1054,10 +953,6 @@ courthouse = {
 		modifier = {
 			factor = 15.0
 			FROM = { governing_capacity_percentage = 1.1 }
-		}
-		modifier = {
-			factor = 100.0
-			has_province_modifier = xorme_ai_agenda_building_spot
 		}
 		#FROM CASH
 		modifier = {

@@ -5,6 +5,7 @@
 - common/buildings/00_buildings.txt: 关注官方是否更新该文件，主要修改为为工厂增加了新的材料
 - common/estate_agendas/00_generic_agendas.txt: 关注官方是否更新该文件，主要修改为将白银加入黄金议程中
 - common/tradegoods/00_tradegoods.txt: 关注官方是否更新该文件，主要修改为增加了新的贸易品
+- events/PriceChanges.txt: 关注官方是否更新该文件，主要修改为增加了新的贸易品
 
 ## 注意后续需要修改的文件
 - common/scripted_triggers

@@ -168,7 +168,7 @@ wine = {
 				region = france_region
 				region = italy_region
 			}
-		
+		}
 		modifier = {
 			factor = 1.1
 			FROM = {
@@ -1922,7 +1922,7 @@ silk = {
 
 dyes = {
 	is_valuable = yes
-	color = { 155 0 24 }
+	color = { 0.61 0.00 0.09 }
 	modifier = {
 		caravan_power = 0.2
 	}
@@ -2588,13 +2588,11 @@ beer = {
 		
 		modifier = {
 			factor = 0
-			NOT = { capital_scope = { continent = europe } }
+			FROM = {
+				NOT = { capital_scope = { continent = europe } }
+			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Beer
-		}
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -2678,10 +2676,6 @@ apiculture = {
 			NOT = { has_global_flag = tradegood_marcin }
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Apiculture
-		}
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -2769,10 +2763,6 @@ whaling = {
 			NOT = { has_global_flag = tradegood_marcin }
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Whaling
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -2817,10 +2807,6 @@ lumber = {
 			NOT = { has_global_flag = tradegood_marcin }
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Lumber
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -2868,10 +2854,6 @@ palm_oil = {
 			NOT = { has_global_flag = tradegood_marcin }
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Palm_oil
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -2932,10 +2914,6 @@ saffron = {
 			NOT = { superregion = china_superregion }		
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Saffron
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -3073,10 +3051,6 @@ rice = {
 				has_country_flag = rice_chance_flag_high
 			}
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Rice
-		}
 		
 	}
 }
@@ -3112,10 +3086,6 @@ opium = {
 			}
 		} 
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Opium
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -3198,10 +3168,6 @@ rum = {
 			region = carribeans_region
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Rum 
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -3238,10 +3204,6 @@ horses = {
 		modifier = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Horses 
 		}
 		modifier = { 
 			factor = 0
@@ -3398,10 +3360,6 @@ jade = {
 				NOT = { has_global_flag = tradegood_marcin }
 		}
 		modifier = {
-			factor = 0
-				 has_global_flag = No_Jade 
-		}
-		modifier = {
 			factor = 25
 			OR = {
 				area = te_waipounamu_area
@@ -3485,10 +3443,6 @@ lead = {
 		modifier = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Lead 
 		}
 		modifier = {
 			factor = 0
@@ -3591,10 +3545,6 @@ cloves = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Cloves 
-		}
 		modifier = {  
 			factor = 0
 			NOT = { superregion = india_superregion }
@@ -3656,10 +3606,6 @@ mercury = {
 		modifier = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				NOT = { has_global_flag = No_Mercury }
 		}
 		modifier = {
 			factor = 0
@@ -3791,10 +3737,6 @@ camel = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-				has_global_flag = No_Camel
-		}
 		modifier = {  
 			factor = 0
 			OR = {
@@ -3870,10 +3812,6 @@ tin = {
 		factor = 15
 		modifier = {
 			factor = 0
-				OR = {
-					NOT = { has_global_flag = tradegood_marcin }
-					has_global_flag = No_Tin 
-				}
 		}
 		modifier = {
 			factor = 0
@@ -3997,10 +3935,6 @@ cheese = {
 		factor = 13
 		modifier = {
 			factor = 0
-				OR = {
-					NOT = { has_global_flag = tradegood_marcin }
-					has_global_flag = No_Cheese 
-				}
 		}
 		modifier = { 
 			factor = 0
@@ -4084,10 +4018,6 @@ citrus = {
 		modifier = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				has_global_flag = No_Citrus
 		}
 		modifier = {
 			factor = 0
@@ -4204,10 +4134,6 @@ seafood = {
 				NOT = { has_global_flag = tradegood_marcin }
 		}
 		modifier = {
-			factor = 0
-				 has_global_flag = No_Seafood 
-		}
-		modifier = {
 			factor = 1.2
 			OR = {
 				region = carribeans_region
@@ -4263,10 +4189,6 @@ carpet = {
 		modifier = {
 		factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Carpet 
 		}
 		modifier = {
 			factor = 0
@@ -4330,10 +4252,6 @@ nutmeg = {
 			factor = 0
 				NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Nutmeg 
-		}
 		modifier = {  
 			factor = 0
 			NOT = { superregion = east_indies_superregion }		
@@ -4381,10 +4299,6 @@ maize = {
 		modifier = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Maize 
 		}
 		modifier = {
 			factor = 0
@@ -4577,10 +4491,6 @@ silver = {
 		}
 		modifier = {
 			factor = 0
-			has_global_flag = No_Silver 
-		}
-		modifier = {
-			factor = 0
 			NOT = { region = central_asia_region }
 			NOT = { region = cascadia_region }
 			NOT = { region = australia_region }
@@ -4672,10 +4582,6 @@ exotic_animals = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Exotic_animals 
-		}
 		
 		modifier = {
 			factor = 0
@@ -4720,10 +4626,6 @@ vanilla = {
 		modifier = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Vanilla 
 		}
 		modifier = {  
 			factor = 0
@@ -4809,10 +4711,6 @@ ebony = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				NOT = { has_global_flag = tradegood_marcin }
-				has_global_flag = No_Ebony 
-			}
 		}
 		
 		modifier = {
@@ -4882,10 +4780,6 @@ tar = {
 			NOT = { has_global_flag = tradegood_marcin }
 		}
 		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Tar 
-		}
 							
 		modifier = {
 			factor = 0
@@ -4982,7 +4876,7 @@ tar = {
 
 sulfur = {
 	is_valuable = yes
-	color = { 255 200 35 }
+	color = { 1.00 0.78 0.14 }
 	modifier = { 
 		infantry_power = 0.05
 	}
@@ -5038,10 +4932,6 @@ sulfur = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Sulfur 
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -5069,7 +4959,7 @@ sulfur = {
 
 leather = {
 	is_valuable = yes
-	color = { 102 70 13 }
+	color = { 0.40 0.27 0.05 }
 	is_latent = yes
 	modifier = {
 		shock_damage_received = -0.05
@@ -5129,10 +5019,6 @@ maple_syrup = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Maple_syrup 
-		}
 		
 		modifier = {
 			factor = 1.2
@@ -5172,10 +5058,6 @@ potato = {
 		modifier = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Potato 
 		}
 		modifier = {
 			factor = 0
@@ -5420,7 +5302,7 @@ fur_clothing = {
 
 cannon = {
 	is_valuable = yes
-	color = { 25 25 71 }
+	color = { 0.10 0.10 0.28 }
 	is_latent = yes
 	modifier = {
 		artillery_power = 0.10
@@ -5435,7 +5317,7 @@ cannon = {
 
 tomato = { 
 	is_valuable = yes
-	color = { 255 102 26 } 
+	color = { 1.00 0.40 0.10 } 
 	modifier = { 
 		placed_merchant_power = 5
 		
@@ -5448,10 +5330,6 @@ tomato = {
 		modifier = {
 			factor = 0
 			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Tomato
 		}
 		modifier = {
 			factor = 1.5
@@ -5501,7 +5379,7 @@ tomato = {
 
 champagne = {
 	is_valuable = yes
-	color = { 120 150 141 }
+	color = { 0.47 0.59 0.55 }
 	modifier = {
 		reform_progress_growth = 0.10
 	}
@@ -5515,7 +5393,7 @@ champagne = {
 
 llama = {
 	is_valuable = yes
-	color = { 218 201 254 }
+	color = { 0.85 0.79 1.00 }
 	modifier = {
 		
 	}
@@ -5529,7 +5407,7 @@ llama = {
 
 indigo = {
 	is_valuable = yes
-	color = { 0 26 227 }
+	color = { 0.00 0.10 0.89 }
 	modifier = {
 		
 	}
@@ -5543,7 +5421,7 @@ indigo = {
 
 sea_turtle = {
 	is_valuable = yes
-	color = { 209 43 138 }
+	color = { 0.82 0.17 0.54 }
 	modifier = {
 		native_assimilation = 0.25
 	}
@@ -5608,7 +5486,7 @@ sea_turtle = {
 
 uniforms = {
 	is_valuable = yes
-	color = { 153 0 51 }
+	color = { 0.60 0.00 0.20 }
 	is_latent = yes
 	modifier = {
 		recover_army_morale_speed = 0.05
@@ -5623,7 +5501,7 @@ uniforms = {
 
 marble_sculpture = {
 	is_valuable = yes
-	color = { 100 149 237 }
+	color = { 0.39 0.58 0.93 }
 	is_latent = yes
 	modifier = {
 		great_project_upgrade_cost = -0.15
@@ -5639,7 +5517,7 @@ marble_sculpture = {
 
 cigars = {
 	is_valuable = yes
-	color = { 92 70 54 }
+	color = { 0.36 0.27 0.21 }
 	is_latent = yes
 	modifier = {
 	
@@ -5655,7 +5533,7 @@ cigars = {
 
 chocolate = {
 	is_valuable = yes
-	color = { 117 54 45 }
+	color = { 0.46 0.21 0.18 }
 	is_latent = yes
 	modifier = {
 
@@ -5670,7 +5548,7 @@ chocolate = {
 
 jade_sculptures = {
 	is_valuable = yes
-	color = { 138 224 198 }
+	color = { 0.54 0.88 0.77 }
 	is_latent = yes
 	modifier = {
 		development_cost_modifier = -0.025
@@ -5686,7 +5564,7 @@ jade_sculptures = {
 
 millet = {
 	is_valuable = yes
-	color = { 200 140 110 }
+	color = { 0.78 0.55 0.43 }
 	modifier = {
 		manpower_in_own_culture_provinces = 0.15
 	}
@@ -5700,7 +5578,7 @@ millet = {
 
 exotic_fur = {
 	is_valuable = yes
-	color = { 200 150 80 }
+	color = { 0.78 0.59 0.31 }
 	modifier = {
 		all_estate_loyalty_equilibrium = 0.05
 	}
@@ -5728,7 +5606,7 @@ exotic_fur = {
 
 String_Instruments = {
 	is_valuable = yes
-	color = { 250 200 160 }
+	color = { 0.98 0.78 0.63 }
 	is_latent = yes
 	modifier = {
 		governing_capacity = 150
@@ -5745,7 +5623,7 @@ String_Instruments = {
 #Gensokyan Goods
 sake = {
 	is_valuable = yes
-	color = { 76 218 76 }
+	color = { 0.30 0.85 0.30 }
 	modifier = {
 		global_unrest = -0.5
 	}
@@ -5759,7 +5637,7 @@ sake = {
 
 custard = {
 	is_valuable = yes
-	color = { 248 255 23 }
+	color = { 0.97 1.00 0.09 }
 	modifier = {
 		heir_chance = 5
 	}
@@ -5773,7 +5651,7 @@ custard = {
 
 cucumber = {
 	is_valuable = yes
-	color = { 39 171 43 }
+	color = { 0.15 0.67 0.17 }
 	modifier = {
 		global_institution_spread = 0.05
 	}
@@ -5820,7 +5698,7 @@ magic_flowers = {
 
 miasma = {  #no modifiers otherwise it'd be broken (as if makai need any more)
 	is_valuable = yes
-	color = { 255  120  0 }
+	color = { 1.00  0.47  0 }
 	province = {
 		local_defensiveness = 0.2
 	}
@@ -5831,7 +5709,7 @@ miasma = {  #no modifiers otherwise it'd be broken (as if makai need any more)
 
 magical_artifacts = {
 	is_valuable = yes
-	color = { 32 25 32 }
+	color = { 0.13 0.10 0.13 }
 	modifier = {
 		global_trade_power = 0.1
 	}
@@ -5845,7 +5723,7 @@ magical_artifacts = {
 
 magic_tomes = {
 	is_valuable = yes
-	color = { 92 14 14 }
+	color = { 0.36 0.05 0.05 }
 	modifier = {
 		all_power_cost = -0.025
 	}
@@ -5859,7 +5737,7 @@ magic_tomes = {
 
 strawberry = {
 	is_valuable = yes
-	color = { 247 67 67 }
+	color = { 0.96 0.26 0.26 }
 	modifier = {
 		reform_progress_growth = 0.025
 	}

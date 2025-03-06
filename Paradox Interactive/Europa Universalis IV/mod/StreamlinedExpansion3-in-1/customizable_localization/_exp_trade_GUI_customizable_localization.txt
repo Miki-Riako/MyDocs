@@ -1,0 +1,227 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+defined_text = {
+    name = GetTerrainTGE
+
+    text = {
+        localisation_key = string_Terrain_TGE_marsh
+        trigger = {
+            ROOT = { has_terrain = marsh }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_farmlands
+        trigger = {
+            ROOT = { has_terrain = farmlands }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_hills
+        trigger = {
+            ROOT = { has_terrain = hills }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_forest
+        trigger = {
+            ROOT = { has_terrain = forest }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Terrain_TGE_woods
+        trigger = {
+            ROOT = { has_terrain = woods }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_mountain
+        trigger = {
+            ROOT = { has_terrain = mountain }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_grasslands
+        trigger = {
+            ROOT = { has_terrain = grasslands }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_jungle
+        trigger = {
+            ROOT = { has_terrain = jungle }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_desert
+        trigger = {
+            ROOT = { has_terrain = desert }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_coastline
+        trigger = {
+            ROOT = { has_terrain = coastline }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_coastal_desert
+        trigger = {
+            ROOT = { has_terrain = coastal_desert }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_drylands
+        trigger = {
+            ROOT = { has_terrain = drylands }
+        }
+    }
+    text = {
+        localisation_key = string_Terrain_TGE_highlands
+        trigger = {
+            ROOT = { has_terrain = highlands }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_savannah
+        trigger = {
+            ROOT = { has_terrain = savannah }
+        }
+    }
+	text = {
+        localisation_key = string_Terrain_TGE_steppe
+        trigger = {
+            ROOT = { has_terrain = steppe }
+        }
+    }
+}
+
+
+defined_text = {
+    name = GetClimateTGE
+
+    text = {
+        localisation_key = string_Climate_TGE_tropical
+        trigger = {
+            ROOT = { has_climate = tropical }
+        }
+    }
+	text = {
+        localisation_key = string_Climate_TGE_arid
+        trigger = {
+            ROOT = { has_climate = arid }
+        }
+    } 
+	text = {
+        localisation_key = string_Climate_TGE_arctic
+        trigger = {
+            ROOT = { has_climate = arctic }
+        }
+    }
+	text = {
+        localisation_key = string_Climate_TGE_temperate
+        trigger = {
+            ROOT = { 
+			    NOT = { has_climate = arctic }
+				NOT = { has_climate = tropical }
+				NOT = { has_climate = arid }
+			}
+        }
+    }
+}
+
+defined_text = {
+    name = GetWinterTGE
+	random = no
+    text = {
+        localisation_key = string_Winter_TGE_mild_winter
+        trigger = {
+            ROOT = { has_winter = mild_winter }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Winter_TGE_normal_winter
+        trigger = {
+            ROOT = { has_winter = normal_winter }
+        }
+    } 
+	
+	text = {
+        localisation_key = string_Winter_TGE_severe_winter
+        trigger = {
+            ROOT = { has_winter = severe_winter }
+        }
+    } 
+
+	text = {
+        localisation_key = string_Winter_TGE_mild_monsoon
+        trigger = {
+            ROOT = { has_monsoon = mild_monsoon }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Winter_TGE_normal_monsoon
+        trigger = {
+            ROOT = { has_monsoon = normal_monsoon }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Winter_TGE_severe_monsoon
+        trigger = {
+            ROOT = { has_monsoon = severe_monsoon }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Winter_TGE_NO
+        trigger = {
+            ROOT = { always = yes }
+        }
+    }
+}
+
+defined_text = {
+    name = GetTypeTGE
+
+    text = {
+        localisation_key = string_Type_TGE_island
+        trigger = {
+            ROOT = { is_island = yes }
+        }
+    }
+	
+	text = {
+        localisation_key = string_Type_TGE_island_no
+        trigger = {
+            ROOT = { 
+				AND = {
+					is_island = no 
+					has_port = no
+				}
+			}
+        }
+    } 
+	
+	text = {
+        localisation_key = string_Type_TGE_island_port
+        trigger = {
+            ROOT = { 
+				AND = {
+					is_island = no 
+					has_port = yes
+				}
+			}
+        }
+    } 
+	
+}
+
+
+
+

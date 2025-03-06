@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "TIU_qtstrawberries"
+		texturefile = "gfx/event_pictures/TIU/qtstrawberries.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "TIU_hkr_festival"
+		texturefile = "gfx/event_pictures/TIU/hkr_festival.dds"
+		allwaystransparent = yes
+	}
+}
