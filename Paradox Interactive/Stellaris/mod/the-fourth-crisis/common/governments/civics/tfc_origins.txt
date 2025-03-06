@@ -1,0 +1,28 @@
+origin_tfc = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_doomsday.dds"
+	picture = GFX_origin_doomsday
+	description = "origin_tooltip_tfc_effects"
+	negative_description = "origin_tooltip_tfc_negative_effects"
+	flags = { custom_start_screen }
+	max_once_global = yes
+	advanced_start = yes
+
+	possible = {
+		authority = {
+			NOR = {
+				value = auth_hive_mind
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	modifier = {
+		# country_government_civic_points_add = 5
+	}
+	traits = {
+		
+	}
+	random_weight = {
+		base = 0
+	}
+}

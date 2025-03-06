@@ -1,0 +1,463 @@
+namespace = tfc_precursor
+
+# Vultaum Introduction
+ship_event = {
+	id = tfc_precursor.1
+	title = "precursor.1.name"
+	desc = "precursor.1.desc"
+	picture = GFX_evt_archaeological_dig
+	location = from
+	is_triggered_only = yes
+	event_chain = vultaum_chain
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+			NOT = { has_country_flag = vultaum_intro } 
+		}
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			is_astral_scar = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			begin_event_chain = {
+				event_chain = "vultaum_chain"
+				target = THIS
+			}
+			set_country_flag = vultaum_intro
+		}
+	}
+
+	option = {
+		name = INTERESTING
+		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
+		owner = {
+			tooltip = {
+				begin_event_chain = {
+					event_chain = "vultaum_chain"
+					target = THIS
+				}
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
+		}
+	}
+}
+
+# Yuht Intro
+ship_event = {
+	id = tfc_precursor.2
+	title = "precursor.500.name"
+	desc = "precursor.500.desc"
+	picture = GFX_evt_archaeological_dig
+	location = from
+	is_triggered_only = yes
+	event_chain = yuht_chain
+
+	trigger = {
+		# exists = solar_system #Unsure why this error would occur, instant_survery?
+		owner = {
+			has_country_flag = has_tfc_precursor
+			NOT = { has_country_flag = yuht_intro } 
+		}
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			is_astral_scar = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			begin_event_chain = {
+				event_chain = "yuht_chain"
+				target = THIS
+			}
+			set_country_flag = yuht_intro
+		}
+	}
+
+	option = {
+		name = INTERESTING
+		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
+		owner = {
+			tooltip = {
+				begin_event_chain = {
+					event_chain = "yuht_chain"
+					target = THIS
+				}
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
+		}
+	}
+}
+
+# First League Notification Event
+ship_event = {
+	id = tfc_precursor.3
+	title = "precursor.1000.name"
+	desc = "precursor.1000.desc"
+	picture = GFX_evt_archaeological_dig
+	location = from
+	is_triggered_only = yes
+	event_chain = first_league_chain
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+			NOT = { has_country_flag = first_league_intro }
+		}
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			is_astral_scar = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			begin_event_chain = {
+				event_chain = "first_league_chain"
+				target = THIS
+			}
+			set_country_flag = first_league_intro
+		}
+	}
+
+	option = {
+		name = INTERESTING
+		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
+		owner = {
+			tooltip = {
+				begin_event_chain = {
+					event_chain = "first_league_chain"
+					target = THIS
+				}
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
+		}
+	}
+}
+
+# Irassian Notification Event
+ship_event = {
+	id = tfc_precursor.4
+	title = "precursor.1500.name"
+	desc = "precursor.1500.desc"
+	picture = GFX_evt_archaeological_dig
+	location = from
+	is_triggered_only = yes
+	event_chain = irassian_chain
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+			NOT = { has_country_flag = irassian_intro }
+		}
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			is_astral_scar = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = irassian_intro
+			begin_event_chain = {
+				event_chain = "irassian_chain"
+				target = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = INTERESTING
+		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
+		owner = {
+			tooltip = {
+				begin_event_chain = {
+					event_chain = "irassian_chain"
+					target = ROOT
+				}
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
+		}
+	}
+}
+
+# Cybrex Notification Event
+ship_event = {
+	id = tfc_precursor.5
+	title = "precursor.2000.name"
+	desc = "precursor.2000.desc"
+	picture = GFX_evt_archaeological_dig
+	location = from
+	is_triggered_only = yes
+	event_chain = cybrex_chain
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+			NOT = { has_country_flag = cybrex_intro }
+		}
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			is_astral_scar = no
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = cybrex_intro
+			begin_event_chain = {
+				event_chain = "cybrex_chain"
+				target = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = INTERESTING
+		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
+		owner = {
+			tooltip = {
+				begin_event_chain = {
+					event_chain = "cybrex_chain"
+					target = ROOT
+				}
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
+		}
+	}
+}
+
+# Zroni Introduction
+ship_event = {
+	id = tfc_precursor.6
+	title = "ancrel.1.name"
+	desc = "ancrel.1.desc"
+	picture = GFX_evt_overgrown_city
+	location = from
+	show_sound = event_wind_ruins
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+		}
+		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		NOT = { has_global_flag = zroni_started }
+		FROM = {
+			has_anomaly = no
+			is_colony = no
+			NOT = { exists = archaeological_site }
+			NOT = { has_planet_flag = suppress_archaeological_sites }
+			habitable_planet = yes
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = zroni_intro }
+		set_global_flag = zroni_started
+		solar_system = { set_star_flag = first_zroni_site@root.owner }
+		from = { prevent_anomaly = yes }
+	}
+
+	option = {
+		name = CURIOUS
+		hidden_effect = {
+			owner = { country_event = { id = story.5 days = 30 } }
+		}
+		from = {
+			create_archaeological_site = zroni_digsite_1
+			root.owner = {
+				set_country_flag = zroni_arc_chain_@prev
+			}
+			add_deposit = d_zro_deposit_2
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}
+
+# Baol Introduction
+ship_event = {
+	id = tfc_precursor.7
+	title = "ancrel.2000.name"
+	desc = "ancrel.2000.desc"
+	picture = GFX_evt_baol_grunur
+	show_sound = event_default
+	location = from
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = has_tfc_precursor
+		}
+		solar_system = {
+			NOR = {
+				is_same_value = root.owner.capital_scope.solar_system
+				has_star_flag = sol_system
+			}
+		}
+		NOT = { has_global_flag = baol_started }
+		FROM = {
+			has_anomaly = no
+			is_star = no
+			NOT = { exists = archaeological_site }
+			NOT = { has_planet_flag = suppress_archaeological_sites }
+			NOR = {
+				is_planet_class = pc_gas_giant
+				is_planet_class = pc_molten
+				is_astral_scar = yes
+			}
+		}
+	}
+
+	immediate = {
+		set_global_flag = baol_started
+		owner = { set_country_flag = baol_intro }
+		solar_system = { set_star_flag = first_grunur_site@root.owner }
+	}
+
+	option = {
+		name = CURIOUS
+		hidden_effect = {
+			owner = { country_event = { id = story.5 days = 30 } }
+			from = { create_archaeological_site = grunur_digsite_1 }
+		}
+	}
+}
+
+# Inetian Introduction
+ship_event = {
+	id = tfc_precursor.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		solar_system = {
+			NOR = {
+				has_star_flag = precursor_system
+				is_same_value = root.owner.capital_scope.solar_system
+			}
+		}
+		owner = {
+			NOT = {	has_country_flag = inetian_intro }
+			has_country_flag = has_tfc_precursor
+		}
+		FROM = {
+			has_anomaly = no
+			# Only on planets that don't have something else going on.
+			NOR = {
+				has_planet_flag = precursor_world
+				exists = archaeological_site
+			}
+			# needs to be a barren planet.
+			OR = {
+				is_planet_class = pc_barren
+				is_planet_class = pc_barren_cold
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = inetian_intro
+			country_event = { id = story.5 days = 30 }
+		}
+		from = {
+			add_anomaly = {
+				category = STORMS_PREC_WM_ONE
+				target = prev.owner
+			}
+		}
+	}
+}
+
+# Adakkaria Introduction
+ship_event = {
+	id = tfc_precursor.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		solar_system = {
+			NOT = { is_same_value = root.owner.capital_scope.solar_system }
+		}
+		owner = {
+			NOT = {	has_country_flag = adakkaria_intro }
+			has_country_flag = has_tfc_precursor
+		}
+		FROM = {
+			NOR = {
+				has_anomaly = yes
+				is_star = yes
+				can_have_habitable_deposits = yes
+				has_planet_flag = precursor_world
+				exists = archaeological_site
+				is_planet_class = pc_gas_giant
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = adakkaria_intro
+			country_event = { id = story.5 days = 30 }
+		}
+		from = {
+			add_anomaly = {
+				category = STORMS_PREC_ONE
+				target = owner
+			}
+		}
+	}
+}
+
+# On the Shoulders of Giants
+# TODO: On the Shoulders of Giants

@@ -1,0 +1,29 @@
+namespace = preftl_espionage
+country_event = {
+	id = preftl_espionage.1001
+	title = "observation.3101.name"
+	desc = "observation.3101.desc"
+	picture = GFX_evt_infiltration_neutral
+	show_sound = event_conversation
+	location = event_target:rogue_agent_planet
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = yes
+		exists = event_target:rogue_agent_country
+		event_target:rogue_agent_planet = {
+			has_observation_outpost = yes
+		}
+	}
+
+	option = {
+		name = "observation.3101.a"
+
+	}
+
+	after = { # 450 days
+		hidden_effect = {
+			country_event = { id = preftl_espionage.1002 days = 1 random = 15 }
+		}
+	}
+}

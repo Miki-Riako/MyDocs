@@ -1,0 +1,14 @@
+namespace = tfc_game_start
+
+event = {
+	id = tfc_game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_origin = origin_tfc }
+			country_event = { id = tfc_origin.0 }
+		}
+	}
+}

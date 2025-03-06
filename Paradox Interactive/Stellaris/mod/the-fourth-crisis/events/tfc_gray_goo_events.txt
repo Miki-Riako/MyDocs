@@ -1,0 +1,136 @@
+namespace = tfc_graygoo
+
+# Encountered Gray
+country_event = {
+	id = tfc_graygoo.1
+	title = tfc_graygoo.1.name
+	desc = tfc_graygoo.1.desc
+	picture = GFX_evt_satellite_in_orbit
+	trigger = { has_country_flag = is_tfc }
+	show_sound = event_radio_chatter
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = dragon_season }
+				remove_global_flag = dragon_season
+			} else_if = {
+				limit = { has_global_flag = gray_goo_empire_set }
+				remove_global_flag = gray_goo_empire_set
+			}
+			set_global_flag = gray_goo_crisis_set
+		}
+	}
+
+	option = {
+		name = tfc_graygoo.1.a
+		hidden_effect = {
+			owner = {
+				country_event = { id = tfc_graygoo.2 }
+			}
+		}
+	}
+}
+
+# Gray 1
+country_event = {
+	id = tfc_graygoo.2
+	title = "TRANSMISSION"
+	desc = tfc_graygoo.2.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = root.species
+		room = root
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfc_graygoo.2.a
+		hidden_effect = {
+			country_event = { id = tfc_graygoo.3 }
+		}
+	}
+}
+
+# Gray 2
+country_event = {
+	id = tfc_graygoo.3
+	title = "TRANSMISSION"
+	desc = tfc_graygoo.3.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = root.species
+		room = root
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfc_graygoo.3.a
+		hidden_effect = {
+			country_event = { id = tfc_graygoo.4 }
+		}
+	}
+}
+
+# Gray 3
+country_event = {
+	id = tfc_graygoo.4
+	title = "TRANSMISSION"
+	desc = tfc_graygoo.4.desc
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = root.species
+		room = root
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfc_graygoo.4.a
+		hidden_effect = {
+			country_event = { id = tfc_graygoo.5 }
+		}
+	}
+}
+
+# Gray 4
+country_event = {
+	id = tfc_graygoo.5
+	title = "TRANSMISSION"
+	desc = tfc_graygoo.5.desc
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = root.species
+		room = root
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfc_graygoo.5.a
+		response_text = tfc_graygoo.5.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = tfc_graygoo.5.b
+		response_text = tfc_graygoo.5.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = tfc_graygoo.5.c
+		response_text = tfc_graygoo.5.c.response
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = { id = graygoo.499 }
+		}
+	}
+}
