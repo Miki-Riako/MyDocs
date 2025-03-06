@@ -11,4 +11,5 @@ Paradox Interactive/Stellaris/*
 !Paradox Interactive/Stellaris/mod/
 !Paradox Interactive/Stellaris/mod/**
 
+.vscode
 **/*.mod
