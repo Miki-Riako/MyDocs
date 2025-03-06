@@ -1,7 +1,10 @@
 ## 需要时常注意更新的内容
 - common/technologies/adm.txt: 关注官方是否更新该文件，主要修改为增加了理念组的解锁
+- common/technologies/dip.txt: 关注官方是否更新该文件，主要修改为增加了开局的建筑解锁情况
 - common/ideas/00_basic_ideas.txt: 关注官方是否更新该文件，主要修改为增加了一个任意开启的条件判断
 - common/buildings/00_buildings.txt: 关注官方是否更新该文件，主要修改为为工厂增加了新的材料
+- common/estate_agendas/00_generic_agendas.txt: 关注官方是否更新该文件，主要修改为将白银加入黄金议程中
+- common/tradegoods/00_tradegoods.txt: 关注官方是否更新该文件，主要修改为增加了新的贸易品
 
 ## 注意后续需要修改的文件
 - common/scripted_triggers

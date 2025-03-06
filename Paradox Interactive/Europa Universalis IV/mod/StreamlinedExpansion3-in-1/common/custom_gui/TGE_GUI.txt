@@ -1,0 +1,800 @@
+custom_button = {
+    name = TGE_base_button
+    potential = {
+		FROM = {
+			ai = no
+			always = no
+		}
+    }
+    trigger = {  always = yes }
+    effect = { 
+		if = {
+			limit = {
+				FROM = { has_country_flag = TGE_GUI }
+			}
+			FROM = { clr_country_flag = TGE_GUI clr_country_flag = TGE_GUI_conf}
+		}
+		else = {
+			FROM = { set_country_flag = TGE_GUI }
+		}
+	}
+	tooltip = TGE_base_button_title
+}
+
+custom_icon = {
+    name = provinceview_TGE_bg 
+	potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+    } 
+}
+
+custom_icon = {
+    name = TGE_backgr 
+	potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+    } 
+}
+
+custom_icon = {
+    name = TGE_window_bg 
+	potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		} 
+    } 
+}
+
+
+custom_text_box = {
+    name = TGE_name 
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+custom_text_box = {
+    name = TGE_Goods_name_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+	tooltip = TGE_Goods_name_pr_title
+}
+
+custom_text_box = {
+    name = TGE_Infrastructure_name_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+
+custom_icon = {
+    name = TGE_Resource
+	potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+    } 
+	tooltip = TGE_Resource_title
+	frame = {  
+       number = 1
+       trigger = { ROOT = { trade_goods = grain } } 
+    }
+	
+	frame = {  
+       number = 2
+       trigger = { ROOT = { trade_goods = wine } } 
+    }
+	
+	frame = {  
+       number = 3
+       trigger = { ROOT = { trade_goods = wool } } 
+    }
+	
+	frame = {  
+       number = 4
+       trigger = { ROOT = { trade_goods = cloth } } 
+    }
+	
+	frame = {  
+       number = 5
+       trigger = { ROOT = { trade_goods = fish } } 
+    }
+	
+	frame = {  
+       number = 6
+       trigger = { ROOT = { trade_goods = fur } } 
+    }
+	
+	frame = {  
+       number = 7
+       trigger = { ROOT = { trade_goods = salt } } 
+    }
+	
+	frame = {  
+       number = 8
+       trigger = { ROOT = { trade_goods = naval_supplies } } 
+    }
+	
+	frame = {  
+       number = 9
+       trigger = { ROOT = { trade_goods = copper } } 
+    }
+	
+	frame = {  
+       number = 10
+       trigger = { ROOT = { trade_goods = gold } } 
+    }
+	
+	frame = {  
+       number = 11
+       trigger = { ROOT = { trade_goods = iron } } 
+    }
+	
+	frame = {  
+       number = 12
+       trigger = { ROOT = { trade_goods = slaves } } 
+    }
+	
+	frame = {  
+       number = 13
+       trigger = { ROOT = { trade_goods = ivory } } 
+    }
+	
+	frame = {  
+       number = 14
+       trigger = { ROOT = { trade_goods = tea } } 
+    }
+	
+	frame = {  
+       number = 15
+       trigger = { ROOT = { trade_goods = chinaware } } 
+    }
+	
+	frame = {  
+       number = 16
+       trigger = { ROOT = { trade_goods = spices } } 
+    }
+	
+	frame = {  
+       number = 17
+       trigger = { ROOT = { trade_goods = coffee } } 
+    }
+	
+	frame = {  
+       number = 18
+       trigger = { ROOT = { trade_goods = chinaware } } 
+    }
+	
+	frame = {  
+       number = 19
+       trigger = { ROOT = { trade_goods = sugar } } 
+    }
+	
+	frame = {  
+       number = 20
+       trigger = { ROOT = { trade_goods = tobacco } } 
+    }
+	
+	frame = {  
+       number = 21
+       trigger = { ROOT = { trade_goods = cocoa } } 
+    }
+	
+	frame = {  
+       number = 22
+       trigger = { ROOT = { trade_goods = silk } } 
+    }
+	
+	frame = {  
+       number = 23
+       trigger = { ROOT = { trade_goods = dyes } } 
+    }
+	
+	frame = {  
+       number = 24
+       trigger = { ROOT = { trade_goods = tropical_wood  } } 
+    }
+	
+	frame = {  
+       number = 25
+       trigger = { ROOT = { trade_goods = livestock } } 
+    }
+	
+	frame = {  
+       number = 25
+       trigger = { ROOT = { trade_goods = livestock } } 
+    }
+	
+	frame = {  
+       number = 26
+       trigger = { ROOT = { trade_goods = incense } } 
+    }
+	
+	frame = {  
+       number = 27
+       trigger = { ROOT = { trade_goods = glass } } 
+    }
+	
+	frame = {  
+       number = 28
+       trigger = { ROOT = { trade_goods = paper } } 
+    }
+	
+	frame = {  
+       number = 29
+       trigger = { ROOT = { trade_goods = gems } } 
+    }
+	
+	frame = {  
+       number = 30
+       trigger = { ROOT = { trade_goods = coal } } 
+    }
+	
+	frame = {  
+       number = 32
+       trigger = { ROOT = { trade_goods = beer } } 
+    }
+	
+	frame = {  
+       number = 33
+       trigger = { ROOT = { trade_goods = apiculture } } 
+    }
+	
+	frame = {  
+       number = 34
+       trigger = { ROOT = { trade_goods = whaling } } 
+    }
+	
+	frame = {  
+       number = 35
+       trigger = { ROOT = { trade_goods = lumber } } 
+    }
+	
+	frame = {  
+       number = 36
+       trigger = { ROOT = { trade_goods = palm_oil } } 
+    }
+	
+	frame = {  
+       number = 37
+       trigger = { ROOT = { trade_goods = cinnamon } } 
+    }
+	
+	frame = {  
+       number = 38
+       trigger = { ROOT = { trade_goods = saffron } } 
+    }
+	
+	frame = {  
+       number = 39
+       trigger = { ROOT = { trade_goods = rice } } 
+    }
+	
+	frame = {  
+       number = 40
+       trigger = { ROOT = { trade_goods = opium } } 
+    }
+	
+	frame = {  
+       number = 41
+       trigger = { ROOT = { trade_goods = rum } } 
+    }
+	
+	frame = {  
+       number = 42
+       trigger = { ROOT = { trade_goods = horses } } 
+    }
+	
+	frame = {  
+       number = 43
+       trigger = { ROOT = { trade_goods = olive_oil } } 
+    }
+	
+	frame = {  
+       number = 44
+       trigger = { ROOT = { trade_goods = amber } } 
+    }
+	
+	frame = {  
+       number = 45
+       trigger = { ROOT = { trade_goods = jade } } 
+    }
+	
+	frame = {  
+       number = 46
+       trigger = { ROOT = { trade_goods = marble } } 
+    }
+	
+	frame = {  
+       number = 47
+       trigger = { ROOT = { trade_goods = lead } } 
+    }
+	
+	frame = {  
+       number = 48
+       trigger = { ROOT = { trade_goods = cloves } } 
+    }
+	
+	frame = {  
+       number = 49
+       trigger = { ROOT = { trade_goods = mercury } } 
+    }
+}
+
+custom_button = {
+    name = TGE_Infrastructure
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+		ROOT = { 
+			OR = {
+				trade_goods = grain 
+				trade_goods = wine
+				trade_goods = apiculture 
+				trade_goods = lumber
+				trade_goods = wool
+				trade_goods = fish
+				trade_goods = livestock 	
+				trade_goods = cheese
+				trade_goods = beer
+				trade_goods = horses
+			}
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = {  } }
+	tooltip = Infrastructure_TGE_title
+}
+
+custom_button = {
+    name = TGE_Infrastructure_MED
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+		ROOT = { 
+			AND = {
+				OR = {
+					trade_goods = olive_oil 
+					trade_goods = citrus
+					trade_goods = grain 
+					trade_goods = wine
+					trade_goods = wool
+					trade_goods = apiculture 
+					trade_goods = lumber
+					trade_goods = fish
+					trade_goods = livestock 				
+				}
+				NOT = {
+					OR = {
+					has_winter = mild_winter
+					has_winter = normal_winter
+					has_winter = severe_winter
+					}
+				}
+			}
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = {  } }
+	tooltip = Infrastructure_TGE_MED_title
+}
+
+custom_button = {
+    name = TGE_Infrastructure_urban
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+		ROOT = { 
+			AND = {
+				OR = {
+					trade_goods = cloth
+					trade_goods = glass
+					trade_goods = paper 
+					trade_goods = silk				
+				}
+			}
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = {  } }
+	tooltip = TGE_Infrastructure_urban_title
+}
+
+custom_button = {
+    name = TGE_Infrastructure_mine
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+		ROOT = { 
+			OR = {
+				trade_goods = iron 
+				trade_goods = copper
+				trade_goods = tin 
+				trade_goods = zinc
+				trade_goods = gold
+				trade_goods = silver 
+				trade_goods = lead 
+				trade_goods = marble
+				trade_goods = mercury
+			}
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = {  } }
+	tooltip = Infrastructure_mine_TGE_title
+}
+
+custom_text_box = {
+    name = TGE_Infrastructure_terrain_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+custom_text_box = {
+    name = TGE_Infrastructure_climate_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+custom_text_box = {
+    name = TGE_Infrastructure_winter_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+custom_text_box = {
+    name = TGE_Infrastructure_type_pr
+    potential = { 
+		FROM = {
+			has_country_flag = TGE_GUI
+		} 
+	} 
+}
+
+
+custom_button = {
+    name = TGE_upgrade_pr
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = { set_country_flag = TGE_GUI_conf_upg } }
+	tooltip = upgrade_pr_TGE_title
+}
+
+custom_button = {
+    name = TGE_destroy_pr
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = { set_country_flag = TGE_GUI_conf  } }
+	tooltip = destroy_pr_TGE_title
+}
+
+##farmlands
+
+custom_button = {
+    name = TGE_slot_1
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { 
+		FROM = { clr_country_flag = TGE_GUI_conf }  
+		if = {
+			limit = { ROOT = { trade_goods = grain } }
+			ROOT = {
+			     change_trade_goods = wine
+			}
+		}	
+		else = {
+			ROOT = {
+			     change_trade_goods = grain
+			}
+		}
+	}
+	tooltip = close_TGE_title
+	frame = {  
+       number = 1
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wine 
+					trade_goods = livestock
+					trade_goods = wool
+					trade_goods = apiculture
+					trade_goods = fish 
+				}
+			} 
+		} 
+    }
+	
+	frame = {  
+       number = 2
+       trigger = { ROOT = { trade_goods = grain } } 
+    }
+	
+	
+}
+
+custom_button = {
+    name = TGE_slot_2
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { 
+		FROM = { clr_country_flag = TGE_GUI_conf }  
+		if = {
+			limit = { 
+				ROOT = { 
+				    OR = {
+						trade_goods = livestock 
+						trade_goods = wool
+					}
+				} 
+			}
+			ROOT = {
+			     change_trade_goods = wine
+			}
+		}	
+		else = {
+			ROOT = {
+			     change_trade_goods = livestock
+			}
+		}
+	}
+	tooltip = close_TGE_title
+	frame = {  
+       number = 25
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wine 
+					trade_goods = grain
+				}
+			} 
+		} 
+    }
+
+	frame = {  
+       number = 2
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = livestock
+					trade_goods = wool
+					trade_goods = apiculture
+					trade_goods = fish 
+				}
+			} 
+	   } 
+    }
+
+}
+
+custom_button = {
+    name = TGE_slot_3
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { 
+		FROM = { clr_country_flag = TGE_GUI_conf }  	
+		if = {
+			limit = { ROOT = { trade_goods = wool } }
+			ROOT = {
+			     change_trade_goods = livestock
+			}
+		}
+		else = {
+			ROOT = {
+			     change_trade_goods = wool
+			}
+		}
+	}
+	tooltip = close_TGE_title
+	frame = {  
+       number = 3
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wine 
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish 
+				}
+			} 
+		} 
+    }
+
+	frame = {  
+       number = 25
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wool
+					trade_goods = apiculture
+				}
+			}  
+		} 
+    }
+
+}
+
+custom_button = {
+    name = TGE_slot_4
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { 
+		FROM = { clr_country_flag = TGE_GUI_conf }  	
+		if = {
+			limit = { ROOT = { trade_goods = apiculture } }
+			ROOT = {
+			     change_trade_goods = wool
+			}
+		}
+		else = {
+			ROOT = {
+			     change_trade_goods = apiculture
+			}
+		}
+	}
+	tooltip = close_TGE_title
+	frame = {  
+       number = 33
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wine 
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wool
+					trade_goods = fish 
+				}
+			} 
+		} 
+    }
+
+	frame = {  
+       number = 3
+       trigger = { ROOT = { trade_goods = apiculture } } 
+    }
+
+}
+
+custom_button = {
+    name = TGE_slot_5
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { 
+		FROM = { clr_country_flag = TGE_GUI_conf }  	
+		if = {
+			limit = { 
+				ROOT = { 
+					NOT = { trade_goods = fish } 
+					has_port = yes	
+				} 
+			}
+			ROOT = {
+			     change_trade_goods = fish
+			}
+		}
+		else_if = {
+			limit = { 
+				ROOT = { 
+					NOT = { trade_goods = lumber } 
+				} 
+			}
+			ROOT = {
+			     change_trade_goods = lumber
+			}
+		}
+	}
+	tooltip = close_TGE_title
+	frame = {  
+       number = 5
+       trigger = { 
+			ROOT = { 
+				AND = {
+					OR = {
+						trade_goods = wine 
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wool
+						trade_goods = apiculture
+					}
+					has_port = yes
+				}
+			} 
+		} 
+    }
+	
+	frame = {  
+       number = 35
+       trigger = { 
+			ROOT = { 
+				OR = {
+					trade_goods = wine 
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wool
+					trade_goods = apiculture
+					trade_goods = fish
+				}
+			} 
+		} 
+    }
+
+}
+
+
+###
+
+custom_button = {
+    name = TGE_main_close_button
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI_conf
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = { clr_country_flag = TGE_GUI_conf } }
+	tooltip = close_TGE_title
+}
+
+custom_button = {
+    name = close_TGE
+    potential = {
+		FROM = {
+			has_country_flag = TGE_GUI
+		}
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { FROM = { clr_country_flag = TGE_GUI clr_country_flag = TGE_GUI_conf } }
+	tooltip = close_TGE_title
+}
+
