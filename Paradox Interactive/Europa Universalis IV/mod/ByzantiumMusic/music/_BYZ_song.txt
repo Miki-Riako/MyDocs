@@ -1,0 +1,84 @@
+song = {
+	name = "The_Byzantine_Empire"
+	chance = {
+		modifier = {
+		    factor = 0
+			NOT = {
+				OR = {
+					tag = TRE
+					tag = MOE
+					tag = BYZ
+					tag = ROM
+				}
+			}
+		}
+		modifier = {
+		    factor = 5
+			is_at_war = no
+		}
+	}
+}
+
+song = {
+	name = "You'll_Come_As_a_Lightning"
+	chance = {
+		modifier = {
+		    factor = 0
+			NOT = {
+				OR = {
+					tag = TRE
+					tag = MOE
+					tag = BYZ
+					tag = ROM
+				}
+			}
+		}
+		modifier = {
+		    factor = 8
+			AND = {
+				is_at_war = yes
+				NOT = {
+					war_with = TUR
+				}
+			}
+		}
+		modifier = {
+			factor = 200
+			war_with = TUR
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+		}
+	}
+}
+
+song = {
+	name = "EXEC_COSMOFLIPS/."
+	chance = {
+		modifier = {
+		    factor = 0
+			NOT = {
+				OR = {
+					tag = TRE
+					tag = MOE
+					tag = BYZ
+					tag = ROM
+				}
+			}
+		}
+		modifier = {
+		    factor = 5
+			AND = {
+				is_at_war = yes
+				NOT = {
+					war_with = TUR
+				}
+			}
+		}
+		modifier = {
+			factor = 100
+			war_with = TUR
+		}
+	}
+}

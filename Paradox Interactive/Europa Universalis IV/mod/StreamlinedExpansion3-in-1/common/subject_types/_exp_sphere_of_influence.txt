@@ -1,0 +1,94 @@
+# Forward declaring all subject types so they can refer to each other in triggers etc.
+sphere_of_influence = { }
+
+#Subjects
+
+sphere_of_influence = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_protectorate
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_trade_protectorate
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_trade_protectorate
+	
+	#Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			is_great_power = yes
+			government_rank = 2
+		}
+	}
+	
+	#Properties 
+	can_be_annexed = no
+	transfer_trade_power = yes
+	joins_overlords_wars = no
+	joins_colonial_wars = no
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	uses_military_focus = no 
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	can_use_claims = no
+	share_rebel_popup = no
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	can_send_tribute = yes
+
+	
+	cities_required_for_bonuses = 25
+	trust_on_start = 35
+	max_government_rank = 1
+	
+	pays_overlord = 1
+	base_liberty_desire = 15
+	liberty_desire_development_ratio = 0.2
+	military_focus = 0.5
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_marry = {
+		same_overlord = all
+	}
+	
+	# Subject Interactions:
+	# (continuous)
+	support_loyalists = yes
+	divert_trade = yes
+	subsidize_armies = yes
+	embargo_rivals = yes
+	# (immediate)
+	bestow_gifts = yes
+	demand_additional_tribute = yes
+	embargo_rivals = yes
+	knowledge_sharing = yes
+	takeondebt = yes
+	place_relative_on_throne = yes
+	placate_rulers = yes
+	replace_governor = yes
+	
+	overlord_opinion_modifier = is_sphere_of_influence
+	subject_opinion_modifier = is_sphere_of_influence
+}
+	
+	
+	
+	
+	
