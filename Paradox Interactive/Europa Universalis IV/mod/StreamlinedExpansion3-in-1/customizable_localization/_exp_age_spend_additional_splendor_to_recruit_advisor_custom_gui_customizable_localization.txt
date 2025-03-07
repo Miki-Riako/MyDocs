@@ -1,0 +1,3536 @@
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTitle
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_adm
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_adm_ate
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_dip
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_dip_ate
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_mil
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_mil_ate
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_adm_tas
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_dip_tas
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_title_mil_tas
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_add_trait_title_tas
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_del_trait_title_tas
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorAteMaxPage
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = "5"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = "4"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = "4"
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "1"
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTasMaxPage
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = "2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = "2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = "2"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "1"
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTasMaxPage
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+		localisation_key = "7"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		localisation_key = "7"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "1"
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorAtePrevPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_ate_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_ate_tt_min_reached
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorAteNextPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_spend_additional_splendor_to_recruit_advisor_max_page_not_reached_ate = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_next_page_button_ate_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_next_page_button_ate_tt_max_reached
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTasPrevPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_spend_additional_splendor_to_recruit_advisor_min_page_not_reached_tas = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_tas_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_tas_tt_min_reached
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTasNextPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_spend_additional_splendor_to_recruit_advisor_max_page_not_reached_tas = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_next_page_button_tas_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_recruit_advisor_next_page_button_tas_tt_max_reached
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTasPrevPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_spend_additional_splendor_to_trait_min_page_not_reached_tas = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_trait_prev_page_button_tas_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_trait_prev_page_button_tas_tt_min_reached
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTasNextPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_spend_additional_splendor_to_trait_max_page_not_reached_tas = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_trait_next_page_button_tas_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_spend_additional_splendor_to_trait_next_page_button_tas_tt_max_reached
+	}
+}
+
+# Vanilla
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType1
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = philosopher
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = statesman
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = army_reformer
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType2
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = natural_scientist
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = naval_reformer
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = army_organiser
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType3
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = artist
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = trader
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = commandant
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType4
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = treasurer
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = spymaster
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = quartermaster
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType5
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = theologian
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = colonial_governor
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = recruitmaster
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType6
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = master_of_mint
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = diplomat
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = fortification_expert
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorType7
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		localisation_key = inquisitor
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		localisation_key = navigator
+	}
+	text = {
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		localisation_key = grand_captain
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+# Advisor Types Expanded
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_loyal_friend_adm
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_loyal_friend_dip
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_loyal_friend_mil
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_architect
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_vicegerent
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_noble_man
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_first_minister_republic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_envoy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_supply_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_visionary
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_colonial_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_banneret
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_missionary
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_loyal_friend_adm
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_loyal_friend_dip
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_loyal_friend_mil
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_architect
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_vicegerent
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_noble_man
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_first_minister_republic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_envoy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_supply_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_visionary
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_colonial_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_banneret
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_missionary
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_court_physician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_concubine_female
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_feudal_lord
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_great_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_traveling_salesman
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_military_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_state_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_vaisyas_peasant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_sergeant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_great_philosopher
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_treasure_fleet_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_imperial_bureaucrat
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_court_physician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_concubine_female
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_feudal_lord
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_great_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_traveling_salesman
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_military_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_state_administrator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_vaisyas_peasant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_sergeant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_great_philosopher
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_treasure_fleet_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_imperial_bureaucrat
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_cardinal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_concubine_male
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_knight
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_steward
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_naval_traditional_tactician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_siege_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_gold_digger
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_guild_trader
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_maratha_warrior
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_arch_chamberlain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_imam
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_cardinal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_concubine_male
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_knight
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_steward
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_naval_traditional_tactician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_siege_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_gold_digger
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_guild_trader
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_maratha_warrior
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_chamberlain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_imam
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_arch_bishop_catholic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_sailors_recruitmaster
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_traditional_tactician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_administrative_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_diplomatic_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_master_of_artillery
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_free_thinker
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_historian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_gentleman
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_monk
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_scholar
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_bishop_catholic
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_sailors_recruitmaster
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_traditional_tactician
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_administrative_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_diplomatic_genius
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_master_of_artillery
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_free_thinker
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_historian
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_gentleman
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_monk
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_scholar
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_arch_bishop_protestant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_blockade_specialist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_landsknecht
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_anti_corruption_officer
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_cultural_commissioner
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_looting_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_revolutionist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_plantation_owner
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_cossack
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_brahmins_preacher
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_inventor
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_bishop_protestant
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_blockade_specialist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_landsknecht
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_anti_corruption_officer
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_cultural_commissioner
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_looting_expert
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_revolutionist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_plantation_owner
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_cossack
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_brahmins_preacher
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_inventor
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_arch_bishop_reformed
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_pirate_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_mercenary_leader
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_first_minister_monarchy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_herald
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_marshal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_reformist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_galley_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_tribal_chieftain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_dhimmi_scholar
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_witch_hunter
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_bishop_reformed
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_pirate_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_mercenary_leader
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_first_minister_monarchy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_herald
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_marshal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_reformist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_galley_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_tribal_chieftain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_dhimmi_scholar
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_witch_hunter
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAte7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_feudal_tax_collector
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_great_negotiator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_lord_of_a_castle
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_first_minister_theocracy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_arch_chancellor
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_arch_marshal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_state_theorist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ate_advisor_galleon_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ate_advisor_rajputs_warrior
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ate_advisor_jains_bureaucrat
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeAte7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_feudal_tax_collector
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_great_negotiator
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_lord_of_a_castle
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_first_minister_theocracy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_chancellor
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_arch_marshal
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_state_theorist
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_galleon_captain
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_rajputs_warrior
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_ate_advisor_jains_bureaucrat
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+# Touhou Advisor
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_daiyousei
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_chen
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_mima
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_flandre
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_doremy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_yorihime
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_daiyousei
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_chen
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_mima
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_flandre
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_doremy
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_yorihime
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_patchouli
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_alice
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_sakuya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_seiga
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_clownpiece
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_patchouli
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_alice
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_sakuya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_seiga
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_clownpiece
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_keine
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_kaguya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_youmu
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_iku
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_keine
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_kaguya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_youmu
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_iku
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_eirin
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_aya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_reisen
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_star
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_eirin
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_aya
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_reisen
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_star
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_hecatia
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_komachi
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_hina
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_hecatia
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_komachi
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_hina
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_sagume
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_suwako
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_momiji
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_sagume
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_suwako
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_momiji
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeTas7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = th_advisor_megumu
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = th_advisor_hatate
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = th_advisor_kanako
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToRecruitAdvisorTypeAlternativeTas7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_megumu
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_hatate
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		localisation_key = ase_spend_additional_splendor_to_recruit_advisor_th_advisor_kanako
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+# Touhou Trait
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = just_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = careful_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = pious_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = industrious_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = strict_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = humane_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = cruel_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas1
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_just_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_careful_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_pious_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_industrious_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_strict_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_humane_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_cruel_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = righteous_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = secretive_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = lawgiver_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = expansionist_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = inspiring_leader_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = babbling_buffoon_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = naive_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas2
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_righteous_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_secretive_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_lawgiver_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_expansionist_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_inspiring_leader_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_babbling_buffoon_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_naive_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = tolerant_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = intricate_web_weaver_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = midas_touched_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = charismatic_negotiator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = martial_educator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = embezzler_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = craven_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas3
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_tolerant_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_intricate_web_weaver_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_midas_touched_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_charismatic_negotiator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_martial_educator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_embezzler_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_craven_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = kind_hearted_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = fertile_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = incorruptible_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = silver_tongue_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = navigator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = infertile_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = loose_lips_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas4
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_kind_hearted_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_fertile_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_incorruptible_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_silver_tongue_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_navigator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_infertile_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_loose_lips_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = free_thinker_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = well_advised_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = architectural_visionary_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = conqueror_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = fierce_negotiator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = drunkard_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = obsessive_perfectionist_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas5
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_free_thinker_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_well_advised_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_architectural_visionary_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_conqueror_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_fierce_negotiator_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_drunkard_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_obsessive_perfectionist_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = well_connected_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = benevolent_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = scholar_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = tactical_genius_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = reformist_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = sinner_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = malevolent_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas6
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_well_connected_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_benevolent_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_scholar_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_tactical_genius_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_reformist_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_sinner_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_malevolent_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitTas7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = calm_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = zealot_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = entrepreneur_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = bold_fighter_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = patron_of_arts_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = greedy_personality
+	}	
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = petty_personality
+	}	
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+defined_text = {
+	name = GetAseSpendAdditionalSplendorToTraitAlternativeTas7
+	random = no
+
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_calm_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_zealot_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_entrepreneur_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_bold_fighter_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_patron_of_arts_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_greedy_personality
+	}
+	text = {
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+		}
+		localisation_key = ase_spend_additional_splendor_to_trait_petty_personality
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}

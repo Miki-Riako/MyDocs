@@ -1,0 +1,400 @@
+ase_retain_age_ability_max_page_for_age_not_reached = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				ase_retain_age_ability_max_page_for_age_is_2 = yes
+				NOT = { check_variable = { which = ase_retain_age_ability_page value = 2 } }
+			}
+			AND = {
+				ase_retain_age_ability_max_page_for_age_is_3 = yes
+				NOT = { check_variable = { which = ase_retain_age_ability_page value = 3 } }
+			}
+		}
+	}
+}
+
+ase_retain_age_ability_max_page_for_age_is_2 = {
+	OR = {
+		current_age = age_of_reformation
+		AND = {
+			has_global_flag = extended_timeline_mod
+			OR = {
+				current_age = late_classical_age
+				current_age = age_of_migrations
+				current_age = dark_age
+				current_age = feudal_age
+				current_age = high_middle_ages
+				current_age = late_middle_ages
+				current_age = age_of_discovery
+				current_age = great_war_age
+				current_age = information_age
+			}
+		}
+	}
+}
+
+ase_retain_age_ability_max_page_for_age_is_3 = {
+	OR = {
+		current_age = age_of_absolutism
+		current_age = age_of_revolutions
+		AND = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+		}
+	}
+}
+
+ase_retain_age_ability_entry_selectable = {
+	splendor = 1600
+	ase_retain_age_ability_not_selected_for_current_age = yes
+}
+
+ase_retain_age_ability_not_selected_for_current_age = {
+	custom_trigger_tooltip = {
+		tooltip = ase_chosen_retain_age_ability
+		OR = {
+			AND = {
+				current_age = age_of_reformation
+				NOT = { has_country_flag = ase_chosen_age_of_reformation }
+			}
+			AND = {
+				current_age = age_of_absolutism
+				NOT = { has_country_flag = ase_chosen_age_of_absolutism }
+			}
+			AND = {
+				current_age = age_of_revolutions
+				NOT = { has_country_flag = ase_chosen_age_of_revolutions }
+			}
+			AND = {
+				has_global_flag = extended_timeline_mod
+				OR = {
+					AND = {
+						current_age = late_classical_age
+						NOT = { has_country_flag = ase_chosen_late_classical_age }
+					}
+					AND = {
+						current_age = age_of_migrations
+						NOT = { has_country_flag = ase_chosen_age_of_migrations }
+					}
+					AND = {
+						current_age = dark_age
+						NOT = { has_country_flag = ase_chosen_dark_age }
+					}
+					AND = {
+						current_age = feudal_age
+						NOT = { has_country_flag = ase_chosen_feudal_age }
+					}
+					AND = {
+						current_age = high_middle_ages
+						NOT = { has_country_flag = ase_chosen_high_middle_ages }
+					}
+					AND = {
+						current_age = late_middle_ages
+						NOT = { has_country_flag = ase_chosen_late_middle_ages }
+					}
+					AND = {
+						current_age = age_of_discovery
+						NOT = { has_country_flag = ase_chosen_age_of_discovery }
+					}
+					AND = {
+						current_age = industrial_age
+						NOT = { has_country_flag = ase_chosen_industrial_age }
+					}
+					AND = {
+						current_age = great_war_age
+						NOT = { has_country_flag = ase_chosen_great_war_age }
+					}
+					AND = {
+						current_age = information_age
+						NOT = { has_country_flag = ase_chosen_information_age }
+					}
+				}
+			}
+		}
+	}
+}
+
+ase_retain_age_ability_entry_1_visible = {
+	OR = {
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					current_age = industrial_age
+				}
+			}
+		}
+	}
+}
+ase_retain_age_ability_entry_1_selectable = {
+	if = {
+		limit = {
+			current_age = age_of_absolutism
+		}
+		if = {
+			limit = {
+				check_variable = { which = ase_retain_age_ability_page value = 3 }
+			}
+			religion_group = dharmic
+		}
+	}
+}
+
+ase_retain_age_ability_entry_2_visible = {
+	OR = {
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					current_age = industrial_age
+				}
+			}
+		}
+	}
+}
+ase_retain_age_ability_entry_2_selectable = {
+	if = {
+		limit = {
+			current_age = age_of_reformation
+		}
+		if = {
+			limit = {
+				check_variable = { which = ase_retain_age_ability_page value = 2 }
+			}
+			government = republic
+		}
+	}
+}
+
+ase_retain_age_ability_entry_3_visible = {
+	OR = {
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+		}
+	}
+}
+ase_retain_age_ability_entry_3_selectable = {
+	if = {
+		limit = {
+			current_age = age_of_absolutism
+		}
+		if = {
+			limit = {
+				check_variable = { which = ase_retain_age_ability_page value = 2 }
+			}
+			religion_group = muslim
+		}
+	}
+}
+
+ase_retain_age_ability_entry_4_visible = {
+	OR = {
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					OR = {
+						current_age = late_classical_age
+						current_age = age_of_migrations
+						current_age = dark_age
+						current_age = feudal_age
+						current_age = high_middle_ages
+						current_age = late_middle_ages
+						current_age = age_of_discovery
+						current_age = industrial_age
+						current_age = great_war_age
+						current_age = information_age
+					}
+				}
+			}
+		}
+		AND = {
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+				AND = {
+					has_global_flag = extended_timeline_mod
+					current_age = industrial_age
+				}
+			}
+		}
+	}
+}
+ase_retain_age_ability_entry_4_selectable = {
+	if = {
+		limit = {
+			current_age = age_of_absolutism
+		}
+		if = {
+			limit = {
+				check_variable = { which = ase_retain_age_ability_page value = 2 }
+			}
+			religion_group = christian
+			NOT = { religion = orthodox }
+			NOT = { religion = coptic }
+		}
+	}
+}
+ase_retain_age_ability_entry_5_selectable = {
+	if = {
+		limit = {
+			current_age = age_of_absolutism
+		}
+		if = {
+			limit = {
+				check_variable = { which = ase_retain_age_ability_page value = 3 }
+			}
+			religion_group = Touhou
+		}
+	}
+}

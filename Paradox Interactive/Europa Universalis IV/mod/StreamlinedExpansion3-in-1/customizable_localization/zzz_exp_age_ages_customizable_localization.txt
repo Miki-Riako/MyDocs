@@ -1,0 +1,142 @@
+defined_text = {
+	name = classical_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = classical_age
+	}
+}
+
+defined_text = {
+	name = late_classical_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = late_classical_age
+	}
+}
+
+defined_text = {
+	name = age_of_migrations
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_migrations
+	}
+}
+
+defined_text = {
+	name = dark_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dark_age
+	}
+}
+
+defined_text = {
+	name = feudal_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = feudal_age
+	}
+}
+
+defined_text = {
+	name = high_middle_ages
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = high_middle_ages
+	}
+}
+
+defined_text = {
+	name = late_middle_ages
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = late_middle_ages
+	}
+}
+
+defined_text = {
+	name = age_of_discovery
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_discovery
+	}
+}
+
+defined_text = {
+	name = age_of_reformation
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_reformation
+	}
+}
+
+defined_text = {
+	name = age_of_absolutism
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_absolutism
+	}
+}
+
+defined_text = {
+	name = age_of_revolutions
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_revolutions
+	}
+}
+
+defined_text = {
+	name = industrial_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = industrial_age
+	}
+}
+
+defined_text = {
+	name = great_war_age
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = great_war_age
+	}
+}

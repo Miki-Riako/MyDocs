@@ -1,0 +1,2870 @@
+custom_icon = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_bg
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_title
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_close_button
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	effect = {
+		hidden_effect = {
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+			set_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 0 }
+			set_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 0 }
+			set_variable = { which = ase_spend_additional_splendor_to_trait_tas_page value = 0 }
+			set_country_flag = ase_spend_additional_splendor_opened
+		}
+	}
+	tooltip = BACK
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = -1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_ate_tt
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_next_page_button_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_max_page_not_reached_ate = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_next_page_button_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_page_text_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = -1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_tas_tt
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_next_page_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_max_page_not_reached_tas = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_next_page_button_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_page_text_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_prev_page_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	trigger = {
+		hidden_trigger = {
+			check_variable = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_trait_tas_page value = -1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_prev_page_button_tas_tt
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_next_page_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_max_page_not_reached_tas = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_next_page_button_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_page_text_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+}
+
+# Vanilla
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_1
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_2
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_3
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_4
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_5
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_6
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_7
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_visible = yes
+	}
+}
+
+# Advisor Types Expanded
+custom_icon = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_bg_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_title_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_close_button_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	effect = {
+		hidden_effect = {
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+			set_country_flag = ase_spend_additional_splendor_opened
+		}
+	}
+	tooltip = BACK
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_1_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_2_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_3_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_4_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_5_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_6_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_ate_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_ate_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_ate_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_ate_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_ate_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7_ate_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_7_ate
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_ate_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_ate_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_ate_visible = yes
+	}
+}
+
+# Touhou
+custom_icon = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_bg_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_title_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_close_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	effect = {
+		hidden_effect = {
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			clr_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+			set_country_flag = ase_spend_additional_splendor_opened
+		}
+	}
+	tooltip = BACK
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_1_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_1_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_2_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_2_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_3_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_3_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_4_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_4_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_5_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_5_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_6_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_6_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_recruit_tas_advisor_entry_selectable = yes
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_recruit_advisor_entry_button_7_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_recruit_advisor_entry_text_7_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_tas_opened
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_tas_opened
+		}
+		ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_visible = yes
+	}
+}
+
+# Touhou Trait
+custom_icon = {
+	name = ase_spend_additional_splendor_to_trait_bg_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_title_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+}
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_close_button_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	effect = {
+		hidden_effect = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+			set_country_flag = ase_spend_additional_splendor_opened
+		}
+	}
+	tooltip = BACK
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_1_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_1_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_1_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_1_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_1_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_1_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_1_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_2_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_2_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_2_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_2_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_2_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_2_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_2_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_3_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_3_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_3_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_3_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_3_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_3_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_3_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_4_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_4_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_4_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_4_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_4_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_4_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_4_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_5_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_5_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_5_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_5_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_5_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_5_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_5_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_6_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_6_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_6_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_6_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_6_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_6_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_6_tas_visible = yes
+	}
+}
+
+custom_button = {
+	name = ase_spend_additional_splendor_to_trait_entry_button_7_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_7_tas_visible = yes
+	}
+	trigger = {
+		ase_spend_additional_splendor_to_trait_entry_selectable = yes
+		ase_spend_additional_splendor_to_trait_entry_7_tas_selectable = yes
+	}
+	effect = {
+		ase_spend_additional_splendor_to_trait_entry_7_tas_effect = yes
+	}
+	frame = {
+		number = 1
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 1 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 2 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 3 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 4 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 5 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 11
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 12
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 6 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 13
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+		}
+	}
+	frame = {
+		number = 14
+		trigger = {
+			is_variable_equal = { which = ase_spend_additional_splendor_to_trait_tas_page value = 7 }
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+	}
+	tooltip = ase_spend_additional_splendor_to_trait_entry_button_7_tas_tt
+}
+custom_text_box = {
+	name = ase_spend_additional_splendor_to_trait_entry_text_7_tas
+	potential = {
+		ai = no
+		OR = {
+			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+		}
+		ase_spend_additional_splendor_to_trait_entry_7_tas_visible = yes
+	}
+}
