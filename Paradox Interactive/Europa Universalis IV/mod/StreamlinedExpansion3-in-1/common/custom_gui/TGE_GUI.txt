@@ -403,8 +403,8 @@ custom_button = {
 				OR = {
 					trade_goods = cloth
 					trade_goods = glass
-					trade_goods = paper 
-					trade_goods = silk				
+					trade_goods = paper
+					trade_goods = silk
 				}
 			}
 		}

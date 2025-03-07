@@ -28,6 +28,39 @@ technology = { #Tribal Government
 	native_ceremonial_fire_pit = yes
 
 	#effect = { } # When a country researches the technology
+	canal_system = yes
+	road_network = yes
+	
+	import_from_subjects = yes
+	off = yes
+	off_2 = yes
+	off_3 = yes
+	off_4 = yes
+	off_5 = yes
+	off_6 = yes
+	off_7 = yes
+	fur_workshop = yes
+	chocolate_factory = yes
+	cigars_factory = yes
+	cannon_foundry = yes
+	metalworking_workshop = yes
+	munition_factory = yes
+	wood_workshop = yes
+	leather_workshop = yes
+	jewellery_workshop = yes
+	uniforms_workshop = yes
+	Instruments_workshop = yes
+	stop_import_from_subjects = yes
+	spectacle_factory = yes
+	sculpture_workshop = yes
+	steam_engine_manu = yes
+	spy_agency = yes
+	post_office = yes
+    armory = yes
+
+	steam_factory = yes
+	mine = yes
+	magical_library = yes
 }
 
 technology = { #Advanced Tribes
