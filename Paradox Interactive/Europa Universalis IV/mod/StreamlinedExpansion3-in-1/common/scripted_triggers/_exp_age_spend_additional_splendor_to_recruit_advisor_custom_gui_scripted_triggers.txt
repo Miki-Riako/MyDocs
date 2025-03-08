@@ -1208,20 +1208,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { has_advisor_type_in_pool = th_advisor_daiyousei }
 				NOT = { has_advisor_type_in_pool = th_advisor_daiyousei_upgraded }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = CIN
-				}
-				exists = CIN
-			}
-			4996 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Fairy
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = CIN
+			# 	}
+			# 	exists = CIN
+			# }
+			# 4996 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Fairy
+			# }
 		}
 		if = {
 			limit = {
@@ -1232,21 +1232,21 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { advisor = th_advisor_chen }
 				NOT = { has_advisor_type_in_pool = th_advisor_chen }
 			}
-			OR = {
-				AND = {
-					NOT = { exists = MHG }
-					NOT = { exists = NMG }
-				}
-				th_is_or_was_tag = { tag = MHG }
-			}
-			5066 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Youkai
-			}
+			# OR = {
+			# 	AND = {
+			# 		NOT = { exists = MHG }
+			# 		NOT = { exists = NMG }
+			# 	}
+			# 	th_is_or_was_tag = { tag = MHG }
+			# }
+			# 5066 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Youkai
+			# }
 		}
 		if = {
 			limit = {
@@ -1257,24 +1257,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { advisor = th_advisor_mima }
 				NOT = { has_advisor_type_in_pool = th_advisor_mima }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = FOM
-				}
-				th_is_or_was_tag = {
-					tag = MIM
-				}
-				exists = FOM
-				exists = MIM
-			}
-			5033 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Higanean
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = FOM
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = MIM
+			# 	}
+			# 	exists = FOM
+			# 	exists = MIM
+			# }
+			# 5033 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Higanean
+			# }
 		}
 	}
 	if = {
@@ -1290,25 +1290,25 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { advisor = th_advisor_flandre }
 				NOT = { has_advisor_type_in_pool = th_advisor_flandre }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = FLR
-				}
-				th_is_or_was_tag = {
-					tag = SCR
-				}
-				exists = FLR
-				exists = SCR
-				exists = SCD
-			}
-			5075 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Scarlet
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = FLR
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = SCR
+			# 	}
+			# 	exists = FLR
+			# 	exists = SCR
+			# 	exists = SCD
+			# }
+			# 5075 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Scarlet
+			# }
 		}
 		if = {
 			limit = {
@@ -1319,27 +1319,27 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { advisor = th_advisor_doremy }
 				NOT = { has_advisor_type_in_pool = th_advisor_doremy }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = LCU
-				}
-				exists = LCU
-			}
-			OR = {
-				NOT = { exists = LEM }
-				AND = {
-					tag = LEM
-					was_tag = EIT
-				}
-			}
-			5318 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = moon_culture
-				accepted_culture = Lunarian_culture
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = LCU
+			# 	}
+			# 	exists = LCU
+			# }
+			# OR = {
+			# 	NOT = { exists = LEM }
+			# 	AND = {
+			# 		tag = LEM
+			# 		was_tag = EIT
+			# 	}
+			# }
+			# 5318 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = moon_culture
+			# 	accepted_culture = Lunarian_culture
+			# }
 		}
 		if = {
 			limit = {
@@ -1350,24 +1350,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_selectable = {
 				NOT = { advisor = th_advisor_yorihime }
 				NOT = { has_advisor_type_in_pool = th_advisor_yorihime }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = LCU
-				}
-				th_is_or_was_tag = {
-					tag = HVR
-				}
-				exists = LCU
-				exists = HVR
-			}
-			5320 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = moon_culture
-				accepted_culture = Lunarian_culture
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = LCU
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = HVR
+			# 	}
+			# 	exists = LCU
+			# 	exists = HVR
+			# }
+			# 5320 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = moon_culture
+			# 	accepted_culture = Lunarian_culture
+			# }
 		}
 	}
 }
@@ -1408,20 +1408,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = {
 				NOT = { advisor = th_advisor_patchouli }
 				NOT = { has_advisor_type_in_pool = th_advisor_patchouli }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = SCR
-				}
-				exists = SCR
-			}
-			5072 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Scarlet
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = SCR
+			# 	}
+			# 	exists = SCR
+			# }
+			# 5072 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Scarlet
+			# }
 		}
 		if = {
 			limit = {
@@ -1434,24 +1434,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = {
 				NOT = { has_advisor_type_in_pool = th_advisor_alice }
 				NOT = { has_advisor_type_in_pool = th_advisor_alice_upgraded }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = MKI
-				}
-				th_is_or_was_tag = {
-					tag = FOM
-				}
-				exists = MKI
-				exists = FOM
-			}
-			5093 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Magician
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = MKI
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = FOM
+			# 	}
+			# 	exists = MKI
+			# 	exists = FOM
+			# }
+			# 5093 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Magician
+			# }
 		}
 		if = {
 			limit = {
@@ -1462,22 +1462,22 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = {
 				NOT = { advisor = th_advisor_sakuya }
 				NOT = { has_advisor_type_in_pool = th_advisor_sakuya }
 			}
-			OR = {
-				NOT = { exists = SCR }
-				tag = SCR
-			}
-			OR = {
-				NOT = { exists = SCD }
-				tag = SCD
-			}
-			5074 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Scarlet
-			}
+			# OR = {
+			# 	NOT = { exists = SCR }
+			# 	tag = SCR
+			# }
+			# OR = {
+			# 	NOT = { exists = SCD }
+			# 	tag = SCD
+			# }
+			# 5074 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Scarlet
+			# }
 		}
 	}
 	if = {
@@ -1493,24 +1493,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = {
 				NOT = { advisor = th_advisor_seiga }
 				NOT = { has_advisor_type_in_pool = th_advisor_seiga }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = JNK
-				}
-				th_is_or_was_tag = {
-					tag = SEI
-				}
-				exists = JNK
-				exists = SEI
-			}
-			5171 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Senkaian
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = JNK
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = SEI
+			# 	}
+			# 	exists = JNK
+			# 	exists = SEI
+			# }
+			# 5171 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Senkaian
+			# }
 		}
 		if = {
 			limit = {
@@ -1521,21 +1521,21 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_selectable = {
 				NOT = { advisor = th_advisor_clownpiece }
 				NOT = { has_advisor_type_in_pool = th_advisor_clownpiece }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = CLP
-				}
-				exists = LRV
-				exists = CLP
-			}
-			5334 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Fairy
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = CLP
+			# 	}
+			# 	exists = LRV
+			# 	exists = CLP
+			# }
+			# 5334 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Fairy
+			# }
 		}
 	}
 }
@@ -1576,25 +1576,25 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_selectable = {
 				NOT = { advisor = th_advisor_keine }
 				NOT = { has_advisor_type_in_pool = th_advisor_keine }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = KNE
-				}
-				th_is_or_was_tag = {
-					tag = KN2
-				}
-				exists = FUJ
-				exists = KNE
-				exists = KN2
-			}
-			4979 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Gensokyo_human
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = KNE
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = KN2
+			# 	}
+			# 	exists = FUJ
+			# 	exists = KNE
+			# 	exists = KN2
+			# }
+			# 4979 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Gensokyo_human
+			# }
 		}
 		if = {
 			limit = {
@@ -1605,25 +1605,25 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_selectable = {
 				NOT = { advisor = th_advisor_kaguya }
 				NOT = { has_advisor_type_in_pool = th_advisor_kaguya }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = EIT
-				}
-				th_is_or_was_tag = {
-					tag = FUJ
-				}
-				exists = LCU
-				exists = EIT
-				exists = LEM
-			}
-			4991 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Eientei
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = EIT
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = FUJ
+			# 	}
+			# 	exists = LCU
+			# 	exists = EIT
+			# 	exists = LEM
+			# }
+			# 4991 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Eientei
+			# }
 		}
 		if = {
 			limit = {
@@ -1634,24 +1634,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_selectable = {
 				NOT = { advisor = th_advisor_youmu }
 				NOT = { has_advisor_type_in_pool = th_advisor_youmu }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = NET
-				}
-				th_is_or_was_tag = {
-					tag = YMU
-				}
-				exists = NET
-				exists = YMU
-			}
-			5111 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Netherlandish
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = NET
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = YMU
+			# 	}
+			# 	exists = NET
+			# 	exists = YMU
+			# }
+			# 5111 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Netherlandish
+			# }
 		}
 	}
 	if = {
@@ -1667,20 +1667,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_selectable = {
 				NOT = { advisor = th_advisor_iku }
 				NOT = { has_advisor_type_in_pool = th_advisor_iku }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = HVR
-				}
-				exists = HVR
-			}
-			5312 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Heavenish
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = HVR
+			# 	}
+			# 	exists = HVR
+			# }
+			# 5312 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Heavenish
+			# }
 		}
 	}
 }
@@ -1721,25 +1721,25 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_selectable = {
 				NOT = { advisor = th_advisor_eirin }
 				NOT = { has_advisor_type_in_pool = th_advisor_eirin }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = EIT
-				}
-				th_is_or_was_tag = {
-					tag = LCU
-				}
-				exists = EIT
-				exists = LCU
-				exists = LEM
-			}
-			5112 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Eientei
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = EIT
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = LCU
+			# 	}
+			# 	exists = EIT
+			# 	exists = LCU
+			# 	exists = LEM
+			# }
+			# 5112 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Eientei
+			# }
 		}
 		if = {
 			limit = {
@@ -1750,20 +1750,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_selectable = {
 				NOT = { advisor = th_advisor_aya }
 				NOT = { has_advisor_type_in_pool = th_advisor_aya }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = TGU
-				}
-				exists = TGU
-			}
-			4971 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Tengu
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = TGU
+			# 	}
+			# 	exists = TGU
+			# }
+			# 4971 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Tengu
+			# }
 		}
 		if = {
 			limit = {
@@ -1774,24 +1774,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_selectable = {
 				NOT = { advisor = th_advisor_reisen }
 				NOT = { has_advisor_type_in_pool = th_advisor_reisen }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = LCU
-				}
-				exists = LCU
-			}
-			OR = {
-				NOT = { exists = EIT }
-				th_is_or_was_tag = { tag = EIT }
-			}
-			5117 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Eientei
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = LCU
+			# 	}
+			# 	exists = LCU
+			# }
+			# OR = {
+			# 	NOT = { exists = EIT }
+			# 	th_is_or_was_tag = { tag = EIT }
+			# }
+			# 5117 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Eientei
+			# }
 		}
 	}
 	if = {
@@ -1807,24 +1807,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_selectable = {
 				NOT = { advisor = th_advisor_star }
 				NOT = { has_advisor_type_in_pool = th_advisor_star }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = CLP
-				}
-				th_is_or_was_tag = {
-					tag = TFR
-				}
-				exists = CLP
-				exists = TFR
-			}
-			4975 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Fairy
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = CLP
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = TFR
+			# 	}
+			# 	exists = CLP
+			# 	exists = TFR
+			# }
+			# 4975 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Fairy
+			# }
 		}
 	}
 }
@@ -1859,28 +1859,28 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_selectable = {
 				NOT = { advisor = th_advisor_hecatia }
 				NOT = { has_advisor_type_in_pool = th_advisor_hecatia }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = HIG
-				}
-				th_is_or_was_tag = {
-					tag = JNK
-				}
-				th_is_or_was_tag = {
-					tag = HEC
-				}
-				exists = HIG
-				exists = JNK
-				exists = HEC
-			}
-			5327 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Higanean
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = HIG
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = JNK
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = HEC
+			# 	}
+			# 	exists = HIG
+			# 	exists = JNK
+			# 	exists = HEC
+			# }
+			# 5327 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Higanean
+			# }
 		}
 		if = {
 			limit = {
@@ -1891,20 +1891,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_selectable = {
 				NOT = { advisor = th_advisor_komachi }
 				NOT = { has_advisor_type_in_pool = th_advisor_komachi }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = HIG
-				}
-				exists = HIG
-			}
-			4969 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Higanean
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = HIG
+			# 	}
+			# 	exists = HIG
+			# }
+			# 4969 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Higanean
+			# }
 		}
 		if = {
 			limit = {
@@ -1915,20 +1915,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_selectable = {
 				NOT = { advisor = th_advisor_hina }
 				NOT = { has_advisor_type_in_pool = th_advisor_hina }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = YOF
-				}
-				exists = YOF
-			}
-			5187 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Youkai
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = YOF
+			# 	}
+			# 	exists = YOF
+			# }
+			# 5187 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Youkai
+			# }
 		}
 	}
 	else_if = {
@@ -1969,20 +1969,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_selectable = {
 				NOT = { advisor = th_advisor_sagume }
 				NOT = { has_advisor_type_in_pool = th_advisor_sagume }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = LCU
-				}
-				exists = LCU
-			}
-			5320 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = moon_culture
-				accepted_culture = Lunarian_culture
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = LCU
+			# 	}
+			# 	exists = LCU
+			# }
+			# 5320 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = moon_culture
+			# 	accepted_culture = Lunarian_culture
+			# }
 		}
 		if = {
 			limit = {
@@ -1993,20 +1993,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_selectable = {
 				NOT = { advisor = th_advisor_suwako }
 				NOT = { has_advisor_type_in_pool = th_advisor_suwako }
 			}	
-			NOT = {
-				th_is_or_was_tag = {
-					tag = MRY
-				}
-				exists = MRY
-			}
-			4998 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Youkai
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = MRY
+			# 	}
+			# 	exists = MRY
+			# }
+			# 4998 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Youkai
+			# }
 		}
 		if = {
 			limit = {
@@ -2017,24 +2017,24 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_selectable = {
 				NOT = { advisor = th_advisor_momiji }
 				NOT = { has_advisor_type_in_pool = th_advisor_momiji }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = TGU
-				}
-				th_is_or_was_tag = {
-					tag = HAK
-				}
-				exists = TGU
-				exists = HAK
-			}
-			5198 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Tengu
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = TGU
+			# 	}
+			# 	th_is_or_was_tag = {
+			# 		tag = HAK
+			# 	}
+			# 	exists = TGU
+			# 	exists = HAK
+			# }
+			# 5198 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Tengu
+			# }
 		}
 	}
 	else_if = {
@@ -2075,20 +2075,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_selectable = {
 				NOT = { advisor = th_advisor_megumu	}
 				NOT = { has_advisor_type_in_pool = th_advisor_megumu }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = TGU
-				}
-				exists = TGU
-			}
-			4964 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Tengu
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = TGU
+			# 	}
+			# 	exists = TGU
+			# }
+			# 4964 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Tengu
+			# }
 		}
 		if = {
 			limit = {
@@ -2099,20 +2099,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_selectable = {
 				NOT = { advisor = th_advisor_hatate }
 				NOT = { has_advisor_type_in_pool = th_advisor_hatate }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = TGU
-				}
-				exists = TGU
-			}
-			4970 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Tengu
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = TGU
+			# 	}
+			# 	exists = TGU
+			# }
+			# 4970 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Tengu
+			# }
 		}
 		if = {
 			limit = {
@@ -2123,20 +2123,20 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_selectable = {
 				NOT = { advisor = th_advisor_kanako }
 				NOT = { has_advisor_type_in_pool = th_advisor_kanako }
 			}
-			NOT = {
-				th_is_or_was_tag = {
-					tag = MRY
-				}
-				exists = MRY
-			}
-			5224 = {
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				culture_group = Gensokyan_culture
-				accepted_culture = Youkai
-			}
+			# NOT = {
+			# 	th_is_or_was_tag = {
+			# 		tag = MRY
+			# 	}
+			# 	exists = MRY
+			# }
+			# 5224 = {
+			# 	is_core = ROOT
+			# 	owned_by = ROOT
+			# }
+			# OR = {
+			# 	culture_group = Gensokyan_culture
+			# 	accepted_culture = Youkai
+			# }
 		}
 	}
 	else_if = {
@@ -2359,7 +2359,7 @@ ase_spend_additional_splendor_to_trait_entry_1_tas_selectable = {
 			NOT = { ruler_has_personality = petty_personality }
 			OR = {
 				has_reform = celestial_empire
-				has_reform = Gensokyan_celestial_empire
+				# has_reform = Gensokyan_celestial_empire
 			}
 		}
 		if = {
@@ -2472,7 +2472,7 @@ ase_spend_additional_splendor_to_trait_entry_2_tas_selectable = {
 				government = monarchy
 			}
 			NOT = { has_reform = celestial_empire }
-			NOT = { has_reform = Gensokyan_celestial_empire }
+			# NOT = { has_reform = Gensokyan_celestial_empire }
 			NOT = { government = tribal }
 			NOT = { government = native }
 		}
@@ -3661,7 +3661,7 @@ ase_spend_additional_splendor_to_trait_entry_7_tas_selectable = {
 			NOT = { ruler_has_personality = humane_personality }
 			OR = {
 				has_reform = celestial_empire
-				has_reform = Gensokyan_celestial_empire
+				# has_reform = Gensokyan_celestial_empire
 			}
 		}
 		if = {

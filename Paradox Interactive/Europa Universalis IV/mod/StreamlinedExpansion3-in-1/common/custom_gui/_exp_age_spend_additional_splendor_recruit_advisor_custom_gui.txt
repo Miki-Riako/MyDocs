@@ -38,6 +38,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = ase_spend_additional_splendor_to_recruit_advisor_close_button
+	trigger = {}
 	potential = {
 		ai = no
 		OR = {
@@ -617,6 +618,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = ase_spend_additional_splendor_to_recruit_advisor_close_button_ate
+	trigger = {}
 	potential = {
 		ai = no
 		OR = {
@@ -1445,6 +1447,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = ase_spend_additional_splendor_to_recruit_advisor_close_button_tas
+	trigger = {}
 	potential = {
 		ai = no
 		OR = {
@@ -1949,6 +1952,7 @@ custom_text_box = {
 }
 custom_button = {
 	name = ase_spend_additional_splendor_to_trait_close_button_tas
+	trigger = {}
 	potential = {
 		ai = no
 		OR = {
@@ -1958,8 +1962,8 @@ custom_button = {
 	}
 	effect = {
 		hidden_effect = {
-			has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
-			has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
+			# has_country_flag = ase_spend_additional_splendor_add_trait_tas_opened
+			# has_country_flag = ase_spend_additional_splendor_del_trait_tas_opened
 			set_country_flag = ase_spend_additional_splendor_opened
 		}
 	}

@@ -628,20 +628,6 @@ country_event = {
 			id = ASE_Splendor_Events.7
 		}
 	}
-
-	#Touhou Advisor
-	option = {
-		name = ASE_Splendor_Events.1.OPT12
-		trigger = { }
-		highlight = yes
-		ai_chance = {
-			factor = 0
-		}
-
-		country_event = {
-			id = TAS_Splendor_Events.1
-		}
-	}
 }
 
 #Hire Admin Advisor
