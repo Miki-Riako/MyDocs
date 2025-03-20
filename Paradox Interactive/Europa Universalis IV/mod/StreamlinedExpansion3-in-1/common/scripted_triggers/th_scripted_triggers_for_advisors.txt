@@ -22,6 +22,9 @@ th_has_mil_advisor = {
 			advisor = th_advisor_hina
 			advisor = th_advisor_yorihime
 			advisor = th_advisor_clownpiece
+			#Maid
+			advisor = ms_advisor_militarist
+			advisor = ms_advisor_red
 		}
 	}
 }
@@ -88,6 +91,11 @@ th_has_adm_advisor = {
 			advisor = th_advisor_daiyousei_upgraded
 			advisor = th_advisor_hecatia
 			advisor = th_advisor_sagume
+			#Maid
+			advisor = ms_advisor_scientist
+			advisor = ms_advisor_green
+			advisor = ms_advisor_blue
+			advisor = ms_advisor_grey
 		}
 	}
 }
@@ -162,6 +170,9 @@ th_has_dip_advisor = {
 			advisor = th_advisor_iku
 			advisor = th_advisor_seiga
 			advisor = th_advisor_star
+			#Maid
+			advisor = ms_advisor_diplo
+			advisor = ms_advisor_white
 		}
 	}
 }

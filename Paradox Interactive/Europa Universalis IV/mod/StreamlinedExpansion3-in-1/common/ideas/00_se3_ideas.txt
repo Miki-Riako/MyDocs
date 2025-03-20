@@ -1,0 +1,45 @@
+se3_hegemon_ideas = {
+	category = ADM
+
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	trigger = {
+		OR = {
+				# unlimited_ideas = yes
+				ai = no
+				is_hegemon = yes
+		}
+	}
+
+	hegemonic_authority = {
+		ae_impact = -0.1
+	}
+	edict_of_eternal_submission = {
+		years_of_nationalism = -5
+	}
+	doctrine_of_final_acquisition = {
+		province_warscore_cost = -0.2
+	}
+	charter_of_sovereign_compliance = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+	}
+	divine_assimilation_mandate = {
+		global_missionary_strength = 0.02
+		culture_conversion_cost = -0.15
+	}
+	edict_of_limitless_integration = {
+		core_creation = -0.2
+		governing_capacity_modifier = 0.2
+	}
+	hegemonic_call_to_obedience = {
+		prestige = 0.5
+		#Includes a diplo interaction mechanic
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_se3_hegemon_ideas"
+		texturefile = "gfx//interface//se3//idea_se3_hegemon_ideas.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
