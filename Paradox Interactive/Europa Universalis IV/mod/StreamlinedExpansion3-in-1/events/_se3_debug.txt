@@ -1,46 +1,17 @@
-namespace = se3_debug
+# namespace = se3_debug
 
-country_event = {
-	id = se3_debug.1
-	title = se3_debug.1.t
-	desc = se3_debug.1.d
-	picture = WESTERNISATION_eventPicture
+# country_event = {
+# 	id = se3_debug.1
+# 	title = se3_debug.1.t
+# 	desc = se3_debug.1.d
+# 	picture = WESTERNISATION_eventPicture
 
-	trigger = { #Always no
-		ai = yes
-		ai = no
-	}
+# 	trigger = { #Always no
+# 		ai = yes
+# 		ai = no
+# 	}
 
-	option = {
-		name = se3_debug.1.a
-		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = se3_diplomat
-			skill = 3
-			cost_multiplier = 0.75
-			culture = ROOT
-			religion = ROOT
-		}
-		define_advisor = {
-			type = se3_financier
-			skill = 3
-			cost_multiplier = 0.75
-			culture = ROOT
-			religion = ROOT
-		}
-		define_advisor = {
-			type = se3_surveyor
-			skill = 3
-			cost_multiplier = 0.75
-			culture = ROOT
-			religion = ROOT
-		}
-		define_advisor = {
-			type = se3_castellan
-			skill = 3
-			cost_multiplier = 0.75
-			culture = ROOT
-			religion = ROOT
-		}
-	}
-}
+# 	option = {
+		
+# 	}
+# }

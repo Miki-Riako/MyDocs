@@ -4,7 +4,6 @@
 
 se3_steward = {
 	monarch_power = ADM
-	yearly_corruption = -0.1
 	global_autonomy = -0.01
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
@@ -26,8 +25,7 @@ se3_steward = {
 
 se3_cardinal = {
 	monarch_power = ADM
-	global_heretic_missionary_strength = 0.03
-	prestige_per_development_from_conversion = 0.2
+	global_heathen_missionary_strength = 0.03
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_male = yes
@@ -48,8 +46,7 @@ se3_cardinal = {
 
 se3_educator = {
 	monarch_power = ADM
-	advisor_cost = -0.2
-	idea_cost = -0.1
+	advisor_cost = -0.1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_male = yes
@@ -71,7 +68,6 @@ se3_educator = {
 se3_grand_vizier = {
 	monarch_power = ADM
 	all_power_cost = -0.025
-	core_creation = -0.1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_male = yes
@@ -96,8 +92,7 @@ se3_grand_vizier = {
 
 se3_diplomat = {
 	monarch_power = DIP
-	improve_relation_modifier = 0.2
-	diplomats = 1
+	improve_relation_modifier = 0.3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_female = yes
@@ -118,7 +113,6 @@ se3_diplomat = {
 
 se3_financier = {
 	monarch_power = DIP
-	inflation_action_cost = -0.5
 	interest = -1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
@@ -144,8 +138,7 @@ se3_financier = {
 
 se3_surveyor = {
 	monarch_power = MIL
-	global_attacker_dice_roll_bonus = 1
-	artillery_levels_available_vs_fort = 1
+	siege_ability = 0.1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_female = yes
@@ -166,8 +159,7 @@ se3_surveyor = {
 
 se3_castellan = {
 	monarch_power = MIL
-	manpower_recovery_speed = 0.15
-	garrison_size = 0.3
+	manpower_recovery_speed = 0.2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_male = yes
@@ -192,9 +184,7 @@ se3_castellan = {
 
 se3_great_engineer = {
 	monarch_power = ADM
-	build_cost = -0.2
 	great_project_upgrade_cost = -0.2
-	great_project_upgrade_time = -0.3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -215,9 +205,7 @@ se3_great_engineer = {
 
 se3_great_scientist = {
 	monarch_power = ADM
-	development_cost = -0.2
-	technology_cost = -0.2
-	global_institution_spread = 0.2
+	technology_cost = -0.1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -238,9 +226,7 @@ se3_great_scientist = {
 
 se3_great_prophet = {
 	monarch_power = ADM
-	warscore_cost_vs_other_religion = -0.15
-	global_missionary_strength = 0.04
-	tolerance_own = 2
+	warscore_cost_vs_other_religion = -0.2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -265,9 +251,7 @@ se3_great_prophet = {
 
 se3_great_merchant = {
 	monarch_power = DIP
-	caravan_power = 0.2
-	global_trade_goods_size_modifier = 0.2
-	trade_company_investment_cost = -0.2
+	caravan_power = 0.3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
 	allow_only_male = yes
@@ -288,9 +272,7 @@ se3_great_merchant = {
 
 se3_great_writer = {
 	monarch_power = DIP
-	culture_conversion_cost = -0.25
 	reform_progress_growth = 0.2
-	monthly_reform_progress = 0.5
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -311,8 +293,7 @@ se3_great_writer = {
 
 se3_great_artist = {
 	monarch_power = DIP
-	culture_conversion_cost = -0.25
-	stability_cost_modifier = -0.4
+	stability_cost_modifier = -0.5
 	monthly_splendor = 5
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
@@ -334,9 +315,7 @@ se3_great_artist = {
 
 se3_great_musician = {
 	monarch_power = DIP
-	culture_conversion_cost = -0.25
-	ae_impact = -0.1
-	diplomatic_upkeep = 3
+	diplomatic_upkeep = 2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -357,8 +336,6 @@ se3_great_musician = {
 
 se3_venetian_merchant = {
 	monarch_power = DIP
-	naval_forcelimit_modifier = 0.2
-	trade_efficiency = 0.3
 	merchants = 2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
@@ -384,8 +361,6 @@ se3_venetian_merchant = {
 
 se3_great_admiral = {
 	monarch_power = MIL
-	naval_maintenance_modifier = -0.2
-	global_naval_engagement_modifier = 0.2
 	siege_blockade_progress = 2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
@@ -408,8 +383,6 @@ se3_great_admiral = {
 se3_great_general = {
 	monarch_power = MIL
 	morale_damage = 0.2
-	siege_ability = 0.2
-	military_tactics = 0.5
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -430,8 +403,6 @@ se3_great_general = {
 
 se3_great_khan = {
 	monarch_power = MIL
-	cav_to_inf_ratio = 0.5
-	raze_power_gain = 0.1
 	cavalry_shock = 1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
@@ -453,9 +424,7 @@ se3_great_khan = {
 
 se3_commandante_general = {
 	monarch_power = MIL
-	native_uprising_chance = -1
-	leader_cost = -0.5
-	army_tradition = 0.02
+	army_tradition = 0.04
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
