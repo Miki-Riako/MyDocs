@@ -1,3 +1,26 @@
+# se3_steward
+# se3_cardinal
+# se3_educator
+# se3_grand_vizier
+# se3_great_engineer
+# se3_great_scientist
+# se3_great_prophet
+
+# se3_diplomat
+# se3_financier
+# se3_great_merchant
+# se3_great_writer
+# se3_great_artist
+# se3_great_musician
+# se3_venetian_merchant
+
+# se3_surveyor
+# se3_castellan
+# se3_great_admiral
+# se3_great_general
+# se3_great_khan
+# se3_commandante_general
+
 ######################################################
 # Administrative Governors Advisors
 ######################################################

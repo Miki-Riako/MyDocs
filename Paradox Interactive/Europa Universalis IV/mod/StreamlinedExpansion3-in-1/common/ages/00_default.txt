@@ -148,9 +148,9 @@ age_of_discovery = {
 				}
 		}
 		ase_dynamic_court = {
-			th_has_adm_advisor = yes
-			th_has_dip_advisor = yes
-			th_has_mil_advisor = yes
+			se3_has_adm_advisor = yes
+			se3_has_dip_advisor = yes
+			se3_has_mil_advisor = yes
 		}
 	}		
 	

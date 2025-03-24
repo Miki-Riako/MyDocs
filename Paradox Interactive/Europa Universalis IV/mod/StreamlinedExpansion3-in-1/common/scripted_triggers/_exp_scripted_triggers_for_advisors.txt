@@ -1,0 +1,249 @@
+se3_has_adm_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_tooltip
+		OR = {
+			advisor = treasurer
+			advisor = philosopher
+			advisor = artist
+			advisor = theologian
+			advisor = master_of_mint
+			advisor = inquisitor
+			advisor = natural_scientist
+			advisor = se3_steward
+			advisor = se3_cardinal
+			advisor = se3_educator
+			advisor = se3_grand_vizier
+			advisor = se3_great_engineer
+			advisor = se3_great_scientist
+			advisor = se3_great_prophet
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					advisor = th_advisor_flandre
+					advisor = th_advisor_eirin
+					advisor = th_advisor_keine
+					advisor = th_advisor_patchouli
+					advisor = th_advisor_daiyousei
+					advisor = th_advisor_daiyousei_upgraded
+					advisor = th_advisor_hecatia
+					advisor = th_advisor_sagume
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					advisor = ms_advisor_scientist
+					advisor = ms_advisor_green
+					advisor = ms_advisor_blue
+					advisor = ms_advisor_grey
+				}
+			}
+		}
+	}
+}
+
+se3_has_adm_advisor_3 = {
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_3_tooltip
+		OR = {
+			treasurer = 3
+			philosopher = 3
+			artist = 3
+			theologian = 3
+			master_of_mint = 3
+			inquisitor = 3
+			natural_scientist = 3
+			se3_steward = 3
+			se3_cardinal = 3
+			se3_educator = 3
+			se3_grand_vizier = 3
+			se3_great_engineer = 3
+			se3_great_scientist = 3
+			se3_great_prophet = 3
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					th_advisor_flandre = 3
+					th_advisor_eirin = 3
+					th_advisor_keine = 3
+					th_advisor_patchouli = 3
+					th_advisor_daiyousei = 3
+					th_advisor_daiyousei_upgraded = 3
+					th_advisor_hecatia = 3
+					th_advisor_sagume = 3
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					ms_advisor_scientist = 3
+					ms_advisor_green = 3
+					ms_advisor_blue = 3
+					ms_advisor_grey = 3
+				}
+			}
+		}
+	}
+}
+
+se3_has_dip_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_tooltip
+		OR = {
+			advisor = statesman
+			advisor = diplomat
+			advisor = naval_reformer
+			advisor = trader
+			advisor = colonial_governor
+			advisor = navigator
+			advisor = spymaster
+			advisor = se3_diplomat
+			advisor = se3_financier
+			advisor = se3_great_merchant
+			advisor = se3_great_writer
+			advisor = se3_great_artist
+			advisor = se3_great_musician
+			advisor = se3_venetian_merchant
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					advisor = th_advisor_alice
+					advisor = th_advisor_alice_upgraded
+					advisor = th_advisor_chen
+					advisor = th_advisor_suwako
+					advisor = th_advisor_komachi
+					advisor = th_advisor_doremy
+					advisor = th_advisor_iku
+					advisor = th_advisor_seiga
+					advisor = th_advisor_star
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					advisor = ms_advisor_diplo
+					advisor = ms_advisor_white
+				}
+			}
+		}
+	}
+}
+
+se3_has_dip_advisor_3 = {
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_3_tooltip
+		OR = {
+			statesman = 3
+			diplomat = 3
+			naval_reformer = 3
+			trader = 3
+			colonial_governor = 3
+			navigator = 3
+			spymaster = 3
+			se3_diplomat = 3
+			se3_financier = 3
+			se3_great_merchant = 3
+			se3_great_writer = 3
+			se3_great_artist = 3
+			se3_great_musician = 3
+			se3_venetian_merchant = 3
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					th_advisor_alice = 3
+					th_advisor_alice_upgraded = 3
+					th_advisor_chen = 3
+					th_advisor_suwako = 3
+					th_advisor_komachi = 3
+					th_advisor_doremy = 3
+					th_advisor_iku = 3
+					th_advisor_seiga = 3
+					th_advisor_star = 3
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					ms_advisor_diplo = 3
+					ms_advisor_white = 3
+				}
+			}
+		}
+	}
+}
+
+se3_has_mil_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_tooltip
+		OR = {
+			advisor = army_organiser
+			advisor = army_reformer
+			advisor = commandant
+			advisor = grand_captain
+			advisor = recruitmaster
+			advisor = fortification_expert
+			advisor = quartermaster
+			advisor = se3_surveyor
+			advisor = se3_castellan
+			advisor = se3_great_admiral
+			advisor = se3_great_general
+			advisor = se3_great_khan
+			advisor = se3_commandante_general
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					advisor = th_advisor_youmu
+					advisor = th_advisor_kanako
+					advisor = th_advisor_hina
+					advisor = th_advisor_yorihime
+					advisor = th_advisor_clownpiece
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					advisor = ms_advisor_militarist
+					advisor = ms_advisor_red
+				}
+			}
+		}
+	}
+}
+
+se3_has_mil_advisor_3 = {
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_3_tooltip
+		OR = {
+			army_organiser = 3
+			army_reformer = 3
+			commandant = 3
+			grand_captain = 3
+			recruitmaster = 3
+			fortification_expert = 3
+			quartermaster = 3
+			se3_surveyor = 3
+			se3_castellan = 3
+			se3_great_admiral = 3
+			se3_great_general = 3
+			se3_great_khan = 3
+			se3_commandante_general = 3
+			if = { #TOUHOU
+				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+				OR = {
+					th_advisor_youmu = 3
+					th_advisor_kanako = 3
+					th_advisor_hina = 3
+					th_advisor_yorihime = 3
+					th_advisor_clownpiece = 3
+				}
+			}
+			if = { #Maid
+				limit = { is_mod_active = "女仆之国"}
+				OR = {
+					ms_advisor_militarist = 3
+					ms_advisor_red = 3
+				}
+			}
+		}
+	}
+}
