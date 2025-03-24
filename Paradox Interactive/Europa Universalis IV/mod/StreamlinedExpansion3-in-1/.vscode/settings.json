@@ -1,6 +1,6 @@
 {
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "files.exclude": {
-        // "common/scripted_triggers/_exp_scripted_triggers_for_advisors.txt": true
+        // "common/scripted_triggers/_se3_advisors_scripted_triggers.txt": true
     } // These files are reported due to increased compatibility with other mods
 }

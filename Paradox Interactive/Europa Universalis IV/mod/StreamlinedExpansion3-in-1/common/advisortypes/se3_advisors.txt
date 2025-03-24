@@ -2,12 +2,11 @@
 # se3_cardinal
 # se3_educator
 # se3_grand_vizier
-# se3_great_engineer
+# se3_financier
 # se3_great_scientist
 # se3_great_prophet
 
 # se3_diplomat
-# se3_financier
 # se3_great_merchant
 # se3_great_writer
 # se3_great_artist
@@ -16,6 +15,7 @@
 
 # se3_surveyor
 # se3_castellan
+# se3_great_engineer
 # se3_great_admiral
 # se3_great_general
 # se3_great_khan
@@ -88,6 +88,27 @@ se3_educator = {
 	}
 }
 
+se3_financier = {
+	monarch_power = DIP
+	interest = -1
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_female = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
 se3_grand_vizier = {
 	monarch_power = ADM
 	all_power_cost = -0.025
@@ -116,27 +137,6 @@ se3_grand_vizier = {
 se3_diplomat = {
 	monarch_power = DIP
 	improve_relation_modifier = 0.3
-	chance = { factor = 0 }
-	ai_will_do = { factor = 20 }
-    allow_only_female = yes
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization_mechanic
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = { monthly_russian_modernization = 0.02 }
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
-		modifier = { yearly_innovativeness = 0.02 }
-	}
-}
-
-se3_financier = {
-	monarch_power = DIP
-	interest = -1
 	chance = { factor = 0 }
 	ai_will_do = { factor = 20 }
     allow_only_female = yes
@@ -202,33 +202,12 @@ se3_castellan = {
 }
 
 ######################################################
-# Diplomatic Great People Advisors
+# Administrative Great People Advisors
 ######################################################
-
-se3_great_engineer = {
-	monarch_power = ADM
-	great_project_upgrade_cost = -0.2
-	chance = { factor = 0 }
-	ai_will_do = { factor = 200 }
-    allow_only_male = yes
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization_mechanic
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = { monthly_russian_modernization = 0.02 }
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
-		modifier = { yearly_innovativeness = 0.02 }
-	}
-}
 
 se3_great_scientist = {
 	monarch_power = ADM
-	technology_cost = -0.1
+	technology_cost = -0.2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -249,7 +228,7 @@ se3_great_scientist = {
 
 se3_great_prophet = {
 	monarch_power = ADM
-	warscore_cost_vs_other_religion = -0.2
+	warscore_cost_vs_other_religion = -0.15
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -269,12 +248,12 @@ se3_great_prophet = {
 }
 
 ######################################################
-# Administrative Great People Advisors
+# Diplomatic Great People Advisors
 ######################################################
 
 se3_great_merchant = {
 	monarch_power = DIP
-	caravan_power = 0.3
+	caravan_power = 0.5
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
 	allow_only_male = yes
@@ -295,7 +274,7 @@ se3_great_merchant = {
 
 se3_great_writer = {
 	monarch_power = DIP
-	reform_progress_growth = 0.2
+	reform_progress_growth = 0.25
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -316,8 +295,7 @@ se3_great_writer = {
 
 se3_great_artist = {
 	monarch_power = DIP
-	stability_cost_modifier = -0.5
-	monthly_splendor = 5
+	stability_cost_modifier = -0.8
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -338,7 +316,7 @@ se3_great_artist = {
 
 se3_great_musician = {
 	monarch_power = DIP
-	diplomatic_upkeep = 2
+	diplomatic_upkeep = 3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -359,7 +337,7 @@ se3_great_musician = {
 
 se3_venetian_merchant = {
 	monarch_power = DIP
-	merchants = 2
+	merchants = 3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -382,9 +360,30 @@ se3_venetian_merchant = {
 # Military Great People Advisors
 ######################################################
 
+se3_great_engineer = {
+	monarch_power = ADM
+	great_project_upgrade_cost = -0.25
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
 se3_great_admiral = {
 	monarch_power = MIL
-	siege_blockade_progress = 2
+	siege_blockade_progress = 4
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -405,7 +404,7 @@ se3_great_admiral = {
 
 se3_great_general = {
 	monarch_power = MIL
-	morale_damage = 0.2
+	global_attacker_dice_roll_bonus = 2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -426,7 +425,7 @@ se3_great_general = {
 
 se3_great_khan = {
 	monarch_power = MIL
-	cavalry_shock = 1
+	cavalry_shock = 1.5
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -447,7 +446,7 @@ se3_great_khan = {
 
 se3_commandante_general = {
 	monarch_power = MIL
-	army_tradition = 0.04
+	army_tradition = 4
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes

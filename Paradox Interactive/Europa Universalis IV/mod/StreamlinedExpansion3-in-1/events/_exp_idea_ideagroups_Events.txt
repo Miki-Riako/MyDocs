@@ -452,9 +452,9 @@ country_event = {
 	trigger = {
 		has_idea = efficient_bureaucracy
 		NOT = { has_country_modifier = IGE_efficient_bureaucracy }
-		has_adm_advisor_with_skill = { skill = 5 }
-		has_dip_advisor_with_skill = { skill = 5 }
-		has_mil_advisor_with_skill = { skill = 5 }
+		se3_has_adm_advisor_with_skill = { skill = 5 }
+		se3_has_adm_advisor_with_skill = { skill = 5 }
+		se3_has_adm_advisor_with_skill = { skill = 5 }
 	}
 
 	mean_time_to_happen = {
@@ -487,9 +487,9 @@ country_event = {
 		has_country_modifier = IGE_efficient_bureaucracy
 		OR = {
 			NOT = { has_idea = efficient_bureaucracy }
-			NOT = { has_adm_advisor_with_skill = { skill = 5 } }
-			NOT = { has_dip_advisor_with_skill = { skill = 5 } }
-			NOT = { has_mil_advisor_with_skill = { skill = 5 } }
+			NOT = { se3_has_adm_advisor_with_skill = { skill = 5 } }
+			NOT = { se3_has_adm_advisor_with_skill = { skill = 5 } }
+			NOT = { se3_has_adm_advisor_with_skill = { skill = 5 } }
 		}
 	}
 

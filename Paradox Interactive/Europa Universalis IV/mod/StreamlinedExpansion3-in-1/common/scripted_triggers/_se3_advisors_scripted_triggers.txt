@@ -1,3 +1,131 @@
+se3_has_adm_advisor_with_skill = {
+	OR = {
+		treasurer = $skill$
+		philosopher = $skill$
+		artist = $skill$
+		theologian = $skill$
+		master_of_mint = $skill$
+		inquisitor = $skill$
+		natural_scientist = $skill$
+		# administrator = $skill$
+		# state_overseer = $skill$
+		# civil_engineer = $skill$
+		# researcher = $skill$
+		# reformist = $skill$
+		# religious_representative = $skill$
+		# julius_archbishop = $skill$
+		# fu_accountant = $skill$
+		# fu_royal_imam = $skill$
+		# fu_city_planner = $skill$
+		# fu_cartographer = $skill$
+		# fu_head_of_patriarchate = $skill$
+		# fu_right_hand_captain = $skill$
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				th_advisor_flandre = $skill$
+				th_advisor_eirin = $skill$
+				th_advisor_keine = $skill$
+				th_advisor_patchouli = $skill$
+				th_advisor_daiyousei = $skill$
+				th_advisor_daiyousei_upgraded = $skill$
+				th_advisor_hecatia = $skill$
+				th_advisor_sagume = $skill$
+			}
+		}
+		if = { #Maid
+			limit = { is_mod_active = "女仆之国"}
+			OR = {
+				ms_advisor_scientist = $skill$
+				ms_advisor_green = $skill$
+				ms_advisor_blue = $skill$
+				ms_advisor_grey = $skill$
+			}
+		}
+	}
+}
+
+se3_has_adm_advisor_with_skill = {
+	OR = {
+		statesman = $skill$
+		diplomat = $skill$
+		naval_reformer = $skill$
+		trader = $skill$
+		colonial_governor = $skill$
+		navigator = $skill$
+		spymaster = $skill$
+		# negotiator = $skill$
+		# pioneer = $skill$
+		# marauder_captain = $skill$
+		# marketeer = $skill$
+		# mercantile_influencer = $skill$
+		# navarch = $skill$
+		# subject_mediator = $skill$
+		# composer = $skill$
+		# poet = $skill$
+		# fu_spymaster_assassin = $skill$
+		# fu_naval_supply_master = $skill$
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				th_advisor_alice = $skill$
+				th_advisor_alice_upgraded = $skill$
+				th_advisor_chen = $skill$
+				th_advisor_suwako = $skill$
+				th_advisor_komachi = $skill$
+				th_advisor_doremy = $skill$
+				th_advisor_iku = $skill$
+				th_advisor_seiga = $skill$
+				th_advisor_star = $skill$
+			}
+		}
+		if = { #Maid
+			limit = { is_mod_active = "女仆之国"}
+			OR = {
+				ms_advisor_diplo = $skill$
+				ms_advisor_white = $skill$
+			}
+		}
+	}
+}
+
+se3_has_adm_advisor_with_skill = {
+	OR = {
+		army_organiser = $skill$
+		army_reformer = $skill$
+		commandant = $skill$
+		grand_captain = $skill$
+		recruitmaster = $skill$
+		fortification_expert = $skill$
+		quartermaster = $skill$
+		# commander = $skill$
+		# drill_instructor = $skill$
+		# combat_engineer = $skill$
+		# tactician = $skill$
+		# mercenary_captain = $skill$
+		# defensive_planner = $skill$
+		# fu_aristocrat = $skill$
+		# fu_legendary_buccaneer = $skill$
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				th_advisor_youmu = $skill$
+				th_advisor_kanako = $skill$
+				th_advisor_hina = $skill$
+				th_advisor_yorihime = $skill$
+				th_advisor_clownpiece = $skill$
+			}
+		}
+		if = { #Maid
+			limit = { is_mod_active = "女仆之国"}
+			OR = {
+				ms_advisor_militarist = $skill$
+				ms_advisor_red = $skill$
+			}
+		}
+	}
+}
+
 se3_has_adm_advisor = {
 	custom_trigger_tooltip = {
 		tooltip = has_adm_advisor_tooltip
@@ -12,8 +140,8 @@ se3_has_adm_advisor = {
 			advisor = se3_steward
 			advisor = se3_cardinal
 			advisor = se3_educator
+			advisor = se3_financier
 			advisor = se3_grand_vizier
-			advisor = se3_great_engineer
 			advisor = se3_great_scientist
 			advisor = se3_great_prophet
 			if = { #TOUHOU
@@ -56,8 +184,8 @@ se3_has_adm_advisor_3 = {
 			se3_steward = 3
 			se3_cardinal = 3
 			se3_educator = 3
+			se3_financier = 3
 			se3_grand_vizier = 3
-			se3_great_engineer = 3
 			se3_great_scientist = 3
 			se3_great_prophet = 3
 			if = { #TOUHOU
@@ -98,7 +226,6 @@ se3_has_dip_advisor = {
 			advisor = navigator
 			advisor = spymaster
 			advisor = se3_diplomat
-			advisor = se3_financier
 			advisor = se3_great_merchant
 			advisor = se3_great_writer
 			advisor = se3_great_artist
@@ -141,7 +268,6 @@ se3_has_dip_advisor_3 = {
 			navigator = 3
 			spymaster = 3
 			se3_diplomat = 3
-			se3_financier = 3
 			se3_great_merchant = 3
 			se3_great_writer = 3
 			se3_great_artist = 3
@@ -185,6 +311,7 @@ se3_has_mil_advisor = {
 			advisor = quartermaster
 			advisor = se3_surveyor
 			advisor = se3_castellan
+			advisor = se3_great_engineer
 			advisor = se3_great_admiral
 			advisor = se3_great_general
 			advisor = se3_great_khan
@@ -223,6 +350,7 @@ se3_has_mil_advisor_3 = {
 			quartermaster = 3
 			se3_surveyor = 3
 			se3_castellan = 3
+			se3_great_engineer = 3
 			se3_great_admiral = 3
 			se3_great_general = 3
 			se3_great_khan = 3
