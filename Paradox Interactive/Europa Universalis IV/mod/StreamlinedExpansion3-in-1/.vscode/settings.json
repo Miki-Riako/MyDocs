@@ -1,6 +1,32 @@
 {
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "files.exclude": {
-        // "common/scripted_triggers/_se3_advisors_scripted_triggers.txt": true
+        "common/scripted_triggers/_se3_advisors_scripted_triggers.txt": true
     } // These files are reported due to increased compatibility with other mods
 }
+/**
+计划修改的文件
+- common/advisortypes/th_advisors.txt: 后续需要删除，为曾经未考虑兼容性的临时文件（记得完成兼容性后要改_se3_advisors_scripted_triggers）
+- common/ages/00_default.txt: 需要增加其兼容性
+- common/buildings/_th_meiras_dojo.txt: 让人迷惑的文件，后续观察
+- common/custom_gui: GUI相关效果需要后续测试
+- common/ideas/00_exp_ideas.txt: 均需要增加接口
+- common/ideas/00_se3_ideas.txt: 均需要增加接口
+- common/mercenary_companies/_exp_mercenary_companies.txt: 目前该文件未测试过，需要注意
+- common/new_diplomatic_actions/_th_request_conversion_faith.txt: 后续需要修改，为曾经未考虑兼容性的临时文件
+- common/on_actions/_exp_age_on_actions.txt: 很复杂的文件，后续要注意
+- common/on_actions/_exp_trade_on_actions.txt: 很复杂的文件，后续要注意
+- common/opinion_modifiers/_th_opinion_modifier.txt: 后续需要删除，为曾经未考虑兼容性的临时文件
+- common/policies、prices: 除了新增文件，旧文件都要大修
+- common/scripted_effects、scripted_triggers: GUI相关效果需要后续测试
+- common/triggered_modifiers: 很多内容不知道在哪里被使用，后续测试
+- 非common文件：均未测试
+修改了的源文件(之后再检查一下)
+- common/ages/00_default.txt: 主要修改为增加了新的时代条件和能力
+- common/buildings/00_buildings.txt:主要修改为为工厂增加了新的材料
+- common/estate_agendas/00_generic_agendas.txt: 主要修改为将白银加入黄金议程中
+- common/ideas/00_basic_ideas.txt: 主要修改为增加了一个任意开启的条件判断
+- common/technologies/adm.txt: 主要修改为增加了理念组的解锁，增加了开局的建筑解锁情况（应该放到dip的，但是为了更大的兼容性放在adm，效果等同），后续要新增建筑相关内容
+- common/tradegoods/00_tradegoods.txt: 主要修改为增加了新的贸易品，后续需要修改相关内容
+- events/PriceChanges.txt: 主要修改为增加了新的贸易品
+**/

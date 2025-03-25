@@ -1,3 +1,4 @@
+# 新增的总督顾问和伟人顾问，用以在时代奖励中使用
 # se3_steward
 # se3_cardinal
 # se3_educator
@@ -362,7 +363,7 @@ se3_venetian_merchant = {
 
 se3_great_engineer = {
 	monarch_power = ADM
-	great_project_upgrade_cost = -0.25
+	great_project_upgrade_cost = -0.3
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes
@@ -425,7 +426,7 @@ se3_great_general = {
 
 se3_great_khan = {
 	monarch_power = MIL
-	cavalry_shock = 1.5
+	cavalry_shock = 1.2
 	chance = { factor = 0 }
 	ai_will_do = { factor = 200 }
     allow_only_male = yes

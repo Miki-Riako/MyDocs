@@ -30,5 +30,6 @@
 - 增加招募伟人的新功能
 - 增加可以改变特质的新功能
 
-## 鸣谢
-- TOUHOU mod中提供的汉化以及旧版的各类扩展
+## 已完成的兼容性
+- Touhou Universalis Updated (CN)
+- 女仆之国

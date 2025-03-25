@@ -1,142 +1,145 @@
-se3_has_adm_advisor_with_skill = {
+# 以下脚本具有的用途有：
+# 理念组相关：理念 efficient_bureaucracy 的效果有使用
+# 时代点相关：其中一个时代目标有使用
+
+# ADM顾问，参数为顾问等级
+se3_has_adm_advisor_of_level = {
 	OR = {
-		treasurer = $skill$
-		philosopher = $skill$
-		artist = $skill$
-		theologian = $skill$
-		master_of_mint = $skill$
-		inquisitor = $skill$
-		natural_scientist = $skill$
-		# administrator = $skill$
-		# state_overseer = $skill$
-		# civil_engineer = $skill$
-		# researcher = $skill$
-		# reformist = $skill$
-		# religious_representative = $skill$
-		# julius_archbishop = $skill$
-		# fu_accountant = $skill$
-		# fu_royal_imam = $skill$
-		# fu_city_planner = $skill$
-		# fu_cartographer = $skill$
-		# fu_head_of_patriarchate = $skill$
-		# fu_right_hand_captain = $skill$
+		has_adm_advisor_of_level = { level = $level$ }
+		se3_diplomat = $level$
+		se3_great_merchant = $level$
+		se3_great_writer = $level$
+		se3_great_artist = $level$
+		se3_great_musician = $level$
+		se3_venetian_merchant = $level$
+		# administrator = $level$
+		# state_overseer = $level$
+		# civil_engineer = $level$
+		# researcher = $level$
+		# reformist = $level$
+		# religious_representative = $level$
+		# julius_archbishop = $level$
+		# fu_accountant = $level$
+		# fu_royal_imam = $level$
+		# fu_city_planner = $level$
+		# fu_cartographer = $level$
+		# fu_head_of_patriarchate = $level$
+		# fu_right_hand_captain = $level$
 		if = { #TOUHOU
 			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
 			OR = {
-				th_advisor_flandre = $skill$
-				th_advisor_eirin = $skill$
-				th_advisor_keine = $skill$
-				th_advisor_patchouli = $skill$
-				th_advisor_daiyousei = $skill$
-				th_advisor_daiyousei_upgraded = $skill$
-				th_advisor_hecatia = $skill$
-				th_advisor_sagume = $skill$
+				th_advisor_flandre = $level$
+				th_advisor_eirin = $level$
+				th_advisor_keine = $level$
+				th_advisor_patchouli = $level$
+				th_advisor_daiyousei = $level$
+				th_advisor_daiyousei_upgraded = $level$
+				th_advisor_hecatia = $level$
+				th_advisor_sagume = $level$
 			}
 		}
 		if = { #Maid
 			limit = { is_mod_active = "女仆之国"}
 			OR = {
-				ms_advisor_scientist = $skill$
-				ms_advisor_green = $skill$
-				ms_advisor_blue = $skill$
-				ms_advisor_grey = $skill$
+				ms_advisor_scientist = $level$
+				ms_advisor_green = $level$
+				ms_advisor_blue = $level$
+				ms_advisor_grey = $level$
 			}
 		}
 	}
 }
 
-se3_has_adm_advisor_with_skill = {
+# DIP顾问，参数为顾问等级
+se3_has_dip_advisor_of_level = {
 	OR = {
-		statesman = $skill$
-		diplomat = $skill$
-		naval_reformer = $skill$
-		trader = $skill$
-		colonial_governor = $skill$
-		navigator = $skill$
-		spymaster = $skill$
-		# negotiator = $skill$
-		# pioneer = $skill$
-		# marauder_captain = $skill$
-		# marketeer = $skill$
-		# mercantile_influencer = $skill$
-		# navarch = $skill$
-		# subject_mediator = $skill$
-		# composer = $skill$
-		# poet = $skill$
-		# fu_spymaster_assassin = $skill$
-		# fu_naval_supply_master = $skill$
+		has_dip_advisor_of_level = { level = $level$ }
+		se3_diplomat = $level$
+		se3_great_merchant = $level$
+		se3_great_writer = $level$
+		se3_great_artist = $level$
+		se3_great_musician = $level$
+		se3_venetian_merchant = $level$
+		# negotiator = $level$
+		# pioneer = $level$
+		# marauder_captain = $level$
+		# marketeer = $level$
+		# mercantile_influencer = $level$
+		# navarch = $level$
+		# subject_mediator = $level$
+		# composer = $level$
+		# poet = $level$
+		# fu_spymaster_assassin = $level$
+		# fu_naval_supply_master = $level$
 		if = { #TOUHOU
 			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
 			OR = {
-				th_advisor_alice = $skill$
-				th_advisor_alice_upgraded = $skill$
-				th_advisor_chen = $skill$
-				th_advisor_suwako = $skill$
-				th_advisor_komachi = $skill$
-				th_advisor_doremy = $skill$
-				th_advisor_iku = $skill$
-				th_advisor_seiga = $skill$
-				th_advisor_star = $skill$
+				th_advisor_alice = $level$
+				th_advisor_alice_upgraded = $level$
+				th_advisor_chen = $level$
+				th_advisor_suwako = $level$
+				th_advisor_komachi = $level$
+				th_advisor_doremy = $level$
+				th_advisor_iku = $level$
+				th_advisor_seiga = $level$
+				th_advisor_star = $level$
 			}
 		}
 		if = { #Maid
 			limit = { is_mod_active = "女仆之国"}
 			OR = {
-				ms_advisor_diplo = $skill$
-				ms_advisor_white = $skill$
+				ms_advisor_diplo = $level$
+				ms_advisor_white = $level$
 			}
 		}
 	}
 }
 
-se3_has_adm_advisor_with_skill = {
+# MIL顾问，参数为顾问等级
+se3_has_mil_advisor_of_level = {
 	OR = {
-		army_organiser = $skill$
-		army_reformer = $skill$
-		commandant = $skill$
-		grand_captain = $skill$
-		recruitmaster = $skill$
-		fortification_expert = $skill$
-		quartermaster = $skill$
-		# commander = $skill$
-		# drill_instructor = $skill$
-		# combat_engineer = $skill$
-		# tactician = $skill$
-		# mercenary_captain = $skill$
-		# defensive_planner = $skill$
-		# fu_aristocrat = $skill$
-		# fu_legendary_buccaneer = $skill$
+		has_mil_advisor_of_level = { level = $level$ }
+		se3_surveyor = $level$
+		se3_castellan = $level$
+		se3_great_engineer = $level$
+		se3_great_admiral = $level$
+		se3_great_general = $level$
+		se3_great_khan = $level$
+		se3_commandante_general = $level$
+		# commander = $level$
+		# drill_instructor = $level$
+		# combat_engineer = $level$
+		# tactician = $level$
+		# mercenary_captain = $level$
+		# defensive_planner = $level$
+		# fu_aristocrat = $level$
+		# fu_legendary_buccaneer = $level$
 		if = { #TOUHOU
 			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
 			OR = {
-				th_advisor_youmu = $skill$
-				th_advisor_kanako = $skill$
-				th_advisor_hina = $skill$
-				th_advisor_yorihime = $skill$
-				th_advisor_clownpiece = $skill$
+				th_advisor_youmu = $level$
+				th_advisor_kanako = $level$
+				th_advisor_hina = $level$
+				th_advisor_yorihime = $level$
+				th_advisor_clownpiece = $level$
 			}
 		}
 		if = { #Maid
 			limit = { is_mod_active = "女仆之国"}
 			OR = {
-				ms_advisor_militarist = $skill$
-				ms_advisor_red = $skill$
+				ms_advisor_militarist = $level$
+				ms_advisor_red = $level$
 			}
 		}
 	}
 }
 
+# ADM顾问
 se3_has_adm_advisor = {
 	custom_trigger_tooltip = {
 		tooltip = has_adm_advisor_tooltip
 		OR = {
-			advisor = treasurer
-			advisor = philosopher
-			advisor = artist
-			advisor = theologian
-			advisor = master_of_mint
-			advisor = inquisitor
-			advisor = natural_scientist
+			has_adm_advisor = yes
 			advisor = se3_steward
 			advisor = se3_cardinal
 			advisor = se3_educator
@@ -170,50 +173,7 @@ se3_has_adm_advisor = {
 	}
 }
 
-se3_has_adm_advisor_3 = {
-	custom_trigger_tooltip = {
-		tooltip = has_adm_advisor_3_tooltip
-		OR = {
-			treasurer = 3
-			philosopher = 3
-			artist = 3
-			theologian = 3
-			master_of_mint = 3
-			inquisitor = 3
-			natural_scientist = 3
-			se3_steward = 3
-			se3_cardinal = 3
-			se3_educator = 3
-			se3_financier = 3
-			se3_grand_vizier = 3
-			se3_great_scientist = 3
-			se3_great_prophet = 3
-			if = { #TOUHOU
-				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
-				OR = {
-					th_advisor_flandre = 3
-					th_advisor_eirin = 3
-					th_advisor_keine = 3
-					th_advisor_patchouli = 3
-					th_advisor_daiyousei = 3
-					th_advisor_daiyousei_upgraded = 3
-					th_advisor_hecatia = 3
-					th_advisor_sagume = 3
-				}
-			}
-			if = { #Maid
-				limit = { is_mod_active = "女仆之国"}
-				OR = {
-					ms_advisor_scientist = 3
-					ms_advisor_green = 3
-					ms_advisor_blue = 3
-					ms_advisor_grey = 3
-				}
-			}
-		}
-	}
-}
-
+# DIP顾问
 se3_has_dip_advisor = {
 	custom_trigger_tooltip = {
 		tooltip = has_dip_advisor_tooltip
@@ -256,48 +216,7 @@ se3_has_dip_advisor = {
 	}
 }
 
-se3_has_dip_advisor_3 = {
-	custom_trigger_tooltip = {
-		tooltip = has_dip_advisor_3_tooltip
-		OR = {
-			statesman = 3
-			diplomat = 3
-			naval_reformer = 3
-			trader = 3
-			colonial_governor = 3
-			navigator = 3
-			spymaster = 3
-			se3_diplomat = 3
-			se3_great_merchant = 3
-			se3_great_writer = 3
-			se3_great_artist = 3
-			se3_great_musician = 3
-			se3_venetian_merchant = 3
-			if = { #TOUHOU
-				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
-				OR = {
-					th_advisor_alice = 3
-					th_advisor_alice_upgraded = 3
-					th_advisor_chen = 3
-					th_advisor_suwako = 3
-					th_advisor_komachi = 3
-					th_advisor_doremy = 3
-					th_advisor_iku = 3
-					th_advisor_seiga = 3
-					th_advisor_star = 3
-				}
-			}
-			if = { #Maid
-				limit = { is_mod_active = "女仆之国"}
-				OR = {
-					ms_advisor_diplo = 3
-					ms_advisor_white = 3
-				}
-			}
-		}
-	}
-}
-
+# MIL顾问
 se3_has_mil_advisor = {
 	custom_trigger_tooltip = {
 		tooltip = has_mil_advisor_tooltip
@@ -337,41 +256,10 @@ se3_has_mil_advisor = {
 	}
 }
 
-se3_has_mil_advisor_3 = {
+# 判断是否有对应的顾问和等级，注意由于tooltip限制，只能为2和3，其他的请直接使用例如 has_adm_advisor_of_level
+se3_has_advisor_of_type_and_level = {
 	custom_trigger_tooltip = {
-		tooltip = has_mil_advisor_3_tooltip
-		OR = {
-			army_organiser = 3
-			army_reformer = 3
-			commandant = 3
-			grand_captain = 3
-			recruitmaster = 3
-			fortification_expert = 3
-			quartermaster = 3
-			se3_surveyor = 3
-			se3_castellan = 3
-			se3_great_engineer = 3
-			se3_great_admiral = 3
-			se3_great_general = 3
-			se3_great_khan = 3
-			se3_commandante_general = 3
-			if = { #TOUHOU
-				limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
-				OR = {
-					th_advisor_youmu = 3
-					th_advisor_kanako = 3
-					th_advisor_hina = 3
-					th_advisor_yorihime = 3
-					th_advisor_clownpiece = 3
-				}
-			}
-			if = { #Maid
-				limit = { is_mod_active = "女仆之国"}
-				OR = {
-					ms_advisor_militarist = 3
-					ms_advisor_red = 3
-				}
-			}
-		}
+		tooltip = has_$type$_advisor_$level$_tooltip
+		se3_has_$type$_advisor_of_level = { level = $level$ }
 	}
 }

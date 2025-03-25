@@ -1,4 +1,3 @@
-#Hakurei Nations politely invite others into their religion
 se3_providential_submission_ultimatum = {
 	category = influence
 	alert_index = 66

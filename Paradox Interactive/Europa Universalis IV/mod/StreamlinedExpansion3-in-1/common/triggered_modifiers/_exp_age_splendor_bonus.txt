@@ -37,9 +37,9 @@ splendor_triggered_modifier_2 = {
 		has_dlc = "Mandate of Heaven"
 	}
 	trigger = {
-		se3_has_adm_advisor_3 = yes
-		se3_has_dip_advisor_3 = yes
-		se3_has_mil_advisor_3 = yes
+		se3_has_advisor_of_type_and_level = { type = adm  level = 3 }
+		se3_has_advisor_of_type_and_level = { type = dip  level = 3 }
+		se3_has_advisor_of_type_and_level = { type = mil  level = 3 }
 	}
 
 	monthly_splendor = 1
