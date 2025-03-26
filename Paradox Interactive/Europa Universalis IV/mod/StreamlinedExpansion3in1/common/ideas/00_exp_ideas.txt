@@ -4,15 +4,15 @@ cossacks_idea_groups_expanded = {
 	bonus = {
 		cav_to_inf_ratio = 0.33
 	}
-trigger = {
-   OR = {
-        ai = no
-        OR = {
-        technology_group = eastern
-        has_estate = estate_cossacks
-        }
-    }
-}
+	trigger = {
+	    OR = {
+	        se3_unlimited_ideas = yes
+			OR = {
+				technology_group = eastern
+				has_estate = estate_cossacks
+			}
+		}
+	}
 
 	
 	steppe_tactics = {
@@ -68,17 +68,17 @@ theocratic_idea_groups_expanded = {
 	bonus = {
 		warscore_cost_vs_other_religion = -0.1
 	}
-trigger = {
-   OR = {
-        ai = no
-        OR = {
-        has_government_attribute = theocratic_monarchy_mechanic
-        has_government_attribute = enables_divine_idea_group
-        government = theocracy
-        has_reform = feudal_theocracy
-        }
-    }
-}
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			OR = {
+				has_government_attribute = theocratic_monarchy_mechanic
+				has_government_attribute = enables_divine_idea_group
+				government = theocracy
+				has_reform = feudal_theocracy
+			}
+		}
+	}
 
 	
 	knightly_duty = {
@@ -136,16 +136,16 @@ horde_idea_groups_expanded = {
 		nomadic_tribes_loyalty_modifier = 0.1  
 		horde_unity = 1
 	}
-trigger = {
-   OR = {
-        ai = no
-        OR = {
-        has_reform = steppe_horde
-        # has_reform = Gensokyan_ski_keigatsu_gang
-        has_government_attribute = enables_horde_idea_group
-        }
-    }
-}
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			OR = {
+				has_reform = steppe_horde
+				# has_reform = Gensokyan_ski_keigatsu_gang
+				has_government_attribute = enables_horde_idea_group
+			}
+		}
+	}
 
 	
 	steppe_cavalry = {
@@ -194,12 +194,12 @@ piracy_idea_groups_expanded = {
 	bonus = {
 		republican_tradition = 0.25
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = is_pirate_republic_reform
-    }
-}
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			has_government_attribute = is_pirate_republic_reform
+		}
+	}
 
 
 	loot_for_all = {
@@ -253,13 +253,13 @@ absolutism_idea_groups_expanded = {
 	bonus = {
 		all_power_cost = -0.035
 	}
-trigger = {
-   OR = {
-        ai = no
-        is_year = 1565
-        NOT = { has_government_attribute = enables_plutocratic_idea_group }
-    }
-}
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			is_year = 1565
+			NOT = { has_government_attribute = enables_plutocratic_idea_group }
+		}
+	}
 
 	
 	absolute_state = {
@@ -307,12 +307,12 @@ th_gensokyan_ideas = {
 		church_loyalty_modifier = 0.1
 	}
 
-trigger = {
-   OR = {
-        ai = no
-		full_idea_group = religious_ideas
-    }
-}
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			full_idea_group = religious_ideas
+		}
+	}
 
 	reformed_faith = {
 		tolerance_own = 1.5
@@ -384,12 +384,12 @@ christian_idea_groups_expanded = {
 	bonus = {
 		enforce_religion_cost = -0.5
 	}
-trigger = {
-   OR = {
-        ai = no
-        religion_group = christian
-    }
-}
+	trigger = {
+	    OR = {
+	        se3_unlimited_ideas = yes
+			religion_group = christian
+		}
+	}
 
 	
 	misssionary_schools = {
@@ -446,12 +446,12 @@ muslim_idea_groups_expanded = {
 	bonus = {
 		global_heretic_missionary_strength = 0.02
 	}
-trigger = {
-   OR = {
-        ai = no
-        religion_group = muslim
-    }
-}
+	trigger = {
+	    OR = {
+	        se3_unlimited_ideas = yes
+			religion_group = muslim
+		}
+	}
 
 	
 	adhan = {
@@ -508,12 +508,12 @@ confucian_idea_groups_expanded = {
         tolerance_own = 1
         #Book of Rites describes the social forms, administration, and ceremonial rites of the Zhou Dynasty. This social vision defined society not as an adversarial system based on contractual relations but as a community of trust based on social responsibility. The four functional occupations are cooperative (farmer, scholar, artisan, merchant). - Wikipedia
     }
-trigger = {
-   OR = {
-        ai = no
-        religion = confucianism
-    }
-}
+	trigger = {
+	    OR = {
+	        se3_unlimited_ideas = yes
+     	   	religion = confucianism
+		}
+	}
 
 
     confucian_ideas_wuchang = {
@@ -561,12 +561,12 @@ great_power_idea_groups_expanded = {
 	bonus = {
 		rival_change_cost = -0.5
 	}
-trigger = {
-   OR = {
-        ai = no
-        is_great_power = yes
-    }
-}
+	trigger = {
+	    OR = {
+	        se3_unlimited_ideas = yes
+			is_great_power = yes
+		}
+	}
 
 	
 	will_to_power = {
@@ -609,13 +609,6 @@ state_affairs_idea_groups_expanded = {
 	bonus = {
 		governing_capacity_modifier = 0.20
 	}
-trigger = {
-   OR = {
-        ai = no
-        always = yes
-    }
-}
-
 	
 	meritocratic_offices = {
 		yearly_corruption = -0.05
@@ -674,13 +667,6 @@ power_projection_idea_groups_expanded = {
 	bonus = {
 		prestige = 1
 	}
-trigger = {
-   OR = {
-        ai = no
-        always = yes
-    }
-}
-
 	
 	choose_your_rivals = {
 		rival_change_cost = -0.5
@@ -730,13 +716,6 @@ national_propaganda_idea_groups_expanded = {
 	bonus = {
 		war_taxes_cost_modifier = -0.5
 	}
-trigger = {
-   OR = {
-        ai = no
-        always = yes
-    }
-}
-
 	
 	civil_honor = {
 		prestige = 1
@@ -775,13 +754,6 @@ trigger = {
 
 imperial_idea_groups_expanded = {
 	category = ADM
-trigger = {
-   OR = {
-        ai = no
-        always = yes
-    }
-}
-
 
 	bonus = {
 		expand_administration_cost = -0.66
@@ -935,13 +907,6 @@ engineer_idea_groups_expanded = {
 	bonus = {
 		global_supply_limit_modifier = 0.33
 	}
-trigger = {
-   OR = {
-        ai = no
-        always = yes
-    }
-}
-
 	
 	vanguard_engineers = {
 		movement_speed = 0.20

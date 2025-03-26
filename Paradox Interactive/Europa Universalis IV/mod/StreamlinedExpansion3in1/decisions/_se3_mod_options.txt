@@ -1,18 +1,52 @@
 country_decisions = { 
-	# mod_options = {
-	# 	major = yes
-	# 	potential = {
-	# 		ai = no
-	# 		NOT = { has_global_flag = tradegood_marcin }	
-	# 	}
-	# 	allow = {
-	# 		always = yes
-	# 	}
-	# 	effect = {
-	# 		country_event = { id = marcin_events.103 }
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 0
-	# 	}
-	# }
+	se3_setting_open_unlimited_ideas = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = se3_setted }
+			NOT = { has_global_flag = se3_unlimited_ideas_setted }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = se3_unlimited_ideas_setted
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	se3_setting_close_unlimited_ideas = {
+		major = yes
+		potential = {
+			ai = no
+			has_global_flag = se3_unlimited_ideas_setted
+			NOT = { has_global_flag = se3_setted }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_global_flag = se3_unlimited_ideas_setted
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	se3_setting_ideas_setted = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = se3_setted }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = se3_setted
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

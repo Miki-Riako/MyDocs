@@ -657,13 +657,18 @@ age_of_reformation = {
 						full_idea_group = christian_idea_groups_expanded
 						full_idea_group = muslim_idea_groups_expanded
 						full_idea_group = confucian_idea_groups_expanded
-						full_idea_group = th_gensokyan_ideas
-						full_idea_group = th_moriya_ideas
-						full_idea_group = th_tradition_ideas
-						full_idea_group = th_lunarian_ideas
-						full_idea_group = th_buddhism_ideas
-						full_idea_group = th_taoism_ideas
-						full_idea_group = th_shinkism_ideas
+						if = { #TOUHOU
+							limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+							OR = {
+									full_idea_group = th_gensokyan_ideas
+									full_idea_group = th_moriya_ideas
+									full_idea_group = th_tradition_ideas
+									full_idea_group = th_lunarian_ideas
+									full_idea_group = th_buddhism_ideas
+									full_idea_group = th_taoism_ideas
+									full_idea_group = th_shinkism_ideas
+							}
+						}
 					}
 				}
 				full_idea_group = humanist_ideas

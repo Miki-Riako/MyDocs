@@ -18,14 +18,13 @@ aristocracy_ideas = {
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = enables_aristocratic_idea_group
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+        	has_government_attribute = enables_aristocratic_idea_group
+		}
+	}
 
-	
 	noble_knights = {
 		cavalry_power = 0.15
 	}
@@ -98,13 +97,12 @@ plutocracy_ideas = {
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = enables_plutocratic_idea_group
-    }
-}
-
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			has_government_attribute = enables_plutocratic_idea_group
+		}
+	}
 
 	tradition_of_payment = {
 		mercenary_cost = -0.2
@@ -163,12 +161,12 @@ horde_gov_ideas = {
 		cavalry_power = 0.25
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = enables_horde_idea_group
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			has_government_attribute = enables_horde_idea_group
+		}
+	}
 
 	
 	horse_lords = {
@@ -213,12 +211,12 @@ theocracy_gov_ideas = {
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = enables_divine_idea_group
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			has_government_attribute = enables_divine_idea_group
+		}
+	}
 
 	servants_of_god = {
 		devotion = 1
@@ -281,12 +279,12 @@ indigenous_ideas = {
 	bonus = {
 		global_institution_spread = 0.25
 	}
-trigger = {
-   OR = {
-        ai = no
-        has_government_attribute = enables_natives_idea_group
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			has_government_attribute = enables_natives_idea_group
+		}
+	}
 
 
 	indigenous_bountiful_land = {
@@ -1151,12 +1149,12 @@ exploration_ideas = {
 
 maritime_ideas = {
 	category = DIP
-trigger = {
-   OR = {
-        ai = no
-        primitives = no
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			primitives = no
+		}
+	}
 
 
 	bonus = {
@@ -1706,12 +1704,12 @@ influence_ideas = {
 
 naval_ideas = {
 	category = MIL
-trigger = {
-   OR = {
-        ai = no
-        primitives = no
-    }
-}
+	trigger = {
+	   OR = {
+	        se3_unlimited_ideas = yes
+			primitives = no
+		}
+	}
 
 
 	bonus = {

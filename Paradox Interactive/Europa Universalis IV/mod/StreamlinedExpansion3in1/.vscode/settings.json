@@ -1,13 +1,11 @@
 {
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "files.exclude": {
-        "common/scripted_triggers/_se3_advisors_scripted_triggers.txt": true
+        // "common/scripted_triggers/_se3_advisor_scripted_triggers.txt": true
     } // These files are reported due to increased compatibility with other mods
 }
 /**
 计划修改的文件
-- common/advisortypes/th_advisors.txt: 后续需要删除，为曾经未考虑兼容性的临时文件（记得完成兼容性后要改_se3_advisors_scripted_triggers）
-- common/ages/00_default.txt: 需要增加其兼容性
 - common/buildings/_th_meiras_dojo.txt: 让人迷惑的文件，后续观察
 - common/custom_gui: GUI相关效果需要后续测试
 - common/ideas/00_exp_ideas.txt: 均需要增加接口
@@ -16,7 +14,6 @@
 - common/new_diplomatic_actions/_th_request_conversion_faith.txt: 后续需要修改，为曾经未考虑兼容性的临时文件
 - common/on_actions/_exp_age_on_actions.txt: 很复杂的文件，后续要注意
 - common/on_actions/_exp_trade_on_actions.txt: 很复杂的文件，后续要注意
-- common/opinion_modifiers/_th_opinion_modifier.txt: 后续需要删除，为曾经未考虑兼容性的临时文件
 - common/policies、prices: 除了新增文件，旧文件都要大修
 - common/scripted_effects、scripted_triggers: GUI相关效果需要后续测试
 - common/triggered_modifiers: 很多内容不知道在哪里被使用，后续测试
