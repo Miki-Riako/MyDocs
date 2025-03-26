@@ -1,0 +1,259 @@
+# Vanilla
+ase_spend_additional_splendor_to_recruit_advisor_entry_1_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = philosopher
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = statesman
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = army_reformer
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_2_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = natural_scientist
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = naval_reformer
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = army_organiser
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_3_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = artist
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = trader
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = commandant
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_4_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = treasurer
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = spymaster
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = quartermaster
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_5_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = theologian
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = colonial_governor
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = recruitmaster
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_6_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = master_of_mint
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = diplomat
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = fortification_expert
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}
+
+ase_spend_additional_splendor_to_recruit_advisor_entry_7_effect = {
+	add_splendor = -400
+	if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_adm_opened
+		}
+		define_advisor = {
+			type = inquisitor
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_dip_opened
+		}
+		define_advisor = {
+			type = navigator
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ase_spend_additional_splendor_recruit_advisor_mil_opened
+		}
+		define_advisor = {
+			type = grand_captain
+			culture = ROOT
+			cost_multiplier = 0.75
+			skill = 2
+		}
+	}
+}

@@ -1,0 +1,174 @@
+spriteTypes = {
+	# spriteType = {
+	# 	name = "GFX_idea_th_moriya_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_moriya_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# spriteType = {
+	# 	name = "GFX_idea_th_tradition_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_tradition_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	spriteType = {
+		name = "GFX_idea_th_gensokyan_ideas"
+		texturefile = "gfx//interface//ideas//idea_th_gensokyan_ideas.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	# spriteType = {
+	# 	name = "GFX_idea_th_lunarian_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_lunarian_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# spriteType = {
+	# 	name = "GFX_idea_th_buddhism_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_buddhism_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# spriteType = {
+	# 	name = "GFX_idea_th_taoism_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_taoism_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# spriteType = {
+	# 	name = "GFX_idea_th_shinkism_ideas"
+	# 	texturefile = "gfx//interface//ideas//idea_th_shinkism_ideas.tga"
+	# 	noOfFrames = 1
+		
+	# 	effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	
+	######
+	
+	spriteType = {
+		name = "GFX_idea_christian_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_christian_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_muslim_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_muslim_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_horde_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_horde_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_standing_army_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_standing_army_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_national_propaganda_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_national_propaganda_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_state_affairs_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_state_affairs_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_imperial_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_imperial_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_engineer_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_engineer_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_power_projection_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_power_projection_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_theocratic_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_theocratic_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_confucian_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_confucian_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_piracy_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_piracy_idea_groups_expanded.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_cossacks_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_cossacks_idea_groups_expanded.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_great_power_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_great_power_idea_groups_expanded.tga"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_mercenary_army_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//mercenary_army_idea_groups_expanded.tga"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_military_academy_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_military_academy_idea_groups_expanded.tga"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_absolutism_idea_groups_expanded"
+		texturefile = "gfx//interface//ideas//idea_absolutism_idea_groups_expanded.tga"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+}
+	

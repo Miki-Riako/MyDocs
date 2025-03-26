@@ -1,0 +1,649 @@
+# 货物进出口
+off = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = copper
+								value = 0.4
+							}
+							
+							check_variable = {
+								which = tin
+								value = 0.3
+							}
+						
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = copper
+						value = 0.4
+					}
+					
+					change_variable = {            
+						which = copper_used
+						value = 0.4
+					}
+					
+					subtract_variable = {            
+						which = tin
+						value = 0.3
+					}
+					
+					change_variable = {            
+						which = tin_used
+						value = 0.3
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.4
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_hostile_attrition = -1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+off_2 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = iron
+								value = 1.0
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = iron
+						value = 1.0
+					}
+					
+					change_variable = {            
+						which = iron_used
+						value = 1.0
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_2
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_2
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.5
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+off_3 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = lead
+								value = 1.0
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = lead
+						value = 1.0
+					}
+					
+					change_variable = {            
+						which = lead_used
+						value = 1.0
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_3
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_3
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.6
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_regiment_cost = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+off_4 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = zinc
+								value = 0.3
+							}
+							
+							check_variable = {
+								which = copper
+								value = 0.4
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = zinc
+						value = 0.3
+					}
+					
+					change_variable = {            
+						which = zinc_used
+						value = 0.3
+					}
+					
+					subtract_variable = {            
+						which = copper
+						value = 0.4
+					}
+					
+					change_variable = {            
+						which = copper_used
+						value = 0.4
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_4
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_4
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.7
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_development_cost = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+off_5 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = glass
+								value = 0.6
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = glass
+						value = 0.6
+					}
+					
+					change_variable = {            
+						which = glass_used
+						value = 0.6
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_5
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_5
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.8
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_state_maintenance_modifier = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+off_6 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = tobacco
+								value = 0.6
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = tobacco
+						value = 0.6
+					}
+					
+					change_variable = {            
+						which = tobacco_used
+						value = 0.6
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_6
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_6
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.9
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_state_maintenance_modifier = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+off_7 = {
+	cost = 0
+	time = 0
+		
+	on_destroyed = {
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						AND = {
+							check_variable = {
+								which = cocoa
+								value = 0.6
+							}
+						}
+					}
+				}
+				FROM = {
+					subtract_variable = {            
+						which = cocoa
+						value = 0.6
+					}
+					
+					change_variable = {            
+						which = cocoa_used
+						value = 0.6
+					}
+				}
+				ROOT = {
+					clr_province_flag = back_to_off_7
+				}
+			}
+			else = {
+				ROOT = {
+					set_province_flag = back_to_off_7
+				}
+			}
+			FROM = {
+				country_event = { 
+					id = New_TradeGood_Events.10
+					days = 2
+				}
+			}
+		}
+	}
+	build_trigger = {
+		always = no
+	}
+	
+	
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	    trade_goods_size = -100
+		local_state_maintenance_modifier = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+import_from_subjects = {
+	cost = 0
+	time = 0
+	
+	potential = {
+		FROM = {
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
+		}
+	}
+	build_trigger = {
+		FROM = {
+			is_subject_other_than_tributary_trigger = yes
+		}
+		ROOT = {
+			NOT = {	has_province_modifier = import_from_subjects_modifier }
+			OR = {
+				trade_goods = copper
+				trade_goods = tin
+				trade_goods = iron
+				trade_goods = lead
+				trade_goods = zinc
+				trade_goods = glass
+				trade_goods = tobacco
+				trade_goods = cocoa
+			}	
+		}
+	}
+	
+	on_built = {
+		hidden_effect = {
+			ROOT = {
+				add_permanent_province_modifier = { 
+					name = import_from_subjects_modifier
+					duration = -1
+				}
+				
+			}
+			
+			if = {
+				limit = { ROOT = { trade_goods = copper } }
+				update_goods_subjects = { GOODS = copper }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = tin } }
+				update_goods_subjects = { GOODS = tin }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = iron } }
+				update_goods_subjects = { GOODS = iron }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = lead } }
+				update_goods_subjects = { GOODS = lead }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = zinc } }
+				update_goods_subjects = { GOODS = zinc }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = glass } }
+				update_goods_subjects = { GOODS = glass }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = tobacco } }
+				update_goods_subjects = { GOODS = tobacco }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = cocoa } }
+				update_goods_subjects = { GOODS = cocoa }
+			}
+			
+			ROOT = {
+				remove_building = import_from_subjects
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		
+	}
+
+	modifier = { 
+		allowed_num_of_buildings = 1 
+		liberty_desire = 10
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+stop_import_from_subjects = {
+	cost = 0
+	time = 0
+	
+	potential = {
+		FROM = {
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
+		}
+	}
+	
+	build_trigger = {
+		FROM = {
+			is_subject_other_than_tributary_trigger = yes
+		}
+		ROOT = {
+			has_province_modifier = import_from_subjects_modifier
+			OR = {
+				trade_goods = copper
+				trade_goods = tin
+				trade_goods = iron
+				trade_goods = lead
+				trade_goods = zinc
+				trade_goods = glass
+				trade_goods = tobacco
+				trade_goods = cocoa
+			}	
+		}
+	}
+	
+	on_built = {
+		hidden_effect = {
+			ROOT = {
+				remove_province_modifier = import_from_subjects_modifier
+			}
+			if = {
+				limit = { ROOT = { trade_goods = copper } }
+				update_goods_subjects = { GOODS = copper }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = tin } }
+				update_goods_subjects = { GOODS = tin }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = iron } }
+				update_goods_subjects = { GOODS = iron }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = lead } }
+				update_goods_subjects = { GOODS = lead }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = zinc } }
+				update_goods_subjects = { GOODS = zinc }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = glass } }
+				update_goods_subjects = { GOODS = glass }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = tobacco } }
+				update_goods_subjects = { GOODS = tobacco }
+			}
+			else_if = {
+				limit = { ROOT = { trade_goods = cocoa } }
+				update_goods_subjects = { GOODS = cocoa }
+			}
+			ROOT = {
+				remove_building = stop_import_from_subjects
+			}
+		}
+	}
+	
+	on_destroyed = {
+		
+	}
+
+	modifier = { 
+		allowed_num_of_buildings = 1 
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+

@@ -1,0 +1,39 @@
+IGE_imperial_guards = {
+    regiments_per_development = 0.020
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack jap_base_sprite_pack  }
+    trigger = {	
+		has_idea = expanded_contracts_expanded
+	}
+	cost_modifier = 0.75
+	modifier = { 
+		discipline = 0.05
+		shock_damage_received = -0.05
+	}
+}
+IGE_imperial_horse_band = {
+    regiments_per_development = 0.015
+	cavalry_weight = 1
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack jap_base_sprite_pack  }
+    trigger = {	
+		has_idea = expanded_contracts_expanded
+	}
+	cost_modifier = 0.75
+	modifier = { 
+		shock_damage = 0.05
+		cavalry_flanking = 0.5
+	}
+}
+IGE_imperial_engineers = {
+    regiments_per_development = 0.015
+	artillery_weight = 1
+	sprites = { westerngfx_sprite_pack easterngfx_sprite_pack muslimgfx_sprite_pack jap_base_sprite_pack  }
+    trigger = {	
+		has_idea = expanded_contracts_expanded
+	}
+	cost_modifier = 0.75
+	modifier = { 
+		artillery_levels_available_vs_fort = 1
+		backrow_artillery_damage = 0.1
+	}
+}
+

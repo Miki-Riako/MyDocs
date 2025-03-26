@@ -1,0 +1,2791 @@
+defined_text = {
+	name = GetAseRetainAgeAbilityMaxPage
+	random = no
+
+	text = {
+		trigger = {
+			ase_retain_age_ability_max_page_for_age_is_3 = yes
+		}
+		localisation_key = "3"
+	}
+	text = {
+		trigger = {
+			ase_retain_age_ability_max_page_for_age_is_2 = yes
+		}
+		localisation_key = "2"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "1"
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityPrevPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = string_ase_retain_age_ability_prev_page_button_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_retain_age_ability_prev_page_button_tt_min_reached
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityNextPageTooltip
+	random = no
+
+	text = {
+		trigger = {
+			ase_retain_age_ability_max_page_for_age_not_reached = yes
+		}
+		localisation_key = string_ase_retain_age_ability_next_page_button_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_ase_retain_age_ability_next_page_button_tt_max_reached
+	}
+}
+
+defined_text = {
+	name = GetAsePreviousAge
+	random = no
+
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+		}
+		localisation_key = age_of_discovery
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+		}
+		localisation_key = age_of_reformation
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+		}
+		localisation_key = age_of_absolutism
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+		}
+		localisation_key = classical_age
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+		}
+		localisation_key = late_classical_age
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+		}
+		localisation_key = age_of_migrations
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+		}
+		localisation_key = dark_age
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+		}
+		localisation_key = feudal_age
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+		}
+		localisation_key = high_middle_ages
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+		}
+		localisation_key = late_middle_ages
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+		}
+		localisation_key = age_of_revolutions
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+		}
+		localisation_key = industrial_age
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+		}
+		localisation_key = great_war_age
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = age_of_discovery
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityName1
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_justified_wars
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_glorious_renaissance
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_siege_blockades
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_institution_spread_from_true_faith
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_dharmic_syncretism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_rival_change
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_adm_efficiency
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_imperial_control
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_classical_architecture
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_classical_great_people
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_lateclassical_elite_guard
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_lateclassical_administration
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_migration_foraging
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_migration_looting
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_darkage_raiding
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_darkage_warlords
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_feudal_glorious_battles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_feudal_levies
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_highmiddle_religious_studies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_highmiddle_shock_tactics
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_latemiddle_legitimacy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_latemiddle_cheaper_mercenaries
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_allow_anti_revolutionary_zeal
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_same_contine_lib_desire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_universal_literacy
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_industrial_construction
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_industrial_weapons_industry
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_greatwar_secret_police
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_greatwar_total_war
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityEffects1
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_justified_wars
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_glorious_renaissance
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_siege_blockades
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_institution_spread_from_true_faith
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_dharmic_syncretism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_rival_change
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_adm_efficiency
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_imperial_control
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_architecture
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_great_people
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_elite_guard
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_administration
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_foraging
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_looting
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_raiding
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_warlords
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_glorious_battles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_levies
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_religious_studies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_shock_tactics
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_legitimacy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_cheaper_mercenaries
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_allow_anti_revolutionary_zeal
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_same_contine_lib_desire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_universal_literacy
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_construction
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_weapons_industry
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_secret_police
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_total_war
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityPicture1
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_justified_wars
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_glorious_renaissance
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_siege_blockades
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_institution_spread_from_true_faith
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_dharmic_syncretism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_rival_change
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_adm_efficiency
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_imperial_control
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_architecture
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_great_people
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_elite_guard
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_administration
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_foraging
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_looting
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_raiding
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_warlords
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_glorious_battles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_levies
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_religious_studies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_shock_tactics
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_legitimacy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_cheaper_mercenaries
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_allow_anti_revolutionary_zeal
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_same_contine_lib_desire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_universal_literacy
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_construction
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_weapons_industry
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_secret_police
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_total_war
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityName2
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_free_war_taxes
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_ruling_dynasty
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_warscore_vs_religion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_prestige_per_development_from_conversion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = tas_gensokyan_supremacy
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_rival_border_fort
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_yearly_absolutism
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_centralised_state
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_classical_philosophy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_classical_defence
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_lateclassical_expeditions
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_lateclassical_diplomacy
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_migration_resettlement
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_migration_border_walls
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_darkage_border_disputes
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_darkage_fire_galleys
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_feudal_tax
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_feudal_military_duty
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_highmiddle_crusaders
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_highmiddle_knights
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_latemiddle_trade
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_latemiddle_state_administration
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_napoleonic_warfare
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_enlightened_governance
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ab_force_march
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_industrial_development
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_industrial_nationalist_zeal
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_greatwar_intelligence_network
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_greatwar_military_expansion
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityEffects2
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_free_war_taxes
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_ruling_dynasty
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_warscore_vs_religion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_prestige_per_development_from_conversion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_tas_gensokyan_supremacy
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_rival_border_fort
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_yearly_absolutism
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_centralised_state
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_philosophy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_defence
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_expeditions
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_diplomacy
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_resettlement
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_border_walls
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_border_disputes
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_fire_galleys
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_tax
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_military_duty
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_crusaders
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_knights
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_trade
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_state_administration
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_napoleonic_warfare
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_enlightened_governance
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_force_march
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_development
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_nationalist_zeal
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_intelligence_network
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_military_expansion
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityPicture2
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_free_war_taxes
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_ruling_dynasty
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_warscore_vs_religion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_prestige_per_development_from_conversion
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_tas_gensokyan_supremacy
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_rival_border_fort
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_yearly_absolutism
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_centralised_state
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_philosophy
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_defence
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_expeditions
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_diplomacy
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_resettlement
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_border_walls
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_border_disputes
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_fire_galleys
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_tax
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_military_duty
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_crusaders
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_knights
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_trade
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_state_administration
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_napoleonic_warfare
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_enlightened_governance
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_force_march
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_development
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_nationalist_zeal
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_intelligence_network
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_military_expansion
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityName3
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_cavalry_armies
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_attack_bonus_in_capital_terrain
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_mercenary_discipline
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_muslim_jihad
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_autonomy
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_strategic_warfare
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_classical_additional_generals
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_classical_terrain
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_lateclassical_conscription
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_migration_expansion
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_migration_siege
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_darkage_spies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_darkage_religious_acceptance
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_feudal_loyalty
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_feudal_law
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_highmiddle_castles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_highmiddle_fertile_farmlands
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_latemiddle_missionary
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_latemiddle_careful_diplomacy
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_more_ships_can_fire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_nationalistic_fervor
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ab_no_distance_for_core
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_industrial_colonization
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ab_industrial_grand_artillery
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_greatwar_relations
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityEffects3
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_cavalry_armies
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_attack_bonus_in_capital_terrain
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_mercenary_discipline
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_muslim_jihad
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_autonomy
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_strategic_warfare
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_additional_generals
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_terrain
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_conscription
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_expansion
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_siege
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_spies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_religious_acceptance
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_loyalty
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_law
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_castles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_fertile_farmlands
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_missionary
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_careful_diplomacy
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_more_ships_can_fire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_nationalistic_fervor
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_no_distance_for_core
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_colonization
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_grand_artillery
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_relations
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityPicture3
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_cavalry_armies
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_attack_bonus_in_capital_terrain
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_mercenary_discipline
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_muslim_jihad
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_autonomy
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_strategic_warfare
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_additional_generals
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_terrain
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_conscription
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_expansion
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_siege
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_spies
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_religious_acceptance
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_loyalty
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_law
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_castles
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_fertile_farmlands
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_missionary
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_careful_diplomacy
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_more_ships_can_fire
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_nationalistic_fervor
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 3 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_no_distance_for_core
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_colonization
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_grand_artillery
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_relations
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+
+defined_text = {
+	name = GetAseRetainAgeAbilityName4
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_colony_boost_development
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_exploration_corp
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_ship_power_propagation
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_confessionalism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_harsh_treatment
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_cultural_relativism
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_classical_ambush_tactics
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_lateclassical_generals
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_migration_marching
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_darkage_stable_empire
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_feudal_mercenaries
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_highmiddle_lasting_dynasty
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_latemiddle_proselytism
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_backrow_artillery
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_uniform_education
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_industrial_skilled_workers
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ab_greatwar_war_industry
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityEffects4
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_colony_boost_development
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_exploration_corp
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_ship_power_propagation
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_confessionalism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_harsh_treatment
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_cultural_relativism
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_classical_ambush_tactics
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_lateclassical_generals
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_migration_marching
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_darkage_stable_empire
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_feudal_mercenaries
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_highmiddle_lasting_dynasty
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_latemiddle_proselytism
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_backrow_artillery
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ase_uniform_education
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_industrial_skilled_workers
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_effects_ab_greatwar_war_industry
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}
+defined_text = {
+	name = GetAseRetainAgeAbilityPicture4
+	random = no
+
+	# Age of Reformation
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_colony_boost_development
+	}
+	text = {
+		trigger = {
+			current_age = age_of_reformation
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_exploration_corp
+	}
+	# Age of Absolutism
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_ship_power_propagation
+	}
+	text = {
+		trigger = {
+			current_age = age_of_absolutism
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_confessionalism
+	}
+	# Age of Revolutions
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_harsh_treatment
+	}
+	text = {
+		trigger = {
+			current_age = age_of_revolutions
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_cultural_relativism
+	}
+	# Extended Timeline
+	# Late Classical Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_classical_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_classical_ambush_tactics
+	}
+	# Age of Migrations
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_migrations
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_lateclassical_generals
+	}
+	# Dark Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = dark_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_migration_marching
+	}
+	# Feudal Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = feudal_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_darkage_stable_empire
+	}
+	# High Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = high_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_feudal_mercenaries
+	}
+	# Late Middle Ages
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = late_middle_ages
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_highmiddle_lasting_dynasty
+	}
+	# Age of Discovery
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = age_of_discovery
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_latemiddle_proselytism
+	}
+	# Industrial Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_backrow_artillery
+	}
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = industrial_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 2 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ase_uniform_education
+	}
+	# Great War Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = great_war_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_industrial_skilled_workers
+	}
+	# Information Age
+	text = {
+		trigger = {
+			has_global_flag = extended_timeline_mod
+			current_age = information_age
+			is_variable_equal = { which = ase_retain_age_ability_page value = 1 }
+		}
+		localisation_key = ase_retain_age_ability_picture_ab_greatwar_war_industry
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "?"
+	}
+}

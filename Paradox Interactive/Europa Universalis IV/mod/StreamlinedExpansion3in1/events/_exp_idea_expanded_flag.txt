@@ -1,0 +1,27 @@
+namespace = idea_groups_expanded_flag
+
+country_event = {
+    id = idea_groups_expanded_flag.1
+    title = idea_groups_expanded_flag.EVTNAME1
+    desc = idea_groups_expanded_flag.EVTDESC1
+	picture = ADVISOR_eventPicture
+	
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        always = yes
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = idea_groups_expanded_mod_active
+        }
+    }
+
+    option = {
+        name = idea_groups_expanded_events1.EVTOPT1
+
+        ai_chance = { factor = 100 }
+    }
+}

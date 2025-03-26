@@ -1,0 +1,127 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_button_red"
+		texturefile = "gfx//interface//ideas_EU4//event_button_red.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_color_red_back"
+		texturefile = "gfx//interface//ideas_EU4//event_button_color_red_back.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_yellow_goods"
+		texturefile = "gfx//interface//ideas_EU4//event_button_yellow_goods.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_blue_latent"
+		texturefile = "gfx//interface//ideas_EU4//event_button_blue_latent.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_base_button"
+		texturefile = "gfx/interface/TGE_base_button.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_provinceview_TGE_bg"
+		texturefile = "gfx/interface/provinceview_TGE_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_close_TGE"
+		texturefile = "gfx/interface/close_TGE.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_backgr"
+		texturefile = "gfx/interface/TGE_backgr.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_confrim_bg"
+		texturefile = "gfx/interface/TGE_confrim_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_upgrade"
+		texturefile = "gfx/interface/TGE_upgrade.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_destroy"
+		texturefile = "gfx/interface/TGE_destroy.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_NO_button"
+		texturefile = "gfx/interface/TGE_NO_button_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_YES_button"
+		texturefile = "gfx/interface/TGE_YES_button.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_window_bg"
+		texturefile = "gfx/interface/TGE_window_bg.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_main_close_button"
+		texturefile = "gfx/interface/TGE_main_close_button.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_main_close_button"
+		texturefile = "gfx/interface/TGE_main_close_button.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_Rural_Infrastructure"
+		texturefile = "gfx/interface/TGE_Rural_Infrastructure.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_Mining_Infrastructure"
+		texturefile = "gfx/interface/TGE_Mining_Infrastructure.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_Infrastructure_MED"
+		texturefile = "gfx/interface/TGE_Rural_Infrastructure_Med.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_TGE_Infrastructure_urban"
+		texturefile = "gfx/interface/TGE_urban_Infrastructure.dds"
+		loadType = "INGAME"
+	}
+	
+	
+}
+	
+
+	

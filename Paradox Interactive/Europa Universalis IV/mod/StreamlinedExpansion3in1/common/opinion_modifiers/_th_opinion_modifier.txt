@@ -1,0 +1,19 @@
+the_great_guider = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+the_new_follower = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+the_instigator = {
+	opinion = -25
+	yearly_decay = 2
+}
+
+the_refused_conversion = {
+	opinion = -50
+	yearly_decay = 5
+}
