@@ -1,4 +1,4 @@
-the_combination_act = {
+the_combination_act_1 = {
 	monarch_power = ADM
 
 	potential = {
@@ -37,7 +37,7 @@ the_combination_act = {
 	}
 }
 
-the_court_of_wards_and_liveries = {
+the_court_of_wards_and_liveries_1 = {
 	monarch_power = ADM
 
 	potential = {
@@ -89,7 +89,7 @@ the_court_of_wards_and_liveries = {
 	}
 }
 
-manueline_architecture = {
+manueline_architecture_1 = {
 	monarch_power = ADM
 
 	potential = {
@@ -113,7 +113,7 @@ manueline_architecture = {
 	}
 }
 
-edict_of_resistance = {
+edict_of_resistance_2 = {
 	monarch_power = ADM
 
 	potential = {
@@ -191,7 +191,7 @@ edict_of_resistance_1 = {
 
 }
 
-enforce_religious_law = {
+enforce_religious_law_1 = {
 	monarch_power = ADM
 
 	potential = {
@@ -273,7 +273,7 @@ enforce_religious_law_2 = {
 	}
 }
 
-the_tolerance_act = {
+the_tolerance_act_2 = {
 	monarch_power = ADM
 
 	potential = {
@@ -355,7 +355,7 @@ the_tolerance_act_1 = {
 	}
 }
 
-the_witchcraft_act = {
+the_witchcraft_act_5 = {
 	monarch_power = ADM
 
 	potential = {
@@ -645,7 +645,7 @@ the_witchcraft_act_4 = {
 	}
 }
 
-policy_of_calculate_delay = {
+policy_of_calculate_delay_2 = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = muslim_idea_groups_expanded
@@ -727,7 +727,7 @@ policy_of_calculate_delay_1 = {
 	}
 }
 
-enlightened_aristocracy = {
+enlightened_aristocracy_1 = {
 	monarch_power = ADM
 	
 	potential = {
@@ -786,7 +786,7 @@ enlightened_aristocracy = {
 			factor = 1.5
 			production_income_percentage = 0.5
 		}	
-	}
+	}	
 }
 
 the_licensing_of_the_press_act_1 = {
@@ -811,7 +811,7 @@ the_licensing_of_the_press_act_1 = {
 	
 	ai_will_do = {
 		factor = 0.8
-	}	
+	}
 }
 
 church_sponsored_guilds_1 = {
@@ -870,7 +870,7 @@ church_sponsored_guilds_2 = {
 	
 	global_trade_goods_size_modifier = 0.1
 	global_missionary_strength = 0.01
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {

@@ -1,903 +1,3 @@
-th_hakurei_tolerance_policy = {	#Hakurei Shinto+Humanist
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = humanist_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = humanist_ideas
-	}
-	
-	tolerance_heathen = 1
-	tolerance_heretic = 1
-
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 2
-			tag = HKR
-		}
-	}
-}
-
-th_enhanced_donation_boxes_policy = {	#Hakurei Shinto+Economics
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = economic_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = economic_ideas
-	}
-
-	global_tax_modifier = 0.15
-
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 2
-			tag = HKR
-		}
-	}
-}
-
-th_better_youkai_extermination_contracts_policy = {	#Hakurei Shinto+Trade
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = trade_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = trade_ideas
-	}
-	
-	trade_efficiency = 0.1
-	global_trade_power = 0.1 
-
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 2
-			tag = HKR
-		}
-	}
-}
-
-th_cute_diplomats_policy = {	#Hakurei Shinto+Diplomacy
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = diplomatic_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = diplomatic_ideas
-	}
-	
-	diplomatic_reputation = 1
-
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 2
-			tag = HKR
-		}
-	}
-}
-
-th_danmaku_veterency_policy = {	#Hakurei Shinto+Quality
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = quality_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = quality_ideas
-	}
-	
-	land_morale = 0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 5
-			tag = HKR
-		}
-	}
-}
-
-th_spell_card_mastery_HKR_policy = {	#Hakurei Shinto+Theocratic (Hakurei Clan)
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = theocratic_idea_groups_expanded
-		OR = {
-			tag = HKR
-			AND = {
-				is_playing_custom_nation = yes 
-				has_reform = Gensokyan_shrine_theocracy
-			}
-		}
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = theocratic_idea_groups_expanded
-	}
-	
-	infantry_power = 0.10
-	global_heretic_missionary_strength = 0.02
-
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-th_spell_card_mastery_policy = {	#Hakurei Shinto+Theocratic (normal)
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = theocratic_idea_groups_expanded
-		NOT = { tag = HKR }
-		OR = {
-			is_playing_custom_nation = no
-			AND = {
-				is_playing_custom_nation = yes
-				NOT = { has_reform = Gensokyan_shrine_theocracy }
-			}
-		}
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = theocratic_idea_groups_expanded
-	}
-	
-	infantry_power = 0.10
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_laid_back_colonizing_policy = {	#Hakurei Shinto+Expansion
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = expansion_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = expansion_ideas
-	}
-	
-	native_assimilation = 0.5
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_pen_and_paper_shrine_maidens_policy = {	#Hakurei Shinto+Adminstrative Ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = administrative_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = administrative_ideas
-	}
-	
-	church_influence_modifier = 0.1
-	governing_capacity_modifier = 0.1
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_more_power_to_the_maidens_policy = {	#Hakurei Shinto+State Affairs Ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = state_affairs_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = state_affairs_idea_groups_expanded
-	}
-
-	church_loyalty_modifier = 0.10
-	improve_relation_modifier = 0.2
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_yukaris_spies_policy = {	#Hakurei Shinto+Espionage
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = spy_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = spy_ideas
-	}
-	
-	spy_offence = 0.1
-	diplomatic_reputation = 1
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_quest_for_gold_policy = {	#Hakurei Shinto+Exploration
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = exploration_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = exploration_ideas
-	}
-
-	range = 0.33 
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_locale_hakurei_barrier_policy = {	#Hakurei Shinto+Defensive Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = defensive_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = defensive_ideas
-	}
-	
-	defensiveness = 0.15
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_blessed_war_ships_policy = {	#Hakurei Shinto+Naval
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = naval_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = naval_ideas
-	}
-	
-	ship_durability = 0.1
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_gensokyan_call_to_arms_policy = {	#Hakurei Shinto+Quantity
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = quantity_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = quantity_ideas
-	}
-	
-	land_forcelimit_modifier = 0.1
-	global_unrest = -1
-	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_volunteer_army_policy = {	#Hakurei Shinto+Mercenary Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = mercenary_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = mercenary_ideas
-	}
-	
-	merc_maintenance_modifier = -0.1
-	mercenary_manpower = 0.1	
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_oni_boulders_policy = {	#Hakurei Shinto+Offensive Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = offensive_ideas
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = offensive_ideas
-	}
-	
-	siege_ability = 0.1
-	shock_damage = 0.1
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-th_hakurei_vult_policy = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_gensokyan_ideas
-		has_idea_group = national_propaganda_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_gensokyan_ideas
-		full_idea_group = national_propaganda_idea_groups_expanded
-	}
-	
-	cb_on_religious_enemies = yes
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-#Moriya
-moriya_crusade = {  #Moriya Shinto+Offensive Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = offensive_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = offensive_ideas
-	}
-
-	infantry_power = 0.10
-
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 1.5
-			tag = MRY
-		}
-	}
-}
-
-sanae_ideas = { #Moriya Shinto+Innovative ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = innovativeness_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = innovativeness_ideas
-	}
-
-	innovativeness_gain = 0.10
-	free_mil_policy = 1
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mountain_gods_supreme = { #Moriya Shinto+Great Power Ideas
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = great_power_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = great_power_idea_groups_expanded
-	}
-
-	vassal_forcelimit_bonus = 1
-	prestige_decay = -0.01
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_defense = { #Moriya Shinto+Defensive Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = defensive_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = defensive_ideas
-	}
-
-	defensiveness = 0.10
-	fort_maintenance_modifier = -0.10
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_deal = { #Moriya Shinto+Economic
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = economic_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = economic_ideas
-	}
-
-	development_cost = -0.05
-	global_tax_modifier = 0.10
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_expansion = { #Moriya Shinto+eExpansion
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = expansion_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = expansion_ideas
-	}
-
-	global_colonial_growth = 10
-	native_assimilation = 0.5
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_admins = { #Moriya Shinto+Admin ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = administrative_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = administrative_ideas
-	}
-
-	production_efficiency = 0.2
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_states = { #Moriya Shinto+States Ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = state_affairs_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = state_affairs_idea_groups_expanded
-	}
-
-	church_loyalty_modifier = 0.10
-	global_manpower_modifier = 0.10
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_humanism = { #Moriya Shinto+Humanist Ideas
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = humanist_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = humanist_ideas
-	}
-
-	global_unrest = -1
-	religious_unity = 0.20
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_facism = { #Moriya Shinto+Imperialism
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = imperial_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = imperial_idea_groups_expanded
-	}
-
-	harsh_treatment_cost = -0.25
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_ops = { #Moriya Shinto+Espionage
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = spy_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = spy_ideas
-	}
-
-	fabricate_claims_cost = -0.2
-	rebel_support_efficiency = 0.5
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_fame = { #Moriya Shinto+Diplomatic
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = diplomatic_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = diplomatic_ideas
-	}
-
-	diplomatic_reputation = 1
-	improve_relation_modifier = 0.10
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_trade = { #Moriya Shinto+Trade
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = trade_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = trade_ideas
-	}
-
-	trade_efficiency = 0.1
-	global_foreign_trade_power = 0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_exploration = { #Moriya Shinto+Exploration
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = exploration_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = exploration_ideas
-	}
-
-	range = 0.33
-	navy_tradition_decay = -0.01
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_maritime = { #Moriya Shinto+Maritime
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = maritime_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = maritime_ideas
-	}
-
-	embargo_efficiency = 0.15
-	naval_tradition_from_trade = 0.15
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_power = { #Moriya Shinto+Power Projection
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = power_projection_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = power_projection_idea_groups_expanded
-	}
-
-	claim_duration = 0.2
-	vassal_income = 0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_influence = { #Moriya Shinto+Influence
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = influence_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = influence_ideas
-	}
-
-	diplomatic_annexation_cost = -0.1
-	improve_relation_modifier = 0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_youkai = { #Moriya Shinto+Aristocratic
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = aristocracy_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = aristocracy_ideas
-	}
-
-	nobles_loyalty_modifier = 0.1
-	army_tradition_decay = -0.005
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			tag = MRY
-	}
-}
-}
-moriya_theocracy = { #Moriya Shinto+Theocratic(For Sanae)
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = theocratic_idea_groups_expanded
-		tag = MRY
-		NOT = {
-			AND = {
-				is_playing_custom_nation = yes
-				has_reform = Gensokyan_shrine_theocracy
-			}
-		}
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = theocratic_idea_groups_expanded
-	}
-
-	land_morale = 0.1
-	global_heretic_missionary_strength = 0.02
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-moriya_theogovs = { #Moriya Shinto+Theocratic ideas(For Others)
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = theocratic_idea_groups_expanded
-		NOT = { tag = MRY }
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = theocratic_idea_groups_expanded
-	}
-
-	global_heretic_missionary_strength = 0.02
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_quality = { #Moriya Shinto+Quality
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = quality_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = quality_ideas
-	}
-
-	discipline = 0.05
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_quantity = { #Moriya Shinto+Quantity
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = quantity_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = quantity_ideas
-	}
-
-	manpower_in_true_faith_provinces = 0.10
-	manpower_recovery_speed = 0.10
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_mercs = { #Moriya Shinto+Mercenary idea group
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = mercenary_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = mercenary_ideas
-	}
-
-	mercenary_manpower= 0.20
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_kanako_troops = { #Moriya Shinto+Mercenary idea group
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = mercenary_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = mercenary_ideas
-	}
-
-	mercenary_discipline = 0.05
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_machines = { #Moriya Shinto+Engineeering
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = engineer_idea_groups_expanded
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = engineer_idea_groups_expanded
-	}
-
-	siege_ability = 0.1
-	land_attrition = -0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-moriya_navies = { #Moriya Shinto+Naval Ideas
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = th_moriya_ideas
-		has_idea_group = naval_ideas
-	}
-	allow = {
-		full_idea_group = th_moriya_ideas
-		full_idea_group = naval_ideas
-	}
-
-	naval_morale = 0.10
-	ship_durability = 0.05
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-
 ###ORIGINAL IGE SECTION###
 
 powder_innovation_act = {
@@ -3769,10 +2869,6 @@ vassal_fleets_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	potential = {
 		has_idea_group = piracy_idea_groups_expanded
 		has_idea_group = influence_ideas 
@@ -4031,10 +3127,6 @@ battle_planning_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	potential = {
 		has_idea_group = cossacks_idea_groups_expanded
 		has_idea_group = spy_ideas  
@@ -4050,10 +3142,6 @@ battle_planning_act = {
 
 the_neigh_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4079,10 +3167,6 @@ feudal_roots_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	potential = {
 		has_idea_group = cossacks_idea_groups_expanded
 		has_idea_group = influence_ideas  
@@ -4098,10 +3182,6 @@ feudal_roots_act = {
 
 raider_navy_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4127,10 +3207,6 @@ crossroad_trade_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	potential = {
 		has_idea_group = cossacks_idea_groups_expanded
 		has_idea_group = trade_ideas  
@@ -4146,10 +3222,6 @@ crossroad_trade_act = {
 
 diplomatic_spice_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4189,10 +3261,6 @@ recruitment_drive_act = {
 
 glorious_monuments_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4254,11 +3322,6 @@ bailout_act = {
 
 tariff_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	ai_will_do = {
 		factor = 0.1
 	}
@@ -4278,10 +3341,6 @@ tariff_act = {
 
 cooperation_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4475,10 +3534,6 @@ aristocratic_administration_act = {
 
 founding_principles_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -4999,10 +4054,6 @@ special_forces_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-
 	potential = {
 		has_idea_group = mercenary_ideas  
 		has_idea_group = maritime_ideas
@@ -5300,10 +4351,6 @@ great_power_pawns_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-	
 	potential = {
 		has_idea_group = military_academy_idea_groups_expanded
 		has_idea_group = great_power_idea_groups_expanded 
@@ -5323,10 +4370,6 @@ efialtes_act = {
 		factor = 0.1
 	}
 
-	ai_will_do = {
-		factor = 0.1
-	}
-	
 	potential = {
 		has_idea_group = military_academy_idea_groups_expanded
 		has_idea_group = spy_ideas 
@@ -5341,10 +4384,6 @@ efialtes_act = {
 
 military_diplomacy_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -5368,10 +4407,6 @@ powerful_merchants_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = {
 		has_idea_group = military_academy_idea_groups_expanded
@@ -5387,11 +4422,7 @@ powerful_merchants_act = {
 }
 
 elite_explorers_act = {
-	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
+	monarch_power = DIP
 
 	ai_will_do = {
 		factor = 0.1
@@ -5416,10 +4447,6 @@ orchestrated_merchant_fleet_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = {
 		has_idea_group = military_academy_idea_groups_expanded
@@ -5436,10 +4463,6 @@ orchestrated_merchant_fleet_act = {
 
 global_power_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -5483,10 +4506,6 @@ soft_influence_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = {
 		has_idea_group = military_academy_idea_groups_expanded
@@ -5503,10 +4522,6 @@ soft_influence_act = {
 
 sovereign_state_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -5530,10 +4545,6 @@ imperial_ambitions_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = {
 		has_idea_group = absolutism_idea_groups_expanded
@@ -5549,10 +4560,6 @@ imperial_ambitions_act = {
 
 harsh_espionage_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -5573,10 +4580,6 @@ harsh_espionage_act = {
 
 ruthless_negotiating_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -5641,10 +4644,6 @@ maritime_hegemony_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = { 
 		has_idea_group = absolutism_idea_groups_expanded 
@@ -5699,10 +4698,6 @@ law_and_order_act = {
 
 subject_development_act = {
 	monarch_power = DIP 
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -6002,10 +4997,6 @@ fellow_reconciliation_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = { 
 		has_idea_group = indigenous_ideas 
@@ -6026,10 +5017,6 @@ federal_expansion_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = { 
 		has_idea_group = indigenous_ideas 
@@ -6046,10 +5033,6 @@ federal_expansion_act = {
 
 natives_first_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -6096,10 +5079,6 @@ regulated_trade_act = {
 	ai_will_do = {
 		factor = 0.1
 	}
-
-	ai_will_do = {
-		factor = 0.1
-	}
 	
 	potential = {
 		has_idea_group = state_affairs_idea_groups_expanded 
@@ -6137,10 +5116,6 @@ plutocratic_imperialism_act = {
 
 propaganda_statue_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1
@@ -6235,10 +5210,6 @@ court_affairs_act = {
 
 imperial_court_act = {
 	monarch_power = DIP
-
-	ai_will_do = {
-		factor = 0.1
-	}
 
 	ai_will_do = {
 		factor = 0.1

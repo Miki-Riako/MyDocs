@@ -8,13 +8,10 @@
 计划修改的文件
 - common/buildings/_th_meiras_dojo.txt: 让人迷惑的文件，后续观察
 - common/custom_gui: GUI相关效果需要后续测试
-- common/ideas/00_exp_ideas.txt: 均需要增加接口
-- common/ideas/00_se3_ideas.txt: 均需要增加接口
-- common/mercenary_companies/_exp_mercenary_companies.txt: 目前该文件未测试过，需要注意
-- common/new_diplomatic_actions/_th_request_conversion_hakurei.txt: 后续需要修改，为曾经未考虑兼容性的临时文件
+- common/mercenary_companies/_exp_mercenary_companies.txt: 考虑要不要留，还是删掉？
 - common/on_actions/_exp_age_on_actions.txt: 很复杂的文件，后续要注意
 - common/on_actions/_exp_trade_on_actions.txt: 很复杂的文件，后续要注意
-- common/policies、prices: 除了新增文件，旧文件都要大修
+- common/prices: 除了新增文件，旧文件都要大修
 - common/scripted_effects、scripted_triggers: GUI相关效果需要后续测试
 - common/triggered_modifiers: 很多内容不知道在哪里被使用，后续测试
 - 非common文件：均未测试

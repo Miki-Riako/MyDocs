@@ -1,4 +1,4 @@
-military_zeal_act = {
+military_zeal_act_2 = {
 	monarch_power = MIL
 	
 	potential = {
@@ -48,7 +48,7 @@ military_zeal_act_1 = {
 	}
 }
 
-field_priests = {
+field_priests_2 = {
 	monarch_power = MIL
 
 	potential = {
@@ -97,8 +97,8 @@ field_priests_1 = {
 		}
 	}
 }
-
-the_tenures_abolition_act = {
+		
+the_tenures_abolition_act_1 = {
 	monarch_power = MIL
 
 	potential = {
@@ -116,10 +116,10 @@ the_tenures_abolition_act = {
 		
 	ai_will_do = {
 		factor = 0.6
-	}	
+	}
 }
 
-zealous_captains = {
+zealous_captains_2 = {
 	monarch_power = MIL
 	
 	potential = {
@@ -173,7 +173,7 @@ zealous_captains_1 = {
 		modifier = {
 			factor = 0.6
 			NOT = { navy_size = 20 }
-		}
+		}	
 	}
 }
 
@@ -383,7 +383,7 @@ guerilla_warfare_1 = {
 	}
 }
 
-noble_loyalty_act = {
+noble_loyalty_act_1 = {
 	monarch_power = MIL
 
 	potential = {
@@ -419,7 +419,7 @@ noble_loyalty_act = {
 	}
 }
 
-the_colonial_nobility_act = {
+the_colonial_nobility_act_1 = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = horde_idea_groups_expanded
@@ -438,7 +438,7 @@ the_colonial_nobility_act = {
 	}
 }
 
-nobles_in_navy_act = {
+nobles_in_navy_act_1 = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = horde_idea_groups_expanded
