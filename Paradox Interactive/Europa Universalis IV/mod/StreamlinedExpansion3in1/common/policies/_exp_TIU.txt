@@ -15,6 +15,10 @@ th_hakurei_tolerance_policy = {	#Hakurei Shinto+Humanist
 
 	ai_will_do = {
 		factor = 0.4
+		modifier = {
+			factor = 2
+			tag = HKR
+		}
 	}
 }
 
@@ -30,11 +34,14 @@ th_enhanced_donation_boxes_policy = {	#Hakurei Shinto+Economics
 		full_idea_group = economic_ideas
 	}
 
-	global_tax_modifier = 0.125
-	development_cost = -0.025
+	global_tax_modifier = 0.15
 
 	ai_will_do = {
-		factor = 0.7
+		factor = 0.4
+		modifier = {
+			factor = 2
+			tag = HKR
+		}
 	}
 }
 
@@ -54,10 +61,13 @@ th_better_youkai_extermination_contracts_policy = {	#Hakurei Shinto+Trade
 	global_trade_power = 0.1 
 
 	ai_will_do = {
-		factor = 0.7
+		factor = 0.4
+		modifier = {
+			factor = 2
+			tag = HKR
+		}
 	}
 }
-
 
 th_cute_diplomats_policy = {	#Hakurei Shinto+Diplomacy
 	monarch_power = DIP
@@ -72,10 +82,13 @@ th_cute_diplomats_policy = {	#Hakurei Shinto+Diplomacy
 	}
 	
 	diplomatic_reputation = 1
-	improve_relation_modifier = 0.05
 
 	ai_will_do = {
-		factor = 0.7
+		factor = 0.4
+		modifier = {
+			factor = 2
+			tag = HKR
+		}
 	}
 }
 
@@ -95,15 +108,26 @@ th_danmaku_veterency_policy = {	#Hakurei Shinto+Quality
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 5
+			tag = HKR
+		}
 	}
 }
 
-th_spell_card_mastery_policy = {
+th_spell_card_mastery_HKR_policy = {	#Hakurei Shinto+Theocratic (Hakurei Clan)
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = th_gensokyan_ideas
 		has_idea_group = theocratic_idea_groups_expanded
+		OR = {
+			tag = HKR
+			AND = {
+				is_playing_custom_nation = yes 
+				has_reform = Gensokyan_shrine_theocracy
+			}
+		}
 	}
 	allow = {
 		full_idea_group = th_gensokyan_ideas
@@ -111,7 +135,34 @@ th_spell_card_mastery_policy = {
 	}
 	
 	infantry_power = 0.10
-	global_heretic_missionary_strength = 0.01
+	global_heretic_missionary_strength = 0.02
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+th_spell_card_mastery_policy = {	#Hakurei Shinto+Theocratic (normal)
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = th_gensokyan_ideas
+		has_idea_group = theocratic_idea_groups_expanded
+		NOT = { tag = HKR }
+		OR = {
+			is_playing_custom_nation = no
+			AND = {
+				is_playing_custom_nation = yes
+				NOT = { has_reform = Gensokyan_shrine_theocracy }
+			}
+		}
+	}
+	allow = {
+		full_idea_group = th_gensokyan_ideas
+		full_idea_group = theocratic_idea_groups_expanded
+	}
+	
+	infantry_power = 0.10
 
 	ai_will_do = {
 		factor = 1
@@ -172,8 +223,8 @@ th_more_power_to_the_maidens_policy = {	#Hakurei Shinto+State Affairs Ideas
 	}
 
 	church_loyalty_modifier = 0.10
-	improve_relation_modifier = 0.1
-	global_manpower_modifier = 0.05
+	improve_relation_modifier = 0.2
+	
 
 	ai_will_do = {
 		factor = 1
@@ -214,7 +265,6 @@ th_quest_for_gold_policy = {	#Hakurei Shinto+Exploration
 	}
 
 	range = 0.33 
-	navy_tradition_decay = -0.005
 
 	ai_will_do = {
 		factor = 1
@@ -233,8 +283,8 @@ th_locale_hakurei_barrier_policy = {	#Hakurei Shinto+Defensive Ideas
 		full_idea_group = defensive_ideas
 	}
 	
-	defensiveness = 0.125
-	fort_maintenance_modifier = -0.05
+	defensiveness = 0.15
+	
 
 	ai_will_do = {
 		factor = 1
@@ -253,8 +303,8 @@ th_blessed_war_ships_policy = {	#Hakurei Shinto+Naval
 		full_idea_group = naval_ideas
 	}
 	
-	ship_durability = 0.075
-	naval_morale = 0.05
+	ship_durability = 0.1
+	
 
 	ai_will_do = {
 		factor = 1
@@ -341,15 +391,16 @@ th_hakurei_vult_policy = {
 	}
 }
 
+#Moriya
 moriya_crusade = {  #Moriya Shinto+Offensive Ideas
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = offensive_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = offensive_ideas
 	}
 
@@ -357,6 +408,10 @@ moriya_crusade = {  #Moriya Shinto+Offensive Ideas
 
 	ai_will_do = {
 		factor = 0.4
+		modifier = {
+			factor = 1.5
+			tag = MRY
+		}
 	}
 }
 
@@ -364,11 +419,11 @@ sanae_ideas = { #Moriya Shinto+Innovative ideas
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = innovativeness_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = innovativeness_ideas
 	}
 
@@ -384,11 +439,11 @@ mountain_gods_supreme = { #Moriya Shinto+Great Power Ideas
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = great_power_idea_groups_expanded
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = great_power_idea_groups_expanded
 	}
 
@@ -399,15 +454,53 @@ mountain_gods_supreme = { #Moriya Shinto+Great Power Ideas
 		factor = 1
 	}
 }
+moriya_defense = { #Moriya Shinto+Defensive Ideas
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = defensive_ideas
+	}
+
+	defensiveness = 0.10
+	fort_maintenance_modifier = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+moriya_deal = { #Moriya Shinto+Economic
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = economic_ideas
+	}
+
+	development_cost = -0.05
+	global_tax_modifier = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
 moriya_expansion = { #Moriya Shinto+eExpansion
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = expansion_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = expansion_ideas
 	}
 
@@ -422,11 +515,11 @@ moriya_admins = { #Moriya Shinto+Admin ideas
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = administrative_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = administrative_ideas
 	}
 
@@ -436,15 +529,34 @@ moriya_admins = { #Moriya Shinto+Admin ideas
 		factor = 1
 	}
 }
+moriya_states = { #Moriya Shinto+States Ideas
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = state_affairs_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = state_affairs_idea_groups_expanded
+	}
+
+	church_loyalty_modifier = 0.10
+	global_manpower_modifier = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
 moriya_humanism = { #Moriya Shinto+Humanist Ideas
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = humanist_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = humanist_ideas
 	}
 
@@ -459,11 +571,11 @@ moriya_facism = { #Moriya Shinto+Imperialism
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = imperial_idea_groups_expanded
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = imperial_idea_groups_expanded
 	}
 
@@ -477,11 +589,11 @@ moriya_ops = { #Moriya Shinto+Espionage
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = spy_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = spy_ideas
 	}
 
@@ -492,15 +604,72 @@ moriya_ops = { #Moriya Shinto+Espionage
 		factor = 1
 	}
 }
+moriya_fame = { #Moriya Shinto+Diplomatic
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = diplomatic_ideas
+	}
+
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+moriya_trade = { #Moriya Shinto+Trade
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = trade_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = trade_ideas
+	}
+
+	trade_efficiency = 0.1
+	global_foreign_trade_power = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+moriya_exploration = { #Moriya Shinto+Exploration
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = exploration_ideas
+	}
+
+	range = 0.33
+	navy_tradition_decay = -0.01
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
 moriya_maritime = { #Moriya Shinto+Maritime
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = maritime_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = maritime_ideas
 	}
 
@@ -515,11 +684,11 @@ moriya_power = { #Moriya Shinto+Power Projection
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = power_projection_idea_groups_expanded
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = power_projection_idea_groups_expanded
 	}
 
@@ -534,11 +703,11 @@ moriya_influence = { #Moriya Shinto+Influence
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = influence_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = influence_ideas
 	}
 
@@ -553,11 +722,11 @@ moriya_youkai = { #Moriya Shinto+Aristocratic
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = aristocracy_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = aristocracy_ideas
 	}
 
@@ -566,21 +735,51 @@ moriya_youkai = { #Moriya Shinto+Aristocratic
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			tag = MRY
 	}
 }
-moriya_theogovs = { #Moriya Shinto+Theocratic ideas
+}
+moriya_theocracy = { #Moriya Shinto+Theocratic(For Sanae)
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = theocratic_idea_groups_expanded
+		tag = MRY
+		NOT = {
+			AND = {
+				is_playing_custom_nation = yes
+				has_reform = Gensokyan_shrine_theocracy
+			}
+		}
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = theocratic_idea_groups_expanded
 	}
 
-	land_morale = 0.05
+	land_morale = 0.1
+	global_heretic_missionary_strength = 0.02
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+moriya_theogovs = { #Moriya Shinto+Theocratic ideas(For Others)
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = theocratic_idea_groups_expanded
+		NOT = { tag = MRY }
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = theocratic_idea_groups_expanded
+	}
+
 	global_heretic_missionary_strength = 0.02
 	
 	ai_will_do = {
@@ -591,11 +790,11 @@ moriya_quality = { #Moriya Shinto+Quality
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = quality_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = quality_ideas
 	}
 
@@ -609,11 +808,11 @@ moriya_quantity = { #Moriya Shinto+Quantity
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = quantity_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = quantity_ideas
 	}
 
@@ -628,11 +827,11 @@ moriya_mercs = { #Moriya Shinto+Mercenary idea group
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = mercenary_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = mercenary_ideas
 	}
 
@@ -646,11 +845,11 @@ moriya_kanako_troops = { #Moriya Shinto+Mercenary idea group
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = mercenary_ideas
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = mercenary_ideas
 	}
 
@@ -664,16 +863,35 @@ moriya_machines = { #Moriya Shinto+Engineeering
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = th_gensokyan_ideas
+		has_idea_group = th_moriya_ideas
 		has_idea_group = engineer_idea_groups_expanded
 	}
 	allow = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = th_moriya_ideas
 		full_idea_group = engineer_idea_groups_expanded
 	}
 
 	siege_ability = 0.1
 	land_attrition = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+moriya_navies = { #Moriya Shinto+Naval Ideas
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = th_moriya_ideas
+		has_idea_group = naval_ideas
+	}
+	allow = {
+		full_idea_group = th_moriya_ideas
+		full_idea_group = naval_ideas
+	}
+
+	naval_morale = 0.10
+	ship_durability = 0.05
 	
 	ai_will_do = {
 		factor = 1

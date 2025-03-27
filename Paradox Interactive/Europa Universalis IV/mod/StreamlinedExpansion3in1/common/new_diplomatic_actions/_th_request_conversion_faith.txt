@@ -1,6 +1,6 @@
 #Hakurei Nations politely invite others into their religion
 th_request_conversion_hakurei = {
-	category = influence
+	category = th_diplo_action
 	alert_index = 30
 	alert_tooltip = th_request_conversion_hakurei_tooltip
 	require_acceptance = yes
@@ -8,7 +8,7 @@ th_request_conversion_hakurei = {
 	is_visible = {
 		is_free_or_tributary_trigger = yes
 		has_idea = beloved_religion
-		# religion =
+		religion = th_hakureishinto
 		FROM = {
 			NOT = { religion = ROOT }
 			NOT = { tag = PAP }
@@ -19,13 +19,30 @@ th_request_conversion_hakurei = {
 
 	is_allowed = {
 		has_idea = beloved_religion
-		# religion =
+		religion = th_hakureishinto
 		FROM = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { tag = PAP }
 			NOT = { is_elector = yes }
 			NOT = { is_emperor = yes }
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						has_country_flag = th_immunity_to_diplomatic_actions
+						has_government_attribute = enables_yama_authority
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = th_from_is_not_immune_to_diplomatic_actions_tt
+				FROM = {
+					NOT = { has_country_flag = th_immunity_to_diplomatic_actions }
+					NOT = { has_government_attribute = enables_yama_authority }
+				}
+			}
 		}
 	}
 
@@ -35,12 +52,12 @@ th_request_conversion_hakurei = {
 			change_religion = ROOT
 			add_opinion = {
     			who = ROOT
-    			modifier = the_great_guider
+    			modifier = th_great_guider
 			}
 		}
 		add_opinion = {
     		who = FROM
-    		modifier = the_new_follower
+    		modifier = th_new_follower
 		}		
 	}
 
@@ -48,12 +65,12 @@ th_request_conversion_hakurei = {
 		FROM = {
 			add_opinion = {
     			who = ROOT
-    			modifier = the_instigator
+    			modifier = th_instigator
 			}
 		}
 		add_opinion = {
     		who = FROM
-    		modifier = the_refused_conversion
+    		modifier = th_refused_conversion
 		}
 	}
 
