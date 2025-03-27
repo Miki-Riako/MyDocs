@@ -11,7 +11,7 @@
 - common/ideas/00_exp_ideas.txt: 均需要增加接口
 - common/ideas/00_se3_ideas.txt: 均需要增加接口
 - common/mercenary_companies/_exp_mercenary_companies.txt: 目前该文件未测试过，需要注意
-- common/new_diplomatic_actions/_th_request_conversion_faith.txt: 后续需要修改，为曾经未考虑兼容性的临时文件
+- common/new_diplomatic_actions/_th_request_conversion_hakurei.txt: 后续需要修改，为曾经未考虑兼容性的临时文件
 - common/on_actions/_exp_age_on_actions.txt: 很复杂的文件，后续要注意
 - common/on_actions/_exp_trade_on_actions.txt: 很复杂的文件，后续要注意
 - common/policies、prices: 除了新增文件，旧文件都要大修

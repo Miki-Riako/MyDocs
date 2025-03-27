@@ -1,0 +1,439 @@
+th_gensokyan_ideas = { #Hakurei Shintoism
+	category = ADM
+
+	bonus = {
+		global_tax_modifier = 0.10
+		church_loyalty_modifier = 0.10
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_hakureishinto
+			}
+		}
+	}
+
+	reformed_faith = {
+		tolerance_own = 1
+		legitimacy = 1
+		devotion = 1
+	}
+	acceptance = {
+		religious_unity = 0.20
+		promote_culture_cost = -0.2
+	}
+	sacred_duty = {
+		land_morale = 0.10
+		war_exhaustion = -0.03
+	}
+	festivals = {
+		global_unrest = -2
+	}
+	united_in_faith = {
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	preserve_faith = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	beloved_religion = {
+		diplomatic_reputation = 1 #Includes a diplo interaction mechanic
+	}
+	
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 4
+			tag = HKR
+		}
+	}
+}
+
+th_moriya_ideas = { #Moriya Shintoism
+	category = ADM
+
+	bonus = {
+		tolerance_own = 2
+		church_loyalty_modifier = 0.10
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_moriyashinto
+			}
+		}
+	}
+
+	counter_faith = {
+		devotion = 0.5
+		legitimacy = 0.5
+		missionaries = 1
+	}
+	expansionism = {
+		years_of_nationalism = -10
+	}
+	divine_mandate = {
+		cb_on_religious_enemies = yes
+	}
+	westernized_maiden = {
+		embracement_cost = -0.05
+		technology_cost = -0.05
+	}
+	global_faith = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.1
+	}
+	gods_of_moriya = {
+		yearly_absolutism = 1 
+		yearly_revolutionary_zeal = 1
+		max_absolutism = 5
+		max_revolutionary_zeal = 5
+	}
+	robust_faith = {
+		prestige = 0.5
+		prestige_from_land = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 0.92
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.15
+			ROOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 1.2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 4
+			tag = MRY
+		}
+	}
+}
+
+th_tradition_ideas = { #Hakurei Tradition
+	category = ADM
+
+	bonus = {
+		cb_on_religious_enemies = yes
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_oldhakurei
+			}
+		}
+	}
+
+	old_faith = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		religious_unity = 0.1
+	}
+	rooted_faith = {
+		tolerance_own = 2
+		manpower_in_true_faith_provinces = 0.1
+	}
+	protectionism = {
+		defensiveness = 0.10
+		global_regiment_cost = -0.05
+	}
+	self_reliance = {
+		production_efficiency = 0.1
+	}
+	old_fights = {
+		shock_damage = 0.10
+	}
+	guide_the_lost = {
+		global_missionary_strength = 0.015
+		missionaries = 1
+	}
+	perseverance = {
+		prestige = 0.5
+		yearly_corruption = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 0.92
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.15
+			ROOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 1.2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 4
+			tag = OKR
+		}
+	}
+}
+
+th_lunarian_ideas = { #Lunarism
+	category = ADM
+
+	bonus = {
+		church_loyalty_modifier = 0.05
+		missionaries = 1
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_lunarian_religion
+			}
+		}
+	}
+
+	ancient_faith = {
+		tolerance_own = 2
+	}
+	old_gods = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.33
+	}
+	rooting_impurities = {
+		cb_on_religious_enemies = yes
+	}
+	high_technology = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	blood_of_ancient = {
+		legitimacy = 1.5
+		devotion = 1.5
+		republican_tradition = 0.5
+	}
+	ancient_nobility = {
+		general_cost = -0.1
+	}
+	unsparing_reign = {
+		harsh_treatment_cost = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 0.92
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.15
+			ROOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 1.2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 4
+			tag = LCU
+		}
+	}
+}
+
+th_buddhism_ideas = { #TH buddhist
+	category = ADM
+
+	bonus = {
+		tolerance_heathen = 1
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_buddhist
+			}
+		}
+	}
+
+	acceptance_species = {
+		num_accepted_cultures = 2
+	}
+	harmony_gensokyo = {
+		harmonization_speed = 0.2
+		tolerance_heretic = 1		
+	}
+	non_discriminatory_treatment = {
+		global_unrest = -1
+		years_of_nationalism = -5
+	}
+	advisor_monk = {
+		advisor_cost = -0.1
+		idea_cost = -0.05
+	}
+	vipassana = {
+		stability_cost_modifier = -0.25
+	}
+	manifestation_theory = {
+		tolerance_own = 1
+		religious_unity = 0.2
+	}
+	body_training = {
+		shock_damage_received = -0.1
+	}
+	
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 4
+			tag = MYO
+		}
+	}
+}
+
+th_taoism_ideas = { #TH taoist
+	category = ADM
+
+	bonus = {
+		tolerance_own = 2
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_taoist
+			}
+		}
+	}
+
+	faith_for_blessing = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+	}
+	subtle_governance = {
+		global_unrest = -2
+	}
+	elixer_alchemy = {
+		production_efficiency = 0.1
+	}
+	spiritual_training = {
+		yearly_corruption = -0.1
+	}
+	thought_of_old_china = {
+		idea_cost = -0.1
+	}
+	religious_war = {
+		cb_on_religious_enemies = yes
+	}
+	rise_of_taoism = {
+		monthly_fervor_increase = 1
+		warscore_cost_vs_other_religion = -0.1
+	}
+	
+	ai_will_do = {
+		factor = 0.92
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.15
+			ROOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 1.2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 4
+			tag = SNK
+		}
+	}
+}
+
+th_shinkism_ideas = { #Shinkism
+	category = ADM
+
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			OR = {
+				se3_unlimited_ideas = yes
+				religion = th_shinkism
+			}
+		}
+	}
+
+	authority_of_goddess = {
+		prestige = 0.5
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+	}
+	living_goddess = {
+		tolerance_own = 2
+	}
+	newest_but_oldest = {
+		tolerance_heretic = 1
+		religious_unity = 0.1
+	}
+	spread_the_faith = {
+		missionaries = 1
+		enforce_religion_cost = -0.25
+	}
+	dea_vult = {
+		cb_on_religious_enemies = yes
+	}
+	servant_of_goddess = {
+		missionary_maintenance_cost = -0.15
+		church_loyalty_modifier = 0.10
+	}
+	mecca_of_magic = {
+		fire_damage = 0.10
+	}
+	
+	ai_will_do = {
+		factor = 0.92
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.15
+			ROOT = { has_border_with_religious_enemy = yes }
+		}
+		modifier = {
+			factor = 1.2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 4
+			tag = MKI
+		}
+		modifier = {
+			factor = 2
+			tag = MKN
+		}
+	}
+}

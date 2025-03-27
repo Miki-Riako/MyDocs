@@ -395,6 +395,31 @@ innovativeness_ideas = {
 religious_ideas = {
 	category = ADM
 
+	trigger = {
+		OR = {
+			se3_unlimited_ideas = yes
+			NOT = {
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+					religion = confucianism
+					if = { #TOUHOU
+						limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+						OR = {
+							religion = th_hakureishinto
+							religion = th_moriyashinto
+							religion = th_oldhakurei
+							religion = th_lunarian_religion
+							religion = th_buddhist
+							religion = th_taoist
+							religion = th_shinkism
+						}
+					}
+				}
+			}
+		}
+	}
+
 	bonus = {
 		culture_conversion_cost = -0.25
 		brahmins_hindu_loyalty_modifier = 0.1

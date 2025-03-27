@@ -1,8 +1,8 @@
 #Hakurei Nations politely invite others into their religion
-th_request_conversion_faith = {
+th_request_conversion_hakurei = {
 	category = influence
 	alert_index = 30
-	alert_tooltip = th_request_conversion_faith_tooltip
+	alert_tooltip = th_request_conversion_hakurei_tooltip
 	require_acceptance = yes
 
 	is_visible = {
