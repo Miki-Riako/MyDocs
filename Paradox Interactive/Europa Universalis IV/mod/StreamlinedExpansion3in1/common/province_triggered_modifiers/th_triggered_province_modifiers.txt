@@ -1,0 +1,36 @@
+yuuka_power = { #extra modifier for yuuka holding sunfield
+  
+ 	potential = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			AND = {
+				trade_goods = magic_flowers
+				owned_by = SFF
+			}
+		}
+	}
+	
+	#viewer = {
+	#}
+	trigger = {
+		if = { #TOUHOU
+			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+			AND = {
+				trade_goods = magic_flowers
+				owned_by = SFF
+			}
+		}
+	}
+	
+	trade_goods_size_modifier = 0.20
+	monarch_military_power = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}

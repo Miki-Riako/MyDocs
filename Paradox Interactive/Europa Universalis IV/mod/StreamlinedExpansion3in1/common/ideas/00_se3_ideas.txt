@@ -7,9 +7,8 @@ se3_hegemon_ideas = {
 
 	trigger = {
 		OR = {
-				# unlimited_ideas = yes
-				ai = no
-				is_hegemon = yes
+			se3_unlimited_ideas = yes
+			is_hegemon = yes
 		}
 	}
 

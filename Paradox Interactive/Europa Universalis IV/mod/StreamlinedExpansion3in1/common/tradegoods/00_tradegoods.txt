@@ -5619,8 +5619,9 @@ String_Instruments = {
 	}
 }
 
-
+################
 #Gensokyan Goods
+################
 sake = {
 	is_valuable = yes
 	color = { 0.30 0.85 0.30 }

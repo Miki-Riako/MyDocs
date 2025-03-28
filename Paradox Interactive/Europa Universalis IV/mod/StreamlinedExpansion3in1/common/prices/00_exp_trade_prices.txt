@@ -7,9 +7,6 @@ grain = { base_price = 2.5 }
 rice = { base_price = 2 }
 wine = { base_price = 2.5 }
 champagne = { base_price = 3.00 }
-sake = { base_price = 2.75 }
-custard = { base_price = 2.5 }
-cucumber = { base_price = 2.5 }
 fish = { base_price = 2.5 }
 salt = { base_price = 3 }
 beer = { base_price = 2.5 }
@@ -21,7 +18,6 @@ seafood = { base_price = 2.75 }
 olive_oil = { base_price = 3.0 }
 maize = { base_price = 2.5 }
 potato = { base_price = 2.5 }
-strawberry = { base_price = 2.5 }
 
 # Textiles
 cloth = { base_price = 3 }
@@ -92,11 +88,6 @@ chocolate = { base_price = 4 }
 cigars = { base_price = 4.25 }
 jade_sculptures = { base_price = 4 }
 String_Instruments = { base_price = 4.50 }
-magic_flowers = { base_price = 0 goldtype = yes }
-miasma = { base_price = 2 }
-magical_artifacts = { base_price = 3.5 }
-magic_tomes = { base_price = 4 }
-#orb_blue = { base_price = 6 }
 	
 # Eastern Resources
 tea = { base_price = 2 }
