@@ -7,8 +7,8 @@ th_gensokyan_ideas = { #Hakurei Shintoism
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_hakureishinto
@@ -62,8 +62,8 @@ th_moriya_ideas = { #Moriya Shintoism
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_moriyashinto
@@ -130,8 +130,8 @@ th_tradition_ideas = { #Hakurei Tradition
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_oldhakurei
@@ -198,8 +198,8 @@ th_lunarian_ideas = { #Lunarism
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_lunarian_religion
@@ -262,8 +262,8 @@ th_buddhism_ideas = { #TH buddhist
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_buddhist
@@ -314,8 +314,8 @@ th_taoism_ideas = { #TH taoist
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_taoist
@@ -376,8 +376,8 @@ th_shinkism_ideas = { #Shinkism
 	}
 
 	trigger = {
-		if = { #TOUHOU
-			limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
+		AND = { #TOUHOU
+			is_mod_active = "Touhou Universalis Updated (CN)"
 			OR = {
 				se3_unlimited_ideas = yes
 				religion = th_shinkism

@@ -403,18 +403,6 @@ religious_ideas = {
 					religion_group = christian
 					religion_group = muslim
 					religion = confucianism
-					if = { #TOUHOU
-						limit = { is_mod_active = "Touhou Universalis Updated (CN)"}
-						OR = {
-							religion = th_hakureishinto
-							religion = th_moriyashinto
-							religion = th_oldhakurei
-							religion = th_lunarian_religion
-							religion = th_buddhist
-							religion = th_taoist
-							religion = th_shinkism
-						}
-					}
 				}
 			}
 		}

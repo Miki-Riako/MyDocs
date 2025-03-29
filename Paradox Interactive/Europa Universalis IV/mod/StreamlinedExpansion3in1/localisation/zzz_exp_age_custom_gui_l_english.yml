@@ -27,15 +27,15 @@
  ase_spend_additional_splendor_entry_button_6_tt_effect: "ˆmw§Y400§!‰Lq¹ppeÿåNÛbßRNMOegê§MŒ˜î•‰|‹WÓbUS§!„v›Q‹NŒ˜î•0"
  ase_spend_additional_splendor_entry_button2_6_tt: "§YÛbßRNMO›Q‹NŒ˜î•§!"
  ase_spend_additional_splendor_entry_button2_6_tt_effect: "±‚9§Y400§!‰Lq¹ppeÿ	ébÛbßRNMO›Q‹NŒ˜î•0"
- tas_spend_additional_splendor_entry_text_1: "ÛbßRNMO‰^ó`aNLˆ?eŒ˜î•"
- tas_spend_additional_splendor_entry_button_1_tt: "§YÛbßRNMO‰^ó`aNLˆ?eŒ˜î•§!"
- tas_spend_additional_splendor_entry_button_1_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMO‰^ó`aNLˆ?eŒ˜î•0"
- tas_spend_additional_splendor_entry_text_2: "ÛbßRNMO‰^ó`aNY²NŒ˜î•"
- tas_spend_additional_splendor_entry_button_2_tt: "§YÛbßRNMO‰^ó`aNY²NŒ˜î•§!"
- tas_spend_additional_splendor_entry_button_2_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMO‰^ó`aNY²NŒ˜î•0"
- tas_spend_additional_splendor_entry_text_3: "ÛbßRNMO‰^ó`aN›Q‹NŒ˜î•"
- tas_spend_additional_splendor_entry_button_3_tt: "§YÛbßRNMO‰^ó`aN›Q‹NŒ˜î•§!"
- tas_spend_additional_splendor_entry_button_3_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMO‰^ó`aN›Q‹NŒ˜î•0"
+ tas_spend_additional_splendor_entry_text_1: "ÛbßRNMOyrŠkLˆ?eŒ˜î•"
+ tas_spend_additional_splendor_entry_button_1_tt: "§YÛbßRNMOyrŠkLˆ?eŒ˜î•§!"
+ tas_spend_additional_splendor_entry_button_1_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMOyrŠkLˆ?eŒ˜î•0"
+ tas_spend_additional_splendor_entry_text_2: "ÛbßRNMOyrŠkY²NŒ˜î•"
+ tas_spend_additional_splendor_entry_button_2_tt: "§YÛbßRNMOyrŠkY²NŒ˜î•§!"
+ tas_spend_additional_splendor_entry_button_2_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMOyrŠkY²NŒ˜î•0"
+ tas_spend_additional_splendor_entry_text_3: "ÛbßRNMOyrŠk›Q‹NŒ˜î•"
+ tas_spend_additional_splendor_entry_button_3_tt: "§YÛbßRNMOyrŠk›Q‹NŒ˜î•§!"
+ tas_spend_additional_splendor_entry_button_3_tt_effect: "±‚9§Y600§!‰Lq¹ppeÿ	ébÛbßRNMOyrŠk›Q‹NŒ˜î•0"
  tas_spend_additional_splendor_entry_text_4: "ûm RNy˜ßu»lwyr("
  tas_spend_additional_splendor_entry_button_4_tt: "§Yûm Rßu»lwyr(§!"
  tas_spend_additional_splendor_entry_button_4_tt_effect: "±‚9§Y800§!‰Lq¹ppeÿ	ébûm RNy˜ßu»lwyr(0"
@@ -145,9 +145,9 @@
  string_ase_spend_additional_splendor_to_recruit_advisor_title_dip_ate: "ÛbßRNMOY²NŒ˜î•ÿATE	ÿ"
  string_ase_spend_additional_splendor_to_recruit_advisor_title_mil: "ÛbßRNMO›Q‹NŒ˜î•"
  string_ase_spend_additional_splendor_to_recruit_advisor_title_mil_ate: "ÛbßRNMO›Q‹NŒ˜î•ÿATE	ÿ"
- string_ase_spend_additional_splendor_to_recruit_advisor_title_adm_tas: "ÛbßRNMO‰^ó`aNLˆ?eŒ˜î•"
- string_ase_spend_additional_splendor_to_recruit_advisor_title_dip_tas: "ÛbßRNMO‰^ó`aNY²NŒ˜î•"
- string_ase_spend_additional_splendor_to_recruit_advisor_title_mil_tas: "ÛbßRNMO‰^ó`aN›Q‹NŒ˜î•"
+ string_ase_spend_additional_splendor_to_recruit_advisor_title_adm_tas: "ÛbßRNMOyrŠkLˆ?eŒ˜î•"
+ string_ase_spend_additional_splendor_to_recruit_advisor_title_dip_tas: "ÛbßRNMOyrŠkY²NŒ˜î•"
+ string_ase_spend_additional_splendor_to_recruit_advisor_title_mil_tas: "ÛbßRNMOyrŠk›Q‹NŒ˜î•"
  string_ase_spend_additional_splendor_to_add_trait_title_tas: "ûm RNy˜ßu»lwyr("
  string_ase_spend_additional_splendor_to_del_trait_title_tas: "»S‰cNy˜ßu»lwyr("
  string_ase_spend_additional_splendor_to_recruit_advisor_prev_page_button_ate_tt: "ÞV0RNNu˜0"
