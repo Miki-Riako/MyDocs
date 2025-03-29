@@ -1370,54 +1370,54 @@ country_event = {
 				province_event = { id = prices_marcin.13 days = 365 }
 			}
 		}
-		hidden_effect = {
-			# 5075 = { change_trade_goods = custard }
-			every_province = {
-				limit = {
-					OR = {
-						# province_id = 5057
-						# province_id = 5296
-						# province_id = 5299
-						# province_id = 5290
-						# province_id = 5229
-						# province_id = 5170
-						# province_id = 5117
-						# province_id = 5097
-						# province_id = 5111
-						# province_id = 5067
-						# province_id = 4975
-						# province_id = 5090
-						province_id = 1019
-						province_id = 1025
-						province_id = 1825
-						# province_id = 5141
-						# province_id = 5043
-						# province_id = 5194
-						# province_id = 5134
-						# province_id = 5351
-					}
-				}
-				change_trade_goods = sake
-			}
-		}
-		hidden_effect = {
-			every_province = {
-				limit = {
-					OR = {
-						province_id = 4419
-						province_id = 1949
-						province_id = 538
-						province_id = 537
-						province_id = 2033
-						province_id = 2034
-						# province_id = 5216
-						# province_id = 4967
-						# province_id = 5354
-					}
-				}
-				change_trade_goods = cucumber
-			}
-		}
+		# hidden_effect = {
+		# 	# 5075 = { change_trade_goods = custard }
+		# 	every_province = {
+		# 		limit = {
+		# 			OR = {
+		# 				province_id = 5057
+		# 				province_id = 5296
+		# 				province_id = 5299
+		# 				province_id = 5290
+		# 				province_id = 5229
+		# 				province_id = 5170
+		# 				province_id = 5117
+		# 				province_id = 5097
+		# 				province_id = 5111
+		# 				province_id = 5067
+		# 				province_id = 4975
+		# 				province_id = 5090
+		# 				province_id = 1019
+		# 				province_id = 1025
+		# 				province_id = 1825
+		# 				province_id = 5141
+		# 				province_id = 5043
+		# 				province_id = 5194
+		# 				province_id = 5134
+		# 				province_id = 5351
+		# 			}
+		# 		}
+		# 		change_trade_goods = sake
+		# 	}
+		# }
+		# hidden_effect = {
+		# 	every_province = {
+		# 		limit = {
+		# 			OR = {
+		# 				province_id = 4419
+		# 				province_id = 1949
+		# 				province_id = 538
+		# 				province_id = 537
+		# 				province_id = 2033
+		# 				province_id = 2034
+		# 				province_id = 5216
+		# 				province_id = 4967
+		# 				province_id = 5354
+		# 			}
+		# 		}
+		# 		change_trade_goods = cucumber
+		# 	}
+		# }
 		# hidden_effect = {
 		# 	every_province = {
 		# 		limit = {

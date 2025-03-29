@@ -912,6 +912,7 @@ custom_button = {
 	}
 	trigger = {
 		splendor = 600
+		always = no
 	}
 	effect = {
 		hidden_effect = {
@@ -946,6 +947,7 @@ custom_button = {
 	}
 	trigger = {
 		splendor = 600
+		always = no
 	}
 	effect = {
 		hidden_effect = {
@@ -980,6 +982,7 @@ custom_button = {
 	}
 	trigger = {
 		splendor = 600
+		always = no
 	}
 	effect = {
 		hidden_effect = {
