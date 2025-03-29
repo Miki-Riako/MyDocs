@@ -1,6 +1,6 @@
 # Touhou
 ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -98,7 +98,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_1_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -182,7 +182,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_2_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -252,7 +252,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_3_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -322,7 +322,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_4_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -373,7 +373,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_5_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
@@ -424,7 +424,7 @@ ase_spend_additional_splendor_to_recruit_advisor_entry_6_tas_effect = {
 }
 
 ase_spend_additional_splendor_to_recruit_advisor_entry_7_tas_effect = {
-	add_splendor = -1200
+	add_splendor = -600
 	if = {
 		limit = {
 			is_variable_equal = { which = ase_spend_additional_splendor_to_recruit_advisor_tas_page value = 1 }
