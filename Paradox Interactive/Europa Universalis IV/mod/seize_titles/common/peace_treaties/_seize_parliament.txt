@@ -1,0 +1,288 @@
+_seize_parliament = {
+	# The following strings need localization: 
+	#		"make_dummy_desc" (uses text processing, supporting bracket notation) ("[FROM.GetName] becomes a [THIS.GetName] Dummy")
+	#		"CB_ALLOWED_make_dummy" (uses plain localization) ("Enforced Dumbness")
+	#		"PEACE_make_dummy" (uses plain localization, but with support for $TAKER$, $TAKERS$, $GIVER$ and $GIVERS$) ("Become $TAKERS$ Dummy")
+
+	# Values default to 0 or "no" unless otherwise stated
+	
+	category = 6 # Any number between 0 and 6. Represents the tab under which it will be listed. 6 corresponds to "treaties". This value currently defaults to 6.
+	power_projection = vassalized_rival # "power_projection" will only be applied if giver is your rival.
+	power_cost_base = 1.0 # Base factor for diplomatic power cost when treaty is not allowed by casus belli. Scales with war score cost.
+	prestige_base = 0.5 # Base factor for prestige gain and loss. Scales with war score cost.
+	ae_base = 0.0 # Base factor for aggressive expansion. Scales with war score cost.
+	warscore_cost = {
+		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
+		all_provinces = 0.0 # All the giver's provinces
+		no_provinces = 40.0 # This is just a constant. Equivalent to a single province with with war score cost 1
+		owner_keeps = 0.0 # The provinces that are not of any of the types below
+		conquered = 0.0 # Provinces that are selected by a Demand Province treaty
+		returned_core = 0.0 # Provinces that are selected by a Return Core treaty
+		released_nation = 0.0 # Provinces that will become a part of a selected released-to-be nation
+		cancelled_subject = 0.0 # This one should not be relevant here since Giver can't be a cancelled subject. Including anyway for completeness
+		concede_colonial_region = 0.0 # Ditto
+	}
+	warscore_cap = 40 # Warscore cost will never go above this value. Only enabled if non-negative. This value defaults to -1.
+	requires_demand_independence = yes # Whether this can be demanded by the former subject in an independence war without also demanding independence.
+	is_make_subject = no # This will make the treaty mutually exclusive with other treaties that makes the giver a subject, or that explicitly frees the giver from their current overlord.
+	requires_is_allowed = no # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
+	
+	is_visible = {
+		has_parliament = no
+		FROM = { has_parliament = yes }
+		# OR = {
+		# 	AND = {
+		# 		government = monarchy
+		# 		FROM = { government = monarchy }
+		# 	}
+		# 	AND = {
+		# 		government = republic
+		# 		FROM = { government = republic }
+		# 	}
+		# 	AND = {
+		# 		government = theocracy
+		# 		FROM = { government = theocracy }
+		# 	}
+		# 	FROM = {
+		# 		OR = {
+		# 			has_reform = governing_senate_reform
+		# 			has_reform = parliamentary_reform
+		# 		}
+		# 	}
+		# }
+		OR = {
+			AND = {
+				government = monarchy
+				FROM = {
+					government = monarchy
+					OR = {
+						has_reform = governing_senate_reform
+						has_reform = parliamentary_reform
+						has_reform = english_monarchy
+						has_reform = british_monarchy
+						has_reform = angevin_monarchy
+						has_reform = absolute_british_monarchy
+						has_reform = reformed_byzantine_monarchy_reform
+						has_reform = irish_highkingdom_reform
+						has_reform = scottish_monarchy_reform
+						has_reform = roman_empire_reform
+						has_reform = stadthalter_monarchy_reform
+						has_reform = polish_great_sejm
+						has_reform = polish_elective_monarchy
+						has_reform = livonian_diplomatic_monarchy
+						has_reform = livonian_constitutional_monarchy
+						has_reform = norwegian_parliamentary_monarchy
+						has_reform = courts_of_navarra
+					}
+				}
+			}
+			AND = {
+				government = republic
+				FROM = {
+					government = republic
+					OR = {
+						has_reform = protectorate_parliament_reform
+						has_reform = parliamentary_republic_reform
+						has_reform = american_republic
+						has_reform = federal_republic
+						has_reform = constitutional_republic
+						has_reform = roman_republic_government
+						has_reform = universal_suffrage_reform
+						has_reform = federal_senate_reform
+					}
+				}
+			}
+			AND = {
+				government = theocracy
+				FROM = {
+					government = theocracy
+					OR = {
+						has_reform = dutch_theocracy_reform
+						has_reform = theocratic_democracy_reform
+						has_reform = regionally_elected_commanders
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_reform = governing_senate_reform
+					has_reform = parliamentary_reform
+				}
+			}
+		}
+	}
+	is_allowed = {
+		FROM = { has_parliament = yes }
+		OR = {
+			AND = {
+				government = monarchy
+				FROM = {
+					government = monarchy
+					OR = {
+						has_reform = governing_senate_reform
+						has_reform = parliamentary_reform
+						has_reform = english_monarchy
+						has_reform = british_monarchy
+						has_reform = angevin_monarchy
+						has_reform = absolute_british_monarchy
+						has_reform = reformed_byzantine_monarchy_reform
+						has_reform = irish_highkingdom_reform
+						has_reform = scottish_monarchy_reform
+						has_reform = roman_empire_reform
+						has_reform = stadthalter_monarchy_reform
+						has_reform = polish_great_sejm
+						has_reform = polish_elective_monarchy
+						has_reform = livonian_diplomatic_monarchy
+						has_reform = livonian_constitutional_monarchy
+						has_reform = norwegian_parliamentary_monarchy
+						has_reform = courts_of_navarra
+					}
+				}
+			}
+			AND = {
+				government = republic
+				FROM = {
+					government = republic
+					OR = {
+						has_reform = protectorate_parliament_reform
+						has_reform = parliamentary_republic_reform
+						has_reform = american_republic
+						has_reform = federal_republic
+						has_reform = constitutional_republic
+						has_reform = roman_republic_government
+						has_reform = universal_suffrage_reform
+						has_reform = federal_senate_reform
+					}
+				}
+			}
+			AND = {
+				government = theocracy
+				FROM = {
+					government = theocracy
+					OR = {
+						has_reform = dutch_theocracy_reform
+						has_reform = theocratic_democracy_reform
+						has_reform = regionally_elected_commanders
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_reform = governing_senate_reform
+					has_reform = parliamentary_reform
+				}
+			}
+		}
+	}
+	effect = {
+		if = { # 君主制议会
+			limit = {
+				government = monarchy
+				FROM = { government = monarchy }
+			}
+			if = {
+				limit = { FROM = { has_reform = english_monarchy }}
+				add_government_reform = english_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = british_monarchy }}
+				add_government_reform = british_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = angevin_monarchy }}
+				add_government_reform = angevin_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = absolute_british_monarchy }}
+				add_government_reform = absolute_british_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = reformed_byzantine_monarchy_reform }}
+				add_government_reform = reformed_byzantine_monarchy_reform
+			} else_if = {
+				limit = { FROM = { has_reform = irish_highkingdom_reform }}
+				add_government_reform = irish_highkingdom_reform
+			} else_if = {
+				limit = { FROM = { has_reform = scottish_monarchy_reform }}
+				add_government_reform = scottish_monarchy_reform
+			} else_if = {
+				limit = { FROM = { has_reform = roman_empire_reform }}
+				add_government_reform = roman_empire_reform
+			} else_if = {
+				limit = { FROM = { has_reform = stadthalter_monarchy_reform }}
+				add_government_reform = stadthalter_monarchy_reform
+			} else_if = {
+				limit = { FROM = { has_reform = polish_great_sejm }}
+				add_government_reform = polish_great_sejm
+			} else_if = {
+				limit = { FROM = { has_reform = polish_elective_monarchy }}
+				add_government_reform = polish_elective_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = livonian_diplomatic_monarchy }}
+				add_government_reform = livonian_diplomatic_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = livonian_constitutional_monarchy }}
+				add_government_reform = livonian_constitutional_monarchy
+			} else_if = {
+				limit = { FROM = { has_reform = norwegian_parliamentary_monarchy }}
+				add_government_reform = norwegian_parliamentary_monarchy
+			} else_if = {
+			    limit = { FROM = { has_reform = courts_of_navarra} }
+				add_government_reform = courts_of_navarra
+			}
+		}
+		else_if = { # 共和制议会
+			limit = {
+				government = republic
+				FROM = { government = republic }
+			}
+			if = {
+				limit = { FROM = { has_reform = protectorate_parliament_reform }}
+				add_government_reform = protectorate_parliament_reform
+			} else_if = {
+				limit = { FROM = { has_reform = american_republic }}
+				add_government_reform = american_republic
+			} else_if = {
+				limit = { FROM = { has_reform = federal_republic }}
+				add_government_reform = federal_republic
+			} else_if = {
+				limit = { FROM = { has_reform = constitutional_republic }}
+				add_government_reform = constitutional_republic
+			} else_if = {
+				limit = { FROM = { has_reform = roman_republic_government }}
+				add_government_reform = roman_republic_government
+			} else_if = {
+				limit = { FROM = { has_reform = universal_suffrage_reform }}
+				add_government_reform = universal_suffrage_reform
+			} else_if = {
+				limit = { FROM = { has_reform = federal_senate_reform }}
+				add_government_reform = federal_senate_reform
+			}
+		}
+		else_if = { # 神权制议会
+			limit = {
+				government = theocracy
+				FROM = { government = theocracy }
+			}
+			if = {
+				limit = { FROM = { has_reform = dutch_theocracy_reform }}
+				add_government_reform = dutch_theocracy_reform
+			} else_if = {
+				limit = { FROM = { has_reform = theocratic_democracy_reform }}
+				add_government_reform = theocratic_democracy_reform
+			} else_if = {
+				limit = { FROM = { has_reform = regionally_elected_commanders }}
+				add_government_reform = regionally_elected_commanders
+			}
+		}
+		else = { # 通用议会
+			if = {
+				limit = { FROM = { has_reform = governing_senate_reform }}
+				add_government_reform = governing_senate_reform
+			} else_if = {
+				limit = { FROM = { has_reform = parliamentary_reform }}
+				add_government_reform = parliamentary_reform
+			}
+		}
+	}
+	ai_weight = {
+		export_to_variable = { variable_name = ai_value value = 0 }
+		limit = { owns_core_province = 1 }
+	}
+}
