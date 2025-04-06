@@ -6,9 +6,12 @@ Paradox Interactive/*
 Paradox Interactive/Europa Universalis IV/*
 !Paradox Interactive/Europa Universalis IV/mod/
 !Paradox Interactive/Europa Universalis IV/mod/**
+Paradox Interactive/Europa Universalis IV/mod/use-myself
+
 !Paradox Interactive/Stellaris/
 Paradox Interactive/Stellaris/*
 !Paradox Interactive/Stellaris/mod/
 !Paradox Interactive/Stellaris/mod/**
 
 **/*.mod
+**/*.zip

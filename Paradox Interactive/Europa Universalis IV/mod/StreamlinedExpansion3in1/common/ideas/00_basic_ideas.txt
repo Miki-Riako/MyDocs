@@ -20,7 +20,7 @@ aristocracy_ideas = {
 	}
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
         	has_government_attribute = enables_aristocratic_idea_group
 		}
 	}
@@ -99,7 +99,7 @@ plutocracy_ideas = {
 	}
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			has_government_attribute = enables_plutocratic_idea_group
 		}
 	}
@@ -163,7 +163,7 @@ horde_gov_ideas = {
 	}
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			has_government_attribute = enables_horde_idea_group
 		}
 	}
@@ -213,7 +213,7 @@ theocracy_gov_ideas = {
 	}
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			has_government_attribute = enables_divine_idea_group
 		}
 	}
@@ -281,7 +281,7 @@ indigenous_ideas = {
 	}
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			has_government_attribute = enables_natives_idea_group
 		}
 	}
@@ -397,7 +397,7 @@ religious_ideas = {
 
 	trigger = {
 		OR = {
-			se3_unlimited_ideas = yes
+			has_country_flag = se3_unlimited_ideas
 			NOT = {
 				OR = {
 					religion_group = christian
@@ -1164,7 +1164,7 @@ maritime_ideas = {
 	category = DIP
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			primitives = no
 		}
 	}
@@ -1719,7 +1719,7 @@ naval_ideas = {
 	category = MIL
 	trigger = {
 	   OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			primitives = no
 		}
 	}

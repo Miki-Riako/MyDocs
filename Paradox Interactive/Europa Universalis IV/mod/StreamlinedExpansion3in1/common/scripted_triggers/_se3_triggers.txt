@@ -1,6 +1,0 @@
-se3_unlimited_ideas = {
-	hidden_trigger = {
-		has_global_flag = se3_unlimited_ideas_setted
-		ai = no
-	}
-}

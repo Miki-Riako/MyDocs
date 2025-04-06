@@ -6,7 +6,7 @@ cossacks_idea_groups_expanded = {
 	}
 	trigger = {
 	    OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			OR = {
 				technology_group = eastern
 				has_estate = estate_cossacks
@@ -70,7 +70,7 @@ theocratic_idea_groups_expanded = {
 	}
 	trigger = {
 		OR = {
-			se3_unlimited_ideas = yes
+			has_country_flag = se3_unlimited_ideas
 			OR = {
 				has_government_attribute = theocratic_monarchy_mechanic
 				has_government_attribute = enables_divine_idea_group
@@ -138,7 +138,7 @@ horde_idea_groups_expanded = {
 	}
 	trigger = {
 		OR = {
-			se3_unlimited_ideas = yes
+			has_country_flag = se3_unlimited_ideas
 			OR = {
 				has_reform = steppe_horde
 				# has_reform = Gensokyan_ski_keigatsu_gang
@@ -196,7 +196,7 @@ piracy_idea_groups_expanded = {
 	}
 	trigger = {
 		OR = {
-			se3_unlimited_ideas = yes
+			has_country_flag = se3_unlimited_ideas
 			has_government_attribute = is_pirate_republic_reform
 		}
 	}
@@ -255,7 +255,7 @@ absolutism_idea_groups_expanded = {
 	}
 	trigger = {
 		OR = {
-			se3_unlimited_ideas = yes
+			has_country_flag = se3_unlimited_ideas
 			is_year = 1565
 			NOT = { has_government_attribute = enables_plutocratic_idea_group }
 		}
@@ -307,7 +307,7 @@ christian_idea_groups_expanded = {
 	}
 	trigger = {
 	    OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			religion_group = christian
 		}
 	}
@@ -369,7 +369,7 @@ muslim_idea_groups_expanded = {
 	}
 	trigger = {
 	    OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			religion_group = muslim
 		}
 	}
@@ -431,7 +431,7 @@ confucian_idea_groups_expanded = {
     }
 	trigger = {
 	    OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
      	   	religion = confucianism
 		}
 	}
@@ -484,7 +484,7 @@ great_power_idea_groups_expanded = {
 	}
 	trigger = {
 	    OR = {
-	        se3_unlimited_ideas = yes
+	        has_country_flag = se3_unlimited_ideas
 			is_great_power = yes
 		}
 	}

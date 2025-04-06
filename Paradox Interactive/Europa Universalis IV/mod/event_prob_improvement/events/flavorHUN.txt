@@ -93,7 +93,13 @@ country_event = {
 		trigger = {
 			HAB = { has_heir = "Ladislaus Postumus" }
 		}
-		ai_chance = { factor = 50 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				HAB = { ai = no }
+			}
+		}
 		add_stability_or_adm_power = yes
 		define_heir = {
 			name = "Ladislaus Postumus"

@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "files.exclude": {
+        // "...": true
+    } // These files are reported due to increased compatibility with other mods
+}
+/**
+计划修改的文件
+- None
+修改了的源文件(之后再检查一下)
+- None
+**/

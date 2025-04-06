@@ -1,4 +1,4 @@
-se3_hegemon_ideas = {
+se_hegemon_ideas = {
 	category = ADM
 
 	bonus = {

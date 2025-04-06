@@ -1,0 +1,467 @@
+# 新增的总督顾问和伟人顾问，用以在时代奖励中使用
+# se_steward
+# se_cardinal
+# se_educator
+# se_grand_vizier
+# se_financier
+# se_great_scientist
+# se_great_prophet
+
+# se_diplomat
+# se_great_merchant
+# se_great_writer
+# se_great_artist
+# se_great_musician
+# se_venetian_merchant
+
+# se_surveyor
+# se_castellan
+# se_great_engineer
+# se_great_admiral
+# se_great_general
+# se_great_khan
+# se_commandante_general
+
+######################################################
+# Administrative Governors Advisors
+######################################################
+
+se_steward = {
+	monarch_power = ADM
+	global_autonomy = -0.01
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_cardinal = {
+	monarch_power = ADM
+	global_heathen_missionary_strength = 0.03
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_educator = {
+	monarch_power = ADM
+	advisor_cost = -0.1
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_financier = {
+	monarch_power = DIP
+	interest = -1
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_female = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_grand_vizier = {
+	monarch_power = ADM
+	all_power_cost = -0.025
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+######################################################
+# Diplomatic Governors Advisors
+######################################################
+
+se_diplomat = {
+	monarch_power = DIP
+	improve_relation_modifier = 0.3
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_female = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+######################################################
+# Military Advisors
+######################################################
+
+se_surveyor = {
+	monarch_power = MIL
+	siege_ability = 0.1
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_female = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_castellan = {
+	monarch_power = MIL
+	manpower_recovery_speed = 0.2
+	chance = { factor = 0 }
+	ai_will_do = { factor = 20 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+######################################################
+# Administrative Great People Advisors
+######################################################
+
+se_great_scientist = {
+	monarch_power = ADM
+	technology_cost = -0.2
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_prophet = {
+	monarch_power = ADM
+	warscore_cost_vs_other_religion = -0.15
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+######################################################
+# Diplomatic Great People Advisors
+######################################################
+
+se_great_merchant = {
+	monarch_power = DIP
+	caravan_power = 0.5
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+	allow_only_male = yes
+    skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_writer = {
+	monarch_power = DIP
+	reform_progress_growth = 0.25
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_artist = {
+	monarch_power = DIP
+	stability_cost_modifier = -0.8
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_musician = {
+	monarch_power = DIP
+	diplomatic_upkeep = 3
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_venetian_merchant = {
+	monarch_power = DIP
+	merchants = 3
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+######################################################
+# Military Great People Advisors
+######################################################
+
+se_great_engineer = {
+	monarch_power = ADM
+	great_project_upgrade_cost = -0.3
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_admiral = {
+	monarch_power = MIL
+	siege_blockade_progress = 4
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_general = {
+	monarch_power = MIL
+	global_attacker_dice_roll_bonus = 2
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_great_khan = {
+	monarch_power = MIL
+	cavalry_shock = 1.2
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}
+
+se_commandante_general = {
+	monarch_power = MIL
+	army_tradition = 4
+	chance = { factor = 0 }
+	ai_will_do = { factor = 200 }
+    allow_only_male = yes
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = russian_modernization_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = { monthly_russian_modernization = 0.02 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_government_attribute = advisors_generate_innovativeness } }
+		modifier = { yearly_innovativeness = 0.02 }
+	}
+}

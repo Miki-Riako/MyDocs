@@ -1,7 +1,9 @@
+# Provide api from se3, but unavailable when only using se.
 country_decisions = { 
-	se3_setting_open_unlimited_ideas = {
+	se_setting_open_unlimited_ideas = {
 		major = yes
 		potential = {
+			always = no
 			ai = no
 			NOT = { has_global_flag = se3_setted }
 			NOT = { has_country_flag = se3_unlimited_ideas }
@@ -16,9 +18,10 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	se3_setting_close_unlimited_ideas = {
+	se_setting_close_unlimited_ideas = {
 		major = yes
 		potential = {
+			always = no
 			ai = no
 			has_country_flag = se3_unlimited_ideas
 			NOT = { has_global_flag = se3_setted }
@@ -33,9 +36,10 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	se3_setting_ideas_setted = {
+	se_setting_ideas_setted = {
 		major = yes
 		potential = {
+			always = no
 			ai = no
 			NOT = { has_global_flag = se3_setted }
 		}
