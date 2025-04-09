@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_cb_minagoro_imperial"
+		texturefile = "gfx/interface/casus_bellis/cb_minagoro_imperial.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

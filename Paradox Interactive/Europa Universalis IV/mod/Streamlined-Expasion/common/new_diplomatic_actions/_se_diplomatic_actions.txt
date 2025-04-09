@@ -7,7 +7,7 @@ se_providential_submission_ultimatum = {
 	is_visible = {
 		is_free_or_tributary_trigger = yes
         is_subject = no
-		has_idea = hegemonic_call_to_obedience
+		has_idea = se_hegemon_ideas_6
 		FROM = { is_subject = no }
 	}
 
@@ -193,5 +193,76 @@ se_providential_submission_ultimatum = {
     }
 	ai_will_do = {
 		full_idea_group = se_hegemon_ideas
+	}
+}
+
+se_prepare_minakoro_invasion = {
+	category = influence
+	require_acceptance = no
+
+	is_visible = {
+		is_free_or_tributary_trigger = yes
+        is_subject = no
+		has_idea = se_minagoro_ideas_3
+		FROM = { is_subject = no }
+	}
+
+	is_allowed = {
+		FROM = {
+			NOT = { defensive_pact_with = ROOT }
+			is_neighbor_of = ROOT
+		}
+		if = {
+			limit = { has_country_modifier = se_minagoro_invasion_preparing }
+			custom_trigger_tooltip = {
+				tooltip = SE_MINAKORO_INVASION_PREPARING_TT
+				NOT = { has_country_modifier = se_minagoro_invasion_preparing }
+			}
+		}
+	}
+
+	on_accept = {
+		add_country_modifier = {
+			name = se_minagoro_invasion_preparing
+			duration = 365
+		}
+		every_neighbor_province = {
+			limit = {
+				owner = {
+					OR = {
+						tag = FROM
+						is_subject_of = FROM
+					}
+				}
+				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
+				has_discovered = ROOT
+			}
+			add_claim = ROOT
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = se_minagoro_invaded
+			}
+            add_trust = {
+                who = ROOT
+                value = -10
+            }
+		}
+	}
+
+	on_decline = {
+	}
+
+	ai_will_do = {
+		full_idea_group = se_minagoro_ideas
+		mil_power = 600
+		monthly_mil = 10
+		NOT = { is_at_war = yes }
+		has_opinion = {
+			who = FROM
+			value = -50
+		}
 	}
 }

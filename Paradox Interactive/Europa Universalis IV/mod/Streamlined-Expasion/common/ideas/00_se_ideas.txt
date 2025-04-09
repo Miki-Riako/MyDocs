@@ -1,10 +1,6 @@
 se_hegemon_ideas = {
 	category = ADM
 
-	bonus = {
-		administrative_efficiency = 0.05
-	}
-
 	trigger = {
 		OR = {
 			has_country_flag = se3_unlimited_ideas
@@ -12,33 +8,123 @@ se_hegemon_ideas = {
 		}
 	}
 
-	hegemonic_authority = {
+	# 完成理念奖励为行政效率增加，极强的buff，使得球长更快速
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	# 首发减少AE
+	se_hegemon_ideas_0 = {
 		ae_impact = -0.1
 	}
-	edict_of_eternal_submission = {
+	# 新征服省份的分离主义减少
+	se_hegemon_ideas_1 = {
 		years_of_nationalism = -5
 	}
-	doctrine_of_final_acquisition = {
+	# 战争分数花费更少，加速扩张
+	se_hegemon_ideas_2 = {
 		province_warscore_cost = -0.2
 	}
-	charter_of_sovereign_compliance = {
+	# 外交影响力更高
+	se_hegemon_ideas_3 = {
 		diplomatic_reputation = 1
 		diplomatic_upkeep = 1
 	}
-	divine_assimilation_mandate = {
+	# 增加宗教与文化力量，加速三一进程
+	se_hegemon_ideas_4 = {
 		global_missionary_strength = 0.02
 		culture_conversion_cost = -0.15
 	}
-	edict_of_limitless_integration = {
+	# 核心速度增加，行政容量更高
+	se_hegemon_ideas_5 = {
 		core_creation = -0.2
 		governing_capacity_modifier = 0.2
 	}
-	hegemonic_call_to_obedience = {
-		prestige = 0.5
+	# 闭门获得威望，解锁一项新的外交行动，允许你外交劝降一个国家成为你的卫戍国
+	se_hegemon_ideas_6 = {
 		#Includes a diplo interaction mechanic
+		prestige = 0.5
 	}
 
 	ai_will_do = {
 		factor = 100
+	}
+}
+
+se_minagoro_ideas = {
+	category = MIL
+
+	trigger = {
+		OR = {
+			has_country_flag = se3_unlimited_ideas
+			war_exhaustion = 16
+		}
+	}
+
+	# 完成理念奖励为进一步减少军队的成本
+	bonus = {
+		global_regiment_cost = -0.5
+	}
+
+	# 获得帝国主义cb，但稳定度提升和侵略扩张花费增加，ai态度极度降低，稳定-1
+	se_minagoro_ideas_0 = {
+		#Includes a unique cb
+		stability_cost_modifier = 0.5
+		ae_impact = 0.2
+		effect = {
+			add_stability = -1
+			every_known_country = {
+				add_opinion = {
+					who = ROOT
+					modifier = se_minagoro_opinion
+				}
+			}
+		}
+	}
+	# 大幅度提升军力总量，解锁强大军队，稳定-1
+	se_minagoro_ideas_1 = {
+		# Includes a strong mercenary
+		land_forcelimit_modifier = 0.2
+		regiment_manpower_usage = -0.25
+		free_land_leader_pool = 1
+		effect = { add_stability = -1 }
+	}
+	# 获得平衡版的幸运国修正，但增加持续的厌战度，稳定-1
+	se_minagoro_ideas_2 = {
+		# Includes a balanced luck modifier
+		war_exhaustion = 0.1
+		effect = { add_stability = -1 }
+	}
+	# 大幅度提升战斗力，解锁对某国得到所有相邻省份的宣称的外交行动，稳定-2
+	se_minagoro_ideas_3 = {
+		# Include a diplo interaction to get all claims of adjacent provinces
+		discipline = 0.05
+		infantry_shock = 0.5
+		global_attacker_dice_roll_bonus = 1
+		effect = { add_stability = -2 }
+	}
+	# 一套较为不错的过渡理念，稳定-2
+	se_minagoro_ideas_4 = {
+		core_creation = -0.1
+		leader_land_shock = 1
+		effect = { add_stability = -2 }
+	}
+	# 解锁可以根据目标发展度一次性吞并国家和平条约，但商人团-2，稳定-2
+	se_minagoro_ideas_5 = {
+		# Include a peace treaty to annex a country
+		merchants = -2
+		effect = { add_stability = -2 }
+	}
+	# 占领某省份时，若拥有该省份宣称，则立即获得该省份，但三点数各-1，稳定-3
+	se_minagoro_ideas_6 = {
+		# Include a province annexation mechanism
+		country_admin_power = -1
+		country_diplomatic_power = -1
+		country_military_power = -1
+		effect = { add_stability = -3 }
+	}
+
+	ai_will_do = {
+		factor = 1
 	}
 }

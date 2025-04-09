@@ -1,0 +1,3 @@
+se_minagoro_invasion_preparing = {
+	country_military_power = -1
+}

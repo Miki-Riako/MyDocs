@@ -1,0 +1,29 @@
+namespace = se_minagoro
+
+# 皆杀之理念的闭门效果
+province_event = {
+	id = se_minagoro.1
+	title = hidden
+	desc = hidden
+	picture = FAMINE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		controller = { has_idea = se_minagoro_ideas_6 }
+		NOT = { controlled_by = owner }
+		NOT = { units_in_province = owner }
+		ROOT = {
+			is_capital = no
+			OR = {
+				is_claim = controller
+				is_core = controller
+			}
+		}
+	}
+	immediate = {
+		cede_province = controller
+		add_devastation = 20
+		add_local_autonomy = 100
+	}
+	option = { name = hidden }
+}
