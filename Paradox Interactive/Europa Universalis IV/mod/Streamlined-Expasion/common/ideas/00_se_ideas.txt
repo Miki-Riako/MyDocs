@@ -66,17 +66,18 @@ se_minagoro_ideas = {
 		global_regiment_cost = -0.5
 	}
 
-	# 获得帝国主义cb，但稳定度提升和侵略扩张花费增加，ai态度极度降低，稳定-1
+	# 获得制造帝国主义cb的外交，但稳定度提升和侵略扩张花费增加，ai态度极度降低
 	se_minagoro_ideas_0 = {
-		#Includes a unique cb
-		stability_cost_modifier = 0.5
+		#Includes a diplo interaction to create imperial cb
+		stability_cost_modifier = 1
 		ae_impact = 0.2
 		effect = {
-			add_stability = -1
-			every_known_country = {
-				add_opinion = {
-					who = ROOT
-					modifier = se_minagoro_opinion
+			hidden_effect = {
+				every_known_country = {
+					add_opinion = {
+						who = ROOT
+						modifier = se_minagoro_opinion
+					}
 				}
 			}
 		}
@@ -89,39 +90,39 @@ se_minagoro_ideas = {
 		free_land_leader_pool = 1
 		effect = { add_stability = -1 }
 	}
-	# 获得平衡版的幸运国修正，但增加持续的厌战度，稳定-1
+	# 获得平衡版的幸运国修正，但增加持续的厌战度，稳定-2
 	se_minagoro_ideas_2 = {
 		# Includes a balanced luck modifier
 		war_exhaustion = 0.1
-		effect = { add_stability = -1 }
+		effect = { add_stability = -2 }
 	}
-	# 大幅度提升战斗力，解锁对某国得到所有相邻省份的宣称的外交行动，稳定-2
+	# 大幅度提升战斗力，解锁对某国得到所有相邻省份的宣称的外交行动，稳定-3
 	se_minagoro_ideas_3 = {
 		# Include a diplo interaction to get all claims of adjacent provinces
 		discipline = 0.05
 		infantry_shock = 0.5
 		global_attacker_dice_roll_bonus = 1
-		effect = { add_stability = -2 }
+		effect = { add_stability = -3 }
 	}
-	# 一套较为不错的过渡理念，稳定-2
+	# 一套较为不错的过渡理念，稳定-4
 	se_minagoro_ideas_4 = {
 		core_creation = -0.1
 		leader_land_shock = 1
-		effect = { add_stability = -2 }
+		effect = { add_stability = -4 }
 	}
-	# 解锁可以根据目标发展度一次性吞并国家和平条约，但商人团-2，稳定-2
+	# 解锁可以根据目标发展度一次性吞并国家和平条约，但商人团-2，稳定-5
 	se_minagoro_ideas_5 = {
 		# Include a peace treaty to annex a country
 		merchants = -2
-		effect = { add_stability = -2 }
+		effect = { add_stability = -5 }
 	}
-	# 占领某省份时，若拥有该省份宣称，则立即获得该省份，但三点数各-1，稳定-3
+	# 占领某省份时，若拥有该省份宣称，则立即获得该省份，但三点数各-1，稳定-6
 	se_minagoro_ideas_6 = {
 		# Include a province annexation mechanism
 		country_admin_power = -1
 		country_diplomatic_power = -1
 		country_military_power = -1
-		effect = { add_stability = -3 }
+		effect = { add_stability = -6 }
 	}
 
 	ai_will_do = {

@@ -1,0 +1,3 @@
+on_siege_won_province = {
+	events = { se_minagoro.1 }
+}

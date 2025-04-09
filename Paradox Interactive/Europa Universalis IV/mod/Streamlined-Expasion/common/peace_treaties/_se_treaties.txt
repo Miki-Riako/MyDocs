@@ -27,16 +27,16 @@ se_minagoro_annexation = {
 	}
 	effect = {
 		FROM = {
-			every_owned_province = {
-				cede_province = ROOT
-			}
-			remove_country = yes
 			every_subject_country = {
 				every_owned_province = {
 					cede_province = ROOT
 				}
 				remove_country = yes
 			}
+			every_owned_province = {
+				cede_province = ROOT
+			}
+			remove_country = yes
 		}
 	}
 	ai_weight = {
