@@ -1,103 +1,0 @@
-﻿l_english:
- se3_setting_open_unlimited_ideas_title: "V/TtõVÄuàeP–6R"
- se3_setting_close_unlimited_ideas_title: "sQí•tõVÄuàeP–6R"
- se3_setting_ideas_setted_title: "tõVÄuP–6R¾‹šRŒRÕk"
- se3_setting_open_unlimited_ideas_desc: "V/TtõVÄuàeP–6R"
- se3_setting_close_unlimited_ideas_desc: "sQí•tõVÄuàeP–6R"
- se3_setting_ideas_setted_desc: "tõVÄuP–6R¾‹šRŒRÕk"
-
- se3_hegemon_ideas: "NLuVgtõV"
- se3_hegemon_ideas_bonus: "ÝuùR8—CgÝ„þV"
- hegemonic_authority: "8—CgZCgS"
- hegemonic_authority_desc: "SVbìN„v›QâVèÇ¹ƒXöeÿ»¦„v—b®‹ðXOêLˆˆmceàV:NÖNìNñmåwµb—bêSO Rãg0"
- edict_of_eternal_submission: "8lR`ãgÕlHh"
- edict_of_eternal_submission_desc: "°eVg„vW0WNSNQ	gÛS’VêS	gÃV`aÀo„vãl0"
- doctrine_of_final_acquisition: "ÈuNSVglQV"
- doctrine_of_final_acquisition_desc: "b‰N„vz‚/gòT«ˆbìNã‰„g:NŽrUS„vIrVÿÏkN:WbyV„vÈu¹pÿýcTôfY†˜W„vRV^S0"
- charter_of_sovereign_compliance: "R¦¦”gOS®‹"
- charter_of_sovereign_compliance_desc: "Y²NNQ/fZSVÿw/fbìNUS¹eb—±RJTÄ‰R„v‚ðS0"
- divine_assimilation_mandate: "nfNTSUeäN"
- divine_assimilation_mandate_desc: "VYe^y™^S9eú^:NbìN„v#WNbÿL–uí‹ŠS«ˆxQM|qÁkdkCN‡efÈu	qKNÅV6q0"
- edict_of_limitless_integration: "àeLu8hÃV‹VäN"
- edict_of_limitless_integration_desc: "ÎNgN²›S0RåeK„KNwmÿNb	gW0W(W`S†˜±NIR¿OèlšRb:NbìN8lR`„vôv–:S0"
- hegemonic_call_to_obedience: "8—CgRVD–RŒ"
- hegemonic_call_to_obedience_desc: "SýVKNTê,TÏ‹äN'Tÿ.sN`OìN„v Q•QÿïSÝO—R™^NÁkÿ—bÒbbìN„va×Vÿ/U	gNˆ	­eÝu0\n§Gã‰•yrŠkY²NLˆ¨R0RVD–RŒ0ÿAQ¸‹`O÷‹BlTýVb:N`O„vkSbýVÿ§!"
- se3_core_assimilation_pact: "8hÃV”q‰pOS®‹"
- desc_se3_core_assimilation_pact: "bìN„v˜RÚP:g„g‚YT”q‰pÿS°e†˜WI•.b8lNR»y„v8hÃV0"
- se3_hegemon_tax_supervision: "8—CgzTÑv¡r6R"
- desc_se3_hegemon_tax_supervision: "hQýV„vÏkNšgÑ‘^ý—ÙpN^ýVËV°‹ÿzwS«ˆ‰”(W¹ƒX:yO0"
- se3_frontier_direct_rule: "¹†uôv–UeäN"
- desc_se3_frontier_direct_rule: "eÜ„vI`cw:SÅV‰˜‚Y^ý,‚ØšHeÐlÿê»lNÇ/fo1Vw„vPãS0"
- se3_pluralistic_assimilation: "YCQRVSÕlHh"
- desc_se3_pluralistic_assimilation: "VÏe„v‚‚åeïSåNÝOYuÿFOÅV‰˜Lk‚˜bìN„vONÙ/fÁNHa„v•^¿u0"
- se3_tech_siphon_pact: "Žb/gy†8Tag¦u"
- desc_se3_tech_siphon_pact: "©‹hQt„vfRw:N^ýVžRŒš²RSbNKbÿ/fÖNìNdkug'Y„vcƒx^0"
- se3_crusade_assimilation: "#Wb”q‰päN"
- desc_se3_crusade_assimilation: "VYe^y™^„vxówSÍ‘ø”:NbìN„vYeXÿ‰kSw„vNˆËn‰Q/UNwáO0"
- se3_sovereign_submission_summit: "RýVãgðSO"
- desc_se3_sovereign_submission_summit: "N¦O‚‚ê,TÏ‹Œ„vY²NgR:WÿÔkASN'Y›QôfýwpV>f8—CgZêN0"
- se3_shadow_subjugation_network: "—fqVãgQÜu"
- desc_se3_shadow_subjugation_network: "Ïk*ND–¸^«R÷^ý	gbìN„v¿uºNlQIN„vZZYÅ`ÔkRQRôfýwgdÁkÍS—ba×V0"
- se3_transoceanic_direct_rule: "èmôv–±RŠ"
- desc_se3_transoceanic_direct_rule: "°e'YF–„vÄžÑ‘ÅV‰˜ôv¾^ý“^?bÿûNUO–klI`cw„v*bYuý/fÛSýVÿ"
- se3_rapid_annexation_act: "TˆmSÕlHh"
- desc_se3_rapid_annexation_act: "ˆmSD–¸^”^‚YÒ‡Ç†TlVsirba„v‡TêSOÙuˆNÖNìN#cNb„v:gO0"
- se3_iron_cavalry_allegiance: "Á”‘šHeàVag¦u"
- desc_se3_iron_cavalry_allegiance: "5ÏeìN„vblšêSAQ¸‹gTN*N¹eT²Q•^ýVQR•NbcKNY0"
- se3_plutocratic_conscription: "Ñ‘CgVìSäN"
- desc_se3_plutocratic_conscription: "FUO„v±”‹ˆÅV‰˜:Nb‰N^eVÿÒbÝuD©RwS1Y»SNb	g8fyrCg0"
- se3_hegemon_iron_wall: "8—CgÁ”ÁX2–¿u"
- desc_se3_hegemon_iron_wall: "¹ƒX„v‰^XÅV‰˜Ôk^ýVÎW™XôfZWúV(uÖNìN„vNˆ‰wQrb,rNS2–¿u0"
- se3_final_siege_charter: "ÈuNSôVÎWªRàz"
- desc_se3_final_siege_charter: "SVbìN„vIeÎWTX<ÑöeÿˆR›QêS	g2N*N	ébÿêq‰kÎWÿbVè•êÎ0"
- se3_elite_reorganization_pact: "¾|•teOS®‹"
- desc_se3_elite_reorganization_pact: "ÆNÎNýV„v›Q–êSM‘O(uØmpl„vfkhVwck„v)RRÅV‰˜Œcác(W^ýVKb-N0"
- se3_human_wave_strategy: "ºNwm*mAmbeu"
- desc_se3_human_wave_strategy: "ÆNÎNýV„vR—t^”^SVkXs^ÕXŸlÿ^ýV„v¾|•êS—(WgTöeIR6erRcƒ‰Š0"
- se3_providential_submission_ultimatum: "RVD–RŒ"
- se3_providential_submission_ultimatum_title: "RVD–RŒ"
- se3_providential_submission_ultimatum_tooltip: "Ž÷‹b:NkSbýV"
- se3_providential_submission_ultimatum_desc: "åN^yˆcKNCgNàeïS©sš„vZ¿RÿbìNÙuˆNSIrgTN/k	ébÿjO:NÆNÎNuXRÿbjO:NLeºNˆm¡N0"
- se3_providential_submission_ultimatum_alert_tooltip: "‰Blãg"
- se3_providential_submission_ultimatum_dialog: "[This.GetName] ‰BlbìNãgÿó`‰ŠbbìNØSbÖNìN„vkSbýV0"
-
- se3_steward: "I`¡R˜R"
- se3_steward_desc: "I`¡R˜RNLwïSý¯n0RÑž—föeãNÿ†˜IN»yV†˜0WöeOÔYXbvQLˆOLwCg0å‹LwMOASRÍ‘‰ÿÃVyKNºN¹eýwÜwûN0ýwr^„vI`¡R˜Rèe(WÐcGS0WµN0ÌR0"
- se3_cardinal: "¢ucˆINYe"
- se3_cardinal_desc: "¢ucˆINYe/fWlš)YINYeO-NgØšµu„v^yLwºNXTKNN0vQÖN—RYe-NmN	g‰|<O„vLwMOµu+Rÿ‚YNckYe-N„v'YINYe0ÆR—RiOYe-N„v‡UV0vQ#¡rt'YÏ‘DµNÿåNÊSYeOTÍ‘‰ÄubèR„v'YÏ‘ºNXT0"
- se3_educator: "Ye²w¶R"
- se3_educator_desc: "Ye²w¶RNÅNÅN/füR^ÿÖNìN/fäSwåwÆ‹„vˆR²bwÿNuô›RŽNôu²bv^.O­dåwÆ‹0–NwYe²w„vnfÊSŒTYCQSÿYe²w¶RmN(WN­eûRŒbhQ°e	gHe„vYe²w¹eÕlÿSNãNïy/t„vzfga.OÙufRuìN0"
- se3_grand_vizier: "'YôuPŸS"
- se3_grand_vizier_desc: "'YôuPŸS/feY¯eüf^ýVÏ‚9NåNNgØšµu„v'YãÿøvSVŽN°Røv„vLw¡Rÿåb	gÝuùR„vãNtCgÿŸSRNêS	gÏ‚9NMbýwã‰d–dkCg0"
- se3_diplomat: "'YY²N˜R"
- se3_diplomat_desc: "Y²N˜R/f,gýV(WNLu‚ðSN„vãNhˆÿ/fýV¶R-NgäSw0g×SSle„vLwMOKNN0Y²N˜R8^«N	gyrCgŒT<yGÿÛwmNOUS°súQOÅ–<yŒŒ„vÎ˜¦^0"
- se3_financier: "Ñ‘‡¶R"
- se3_financier_desc: "Ñ‘‡¶R/fYt„˜—rŒT0¡R„v˜RXTÿùRÏuNmbV¿RŒT^:WLˆÅ`g:NOea0ýV¶R0?e^—?QbÿNbXbKNºNÅV‰˜ýwŒ„U­e0"
- se3_surveyor: "KmÏ‘^"
- se3_surveyor_desc: "	g*NäSw„vrÝ‹/fÙHNô‹„vÿ•bDW0W'TÿÍSckNLuN„vW0WmNNOØSY0©srRV©srÿ‹NžRN	gHe)R(uW0W„vnx^—8^Í‘‰0w	gHe)R(uzzô•„vMRÐc/fÇKmÏ‘ŒT6RþVÛLˆñmeQ†Nã‰0KmÏ‘mN/fNy˜nÜAm•„v‹NNÿ†Nã‰W0W÷N<P„vºNO«N×S0RøvSV'Y„vèˆÊv0"
- se3_castellan: "ÎWIN"
- se3_castellan_desc: "ÎWIN/fôv¥c#¡rtÎW/Xb‰^Xåe8^‹N¡RÊShT¹†˜W„v›Q‹N•˜R0ÎW/X-NÏ…	g'YÏ‘0ÌRv^‰šNb	g›Q–ÿàVdkÎWINNÅN‰¾|f:Vr^ÿôf‰àVNŒN0b‰Ngô•ÿåb	gGYMbVýw„vÎWINýwYæTóSbNSÿÛw9eØS†SòSpT0"
- se3_great_engineer: "'YåTz^"
- se3_great_engineer_desc: "'YåTz^/fÅd•ŒRbTÍyON„vºN0ÖNìNú^.ªuõV‘x0SïŒTšÙzû|ßuegÐcGSºNìN„vuImÁT(0ÖNìNR.ú^Qrbg¢”„v°eåTz‚ÿÖNìNc˜cÐ³lÿÖNìNŠb™l.oØSbÿu2mÿÖNìN¨c¨RNw‡efNLuN­eTMRÑSUS0"
- se3_great_scientist: "'YÑyfR¶R"
- se3_great_scientist_desc: "'YÑyfR¶RûRŒbNLu„v…Q(WÄ‰‹V0ÖNìNÑS°s0WtôVÕu*Y3–Ðl0ÖNìNÑS°s‰w<wNïSÊS„v®VSu‹TÿVgCQ.t-Nt…+T„v›RÏ‘0ÖNìNùR—b)Y±‚NÑž‰kÅuÿ„˜ŠåeŽ†ŒTgŽ†0ÖNìNONLuØS—VjwgaÿÖNìNR.‡ef„v*geg0"
- se3_great_prophet: "'YHQåw"
- se3_great_prophet_desc: "'YHQåwÓbUS—RYeáOðN„v†ußWÿTNºN.O¾N*N‡efùRS·VŒT&Ot„vìr0RÁ‰ã‰0ÖNìNRËz—RYeåN.O¾^y„vyó—ÿv^SŽ‹Y„váOðN&^ÙuNºN0sSO(WN*NlÏeg:NpˆK„„vöegÿÖNìNmNýwÙuºNåNàeP–„v^g0"
- se3_great_merchant: "'YFUN¶R"
- se3_great_merchant_desc: "'YFUN¶R›OÙuT*N‡efuXRNb—„virDŒTg¡R0ÖNìNÛãS®|ß˜0oƒirŒTbYˆOÁTÿÖNìNúQãS,g‡efNbuµN„vTÍy'ir0ÖNìNÐc›OŒRb'Y‹Wy˜îvNb—„v'YÏ‘‡D0ÖNìN:Nte*N‡efNLuR.0ÌR0"
- se3_great_writer: "'Y‡efR¶R"
- se3_great_writer_desc: "'Y‡efR¶R/f±›NýwSuIm-NbìN„v4ng0‰l`0‹YGYÃV0Vv‹Y0P`ç`ŒTëVPN(uOŽ„v‡eWRhˆ¾úQeg„vN²)YMb7usY0Nº‹/fÇ×‹Lk0Sô‹Ø/fbgRÿÖNìNý/fšRIN†NÖNìN‡ef„v‡eS„vN²z‚/g¶R0NèR‡efR¶R1Œ™Q„v/f‰^ó`-N„vNLuÿæSNèRý–NwòTfR0?e»l0—RYeŒTÑyfR„vekÿÇ‡efRjOÁThˆ¾ÖNìNùR>yO„vgg0N¡r`HNô‹ÿÖNìN„vŠº‹(Wöeô•„vjmno-NÞVÍTÿSºN‰|'t'tTwû|(WNw0"
- se3_great_artist: "'YŽ/g¶R"
- se3_great_artist_desc: "'YŽ/g¶R/fÅˆp™N*N‡efYhˆ„vO'YºNir0ÖNìNÇÏcØuNLueghˆ¾NTåNŽV„vŽa0IQ‰0bV¶rŒTr‚iV0ÖNìNÕ–IRÕ–QX0Øu6RþVHh0ÍbDdøvGr06RjO5uqVÿÙNRbVVý«ˆ(uåNhˆ°sºN'`0ÖNìN„vjOÁTÏu8^…ŠöeãNŒT0Wt„vP–6RÿYe²wŒTV/TNwºN‰|„vzfgaÿ©‹N*N‡ef·ƒ—VÔkƒR„vir(›RÏ‘ôf:N:V'Y„v›RÏ‘0"
- se3_great_musician: "'Yó—PN¶R"
- se3_great_musician_desc: "þfÏu	gºNô‹Çó—PN/fºN‰|„vupB›ÿ	cgqÙ*Nô‹Õlÿ±HN'Yó—PN¶Ràe‘u1S/fºN‰|upB›„vˆR²bw†N0N¡r/fÀNHNbVV„vó—PNbÀNHN7h„vPNhVÿ¡l	g+R„vz‚/gbVVýwÔkó—PNôfSb¨RºNÃV0ÎNSVt^ºN‰|reûQ(gÍh„võ—‹V0R°sãN'Y‹W5uPR²NÍTPNÿO'Y„vjOòf¶RŒToOY¶RìN(uÖNìN„vŽbçTÙu‡ef&^eg†Nàepe„v0krŒTêl4l0"
- se3_venetian_merchant: "'YZ<S¯eFUºN"
- se3_venetian_merchant_desc: ",r13Nªu0R16NªuÏu%„NwZ<S¯e„vFUºNNÅNÅN/f8fwÿÖNìNTöeØ/f¢ci–¶R0Y²N¶R00WtfR¶RŒTjO¶R0d–†NÙuZ<S¯eqQŒTýV&^eg0ÌRÿÖNìNØ&^ÞVeg„våwÆ‹ŒT‡eSÿv^NèlŽN™QjO0N›N*NºN¢ci–¶R‚YlšïS·âlWÿôTS· R¯e^WŒT‰R^WTNTRTXÌ‘<SÿNÅNOZ<S¯eÌR¶^ÿmN:NZ<S¯eb—VðXg0"
- se3_great_admiral: "wm›Qßu^"
- se3_great_admiral_desc: "wm›Qßu^#c%cwm›Q0‚–(W'YwmNbÖSÜw)R0ÖNìN6RšR¡‹R0OSŒv^žRËeYBg„vjObLˆ¨RåNnxÝO,gýV(WwmN„vO¿R0WMOåNÊSwmèn0W:S„v‰RhQ0"
- se3_great_general: "F–›Qßu^"
- se3_great_general_desc: "F–›Qßu^/f‡efNLu-NgO'Y„vbëX0ÖNìNR°efkhVv^­‹ÃuëXuQ0ÖNìN6RšRbeuÝO²bêñT„v‡efN×SLeºN2O³RÿÑS¨RÇRbe„vIe¿Rÿú^.ZWúV„v/X’Wÿ¾‹nçT™Y„vWWY0ÖNìN‡sHQóúQbÕXbóNLe0‚0ÖNìN(Wb:WNc%c²Q•ÿ(uêñTËR–„v©wŽbÅbNwºNl„v‹TÐ0"
- se3_great_khan: "'YïSWl"
- se3_great_khan_desc: "WlÿKhan	ÿ/f™„äSºNùR–™†˜„vðyŒÿàeº‹/fSèK„b/fèK„Twßv„v–™†˜ýïSåNðy:NWl0(WÁ”(gwTw„vöeãNÿÙ*N4YTˆIN‰c›Q‹N†˜–ˆÿFOTegmNc™„äS^ýV„v?e»l†˜–ˆ0™„äS„vWl1u™„äS5Ïe¨c	³QšRÿIN‰/f9hncMbýwŒTÁT·Vw^—Nˆßu0WlŽVŽVÅbûN›Q–„vßu^ÿc%c™„äS'Y›QÛLˆVb0TegÙ*N4YTˆÈS>muúQ†N'YWlÿKhagan	ÿÙ*N°e4YTˆÿ(ujOgØšßu»lw„vðy|TÿasSOWlKNWlÿFOžRE–N'YWlÙ*NðyŒ/f1227t^b	T`Wl»SNTMbúQ°s„v0"
- se3_commandante_general: "'YI`c%c"
- se3_commandante_general_desc: "'YåT&OÔkšN„v†SòSúW,g1S/fNèµb—bÐ¨RòSÿwµb—bÐ¨R-NmNŒm°súQNû|RpgúQ„v›Q‹Nc%c˜R0ÎNUO^X··V·#WlšN0RUO^X·lšÌ‘šN·ÑySYætÿÎNVg‰¯eÑy··VÝOÉb·QhfW·VS0RUO^X·‰RN<SeY·>m¯eÿQ0Rã‰>ew‰™„·»s)RætSÿWSŽ2m„v†SòSÛzŽrôvïSŒ1uÉbNŽ2m„v›Q‹N†˜üRºNNKbQX.0"

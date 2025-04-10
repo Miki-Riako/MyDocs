@@ -1,77 +1,50 @@
-#Hakurei Nations politely invite others into their religion
-th_request_conversion_hakurei = {
-	category = th_diplo_action
-	alert_index = 30
-	alert_tooltip = th_request_conversion_hakurei_tooltip
+se_providential_submission_ultimatum = {
+	category = influence
+	alert_index = 66
+	alert_tooltip = se_providential_submission_ultimatum_tooltip
 	require_acceptance = yes
 
 	is_visible = {
 		is_free_or_tributary_trigger = yes
-		has_idea = beloved_religion
-		religion = th_hakureishinto
-		FROM = {
-			NOT = { religion = ROOT }
-			NOT = { tag = PAP }
-			NOT = { is_elector = yes }
-			NOT = { is_emperor = yes }
-		}
+        is_subject = no
+		has_idea = se_hegemon_ideas_6
+		FROM = { is_subject = no }
 	}
 
 	is_allowed = {
-		has_idea = beloved_religion
-		religion = th_hakureishinto
+        is_hegemon = yes
+        is_at_war = no
 		FROM = {
+            has_opinion = {
+                who = ROOT
+                value = 50
+            }
+			NOT = { coalition_target = ROOT }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			NOT = { tag = PAP }
+            is_subject = no
+			NOT = { is_great_power = yes }
 			NOT = { is_elector = yes }
 			NOT = { is_emperor = yes }
 		}
 		if = {
-			limit = {
-				FROM = {
-					OR = {
-						has_country_flag = th_immunity_to_diplomatic_actions
-						has_government_attribute = enables_yama_authority
-					}
-				}
-			}
+			limit = { FROM = { total_development = root } }
 			custom_trigger_tooltip = {
-				tooltip = th_from_is_not_immune_to_diplomatic_actions_tt
-				FROM = {
-					NOT = { has_country_flag = th_immunity_to_diplomatic_actions }
-					NOT = { has_government_attribute = enables_yama_authority }
-				}
+				tooltip = FROM_MORE_DEV_THAN_ROOT_TT
+				FROM = { NOT = { total_development = root } }
 			}
 		}
 	}
 
 	on_accept = {
 		add_prestige = 10
-		FROM = {
-			change_religion = ROOT
-			add_opinion = {
-    			who = ROOT
-    			modifier = th_great_guider
-			}
-		}
-		add_opinion = {
-    		who = FROM
-    		modifier = th_new_follower
-		}		
+        create_subject = {
+            subject_type = march
+            subject = FROM
+        }
 	}
 
 	on_decline = {
-		FROM = {
-			add_opinion = {
-    			who = ROOT
-    			modifier = th_instigator
-			}
-		}
-		add_opinion = {
-    		who = FROM
-    		modifier = th_refused_conversion
-		}
 	}
 
     ai_acceptance = {
@@ -84,7 +57,7 @@ th_request_conversion_hakurei = {
 				with = ROOT
 			}
 			multiply_variable = {
-				which = ai_value 
+				which = ai_value
 				value = 0.2
 			}
         }
@@ -95,8 +68,8 @@ th_request_conversion_hakurei = {
 				value = trust
 				who = FROM
 				with = ROOT
-			}			
-			subtract_variable = { 
+			}
+			subtract_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -141,13 +114,13 @@ th_request_conversion_hakurei = {
 			name = attitude_threatened_DIPLO_ATTITUDE_TT
 			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_threatened } } }
 			export_to_variable = { variable_name = ai_value value = 1 }
-			multiply_variable = { which = ai_value value = 100 }
+			multiply_variable = { which = ai_value value = 50 }
 		}
 		add_entry = {
 			name = attitude_friendly_DIPLO_ATTITUDE_TT
 			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
 			export_to_variable = { variable_name = ai_value value = 1 }
-			multiply_variable = { which = ai_value value = 20 }
+			multiply_variable = { which = ai_value value = 10 }
 		}
 		add_entry = {
 			name = AI_DIPLOMATIC_REPUTATION
@@ -191,8 +164,34 @@ th_request_conversion_hakurei = {
 				value = -0.25
 			}
 		}
+		add_entry = {
+			name = DIPLO_HAS_AI_HAS_OWN_SUBJECTS_TT
+			limit = {
+				FROM = { num_of_subjects = 1 }
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 1
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+		add_entry = {
+			name = attitude_neutral_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -20 }
+		}
+		add_entry = {
+			name = attitude_domineering_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_domineering } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -1000 }
+		}
     }
 	ai_will_do = {
-		full_idea_group = th_gensokyan_ideas
+		full_idea_group = se_hegemon_ideas
 	}
 }

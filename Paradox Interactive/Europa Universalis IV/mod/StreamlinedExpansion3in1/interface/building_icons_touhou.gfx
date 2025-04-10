@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_th_meiras_dojo"
-		texturefile = "gfx//interface//buildings//chinese_spy_agency.tga"
-		loadType = "INGAME"
-	}
-}

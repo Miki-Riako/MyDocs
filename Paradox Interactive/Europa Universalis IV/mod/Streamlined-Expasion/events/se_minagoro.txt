@@ -3,8 +3,8 @@ namespace = se_minagoro
 # 皆杀之理念的闭门效果
 province_event = {
 	id = se_minagoro.1
-	title = hidden
-	desc = hidden
+	title = se_minagoro.1
+	desc = se_minagoro.1
 	picture = FAMINE_eventPicture
 	hidden = yes
 	is_triggered_only = yes
@@ -25,5 +25,5 @@ province_event = {
 		add_devastation = 20
 		add_local_autonomy = 100
 	}
-	option = { name = hidden }
+	option = { name = se_minagoro.1 }
 }
