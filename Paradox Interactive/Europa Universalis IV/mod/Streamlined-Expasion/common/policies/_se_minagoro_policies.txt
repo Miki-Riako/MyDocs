@@ -1,0 +1,258 @@
+# 行政类政策
+# 行政理念组 核心花费-5%，行政容量+10%
+# 经济理念组 战争税军事点数花费-100%，但禁止该国派遣商人团
+# 扩张理念组 自治领地最低自治度-20%，但禁止该国建立殖民地
+# 人文理念组 宗教统一+40%
+# 革新理念组 免费政策+1，但禁止该国向省份传教
+# 宗教理念组 对异教国家和平协议中的战争分数花费-15%
+
+# 外交类政策
+# 外交理念组 省份战争分数花费-10%，特使行程时间-20%
+# 间谍理念组 外国间谍察觉+75%
+# 探索理念组 全局移民增长+40，但土著叛乱几率+50%
+# 影响理念组 不正当要求-20%
+
+# 军事类政策
+# 贵族理念组 骑兵冲击+0.5，但禁止军队超过部队上限
+# 财阀理念组 可以劫掠的省份财富+100%，但禁止​​减少通货膨胀
+# 防守理念组 全局防御方骰子增加+1
+# 进攻理念组 陆军将领围城+1
+# 质量理念组 允许部队忽略要塞控制区域，但陆军上限-50%
+# 数量理念组 免除强行军所需的军事点数花费，但陆军月度损耗+30%
+
+# 行政类政策
+se_skull_tax_system = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = administrative_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = administrative_ideas
+	}
+	core_creation = -0.05
+	governing_capacity_modifier = 0.1
+	ai_will_do = { factor = 10 }
+}
+
+se_war_economy = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = economic_ideas
+	}
+	war_taxes_cost_modifier = -1
+	can_not_send_merchants = yes
+	ai_will_do = { factor = 10 }
+}
+
+se_hellish_administration = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = expansion_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = expansion_ideas
+	}
+	min_autonomy_in_territories = -0.2
+	can_not_build_colonies = yes
+	ai_will_do = { factor = 10 }
+}
+
+se_blood_unity = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = humanist_ideas
+	}
+	religious_unity = 0.4
+	ai_will_do = { factor = 10 }
+}
+
+se_innovation_through_carnage = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	free_policy = 1
+	can_not_build_missionaries = yes
+	ai_will_do = { factor = 10 }
+}
+
+se_holy_annihilation = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = religious_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = religious_ideas
+	}
+	warscore_cost_vs_other_religion = -0.15
+	ai_will_do = { factor = 10 }
+}
+
+# 外交类政策
+se_brutal_claims = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	province_warscore_cost = -0.1
+	envoy_travel_time = -0.2
+	ai_will_do = { factor = 10 }
+}
+
+se_bloody_counterespionage = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = spy_ideas
+	}
+	global_spy_defence = 0.75
+	ai_will_do = { factor = 10 }
+}
+
+se_scorched_colonization = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = exploration_ideas
+	}
+	global_colonial_growth = 4
+	native_uprising_chance = 0.5
+	ai_will_do = { factor = 10 }
+}
+
+se_tyrannical_annexation = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = influence_ideas
+	}
+	unjustified_demands = -0.2
+	ai_will_do = { factor = 10 }
+}
+
+# 军事类政策
+se_hellish_cavalry = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	cavalry_shock = 0.5
+	capped_by_forcelimit = yes
+	ai_will_do = { factor = 10 }
+}
+
+se_plundered_economy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	available_province_loot = 1
+	may_not_reduce_inflation = yes
+	ai_will_do = { factor = 10 }
+}
+
+se_iron_wall_doctrine = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = defensive_ideas
+	}
+	global_defender_dice_roll_bonus = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_siege_of_terror = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = offensive_ideas
+	}
+	leader_siege = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_doomsday_maneuver = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = quality_ideas
+	}
+	can_bypass_forts = yes
+	land_forcelimit_modifier = -0.5
+	ai_will_do = { factor = 10 }
+}
+
+se_endless_march = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_minagoro_ideas
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = se_minagoro_ideas
+		full_idea_group = quantity_ideas
+	}
+	force_march_free = yes
+	land_attrition = 0.3
+	ai_will_do = { factor = 10 }
+}

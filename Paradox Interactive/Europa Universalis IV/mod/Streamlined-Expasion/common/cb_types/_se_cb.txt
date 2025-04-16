@@ -1,0 +1,10 @@
+cb_minagoro_imperial = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		has_idea = se_minagoro_ideas_0
+		is_free_or_tributary_trigger = yes
+	}
+
+	war_goal = take_capital_imperial
+}

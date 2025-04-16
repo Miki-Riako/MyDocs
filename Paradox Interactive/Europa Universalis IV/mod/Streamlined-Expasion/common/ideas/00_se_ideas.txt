@@ -42,12 +42,74 @@ se_hegemon_ideas = {
 	}
 	# 闭门获得威望，解锁一项新的外交行动，允许你外交劝降一个国家成为你的卫戍国
 	se_hegemon_ideas_6 = {
-		#Includes a diplo interaction mechanic
+		# Includes a diplo interaction mechanic
 		prestige = 0.5
 	}
 
 	ai_will_do = {
 		factor = 100
+	}
+}
+
+se_interaction_ideas = {
+	category = DIP
+
+	trigger = {
+		OR = {
+			has_country_flag = se3_unlimited_ideas
+			has_country_flag = se_interaction_ideas_allowed
+		}
+	}
+
+	# 完成理念奖励为强大的减外交吞并费用
+	bonus = {
+		diplomatic_annexation_cost = -0.25
+	}
+
+	# 外交联络
+	se_interaction_ideas_0 = {
+		#Includes two diplo interaction mechanics
+		diplomats = 1
+	}
+	# 金元外交
+	se_interaction_ideas_1 = {
+		#Includes two diplo interaction mechanics
+		cb_on_primitives = yes
+	}
+	# 权术主义
+	se_interaction_ideas_2 = {
+		#Includes two diplo interaction mechanics
+		spy_action_cost_modifier = -0.2
+	}
+	# 边界勘定
+	se_interaction_ideas_3 = {
+		#Includes two diplo interaction mechanics
+		reduced_liberty_desire = 15
+	}
+	# 国家安全
+	se_interaction_ideas_4 = {
+		#Includes two diplo interaction mechanics
+		church_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+	# 国家理性
+	se_interaction_ideas_5 = {
+		#Includes two diplo interaction mechanics
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.1
+	}
+	# 炮舰外交
+	se_interaction_ideas_6 = {
+		#Includes two diplo interaction mechanics
+		unjustified_demands = -0.2
+		global_prov_trade_power_modifier = 0.25
+		war_exhaustion_cost = -0.3
+	}
+
+	ai_will_do = {
+		factor = 10
 	}
 }
 
@@ -66,9 +128,9 @@ se_minagoro_ideas = {
 		global_regiment_cost = -0.5
 	}
 
-	# BUG 获得制造帝国主义cb的外交，但稳定度提升和侵略扩张花费增加，ai态度极度降低
+	# 获得帝国主义cb，但稳定度提升和侵略扩张花费增加，ai态度极度降低
 	se_minagoro_ideas_0 = {
-		#Includes a diplo interaction to create imperial cb
+		# Includes a diplo interaction to create imperial cb
 		stability_cost_modifier = 2
 		ae_impact = 0.2
 		effect = {
@@ -96,7 +158,7 @@ se_minagoro_ideas = {
 		war_exhaustion = 0.1
 		effect = { add_stability = -2 }
 	}
-	# BUG 大幅度提升战斗力，解锁对某国得到所有相邻省份的宣称的外交行动，稳定-3
+	# 大幅度提升战斗力，解锁对某国得到所有相邻省份的宣称的外交行动，稳定-3
 	se_minagoro_ideas_3 = {
 		# Include a diplo interaction to get all claims of adjacent provinces
 		discipline = 0.05
@@ -106,14 +168,17 @@ se_minagoro_ideas = {
 	}
 	# 一套较为不错的过渡理念，稳定-4
 	se_minagoro_ideas_4 = {
-		core_creation = -0.1
+		core_creation = -0.15
 		leader_land_shock = 1
 		effect = { add_stability = -4 }
 	}
-	# BUG 解锁可以根据目标发展度一次性吞并国家和平条约，但商人团-2，稳定-5
+	# 解锁可以以侵略扩张为代价更容易吞并国家的和平条约，但各种使者减少，稳定-5
 	se_minagoro_ideas_5 = {
 		# Include a peace treaty to annex a country
 		merchants = -2
+		missionaries = -1
+		diplomats = -1
+
 		effect = { add_stability = -5 }
 	}
 	# 占领某省份时，若拥有该省份宣称，则立即获得该省份，但三点数各-1，稳定-6

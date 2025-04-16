@@ -6,7 +6,7 @@ se_minagoro_annexation = {
 	ae_base = 1.5 # Base factor for aggressive expansion. Scales with war score cost.
 	warscore_cost = {
 		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
-		all_provinces = 0.6 # All the giver's provinces
+		all_provinces = 0.8 # All the giver's provinces
 		no_provinces = 0.0 # This is just a constant. Equivalent to a single province with with war score cost 1
 		owner_keeps = 0.0 # The provinces that are not of any of the types below
 		conquered = 0.0 # Provinces that are selected by a Demand Province treaty
@@ -21,21 +21,10 @@ se_minagoro_annexation = {
 	requires_is_allowed = no # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
 
 	is_visible = { has_idea = se_minagoro_ideas_5 }
-	is_allowed = {
-		has_idea = se_minagoro_ideas_5
-		NOT = { is_subject = yes }
-	}
+	is_allowed = { NOT = { is_subject = yes } }
 	effect = {
 		FROM = {
-			every_subject_country = {
-				every_owned_province = {
-					cede_province = ROOT
-				}
-				remove_country = yes
-			}
-			every_owned_province = {
-				cede_province = ROOT
-			}
+			every_owned_province = { cede_province = ROOT }
 			remove_country = yes
 		}
 	}

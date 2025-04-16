@@ -1,0 +1,252 @@
+# 行政类政策
+# 行政理念组 月度政府改革+20%，外交声誉+1
+# 经济理念组 商人团+1
+# 扩张理念组 外交关系+2
+# 人文理念组 分离主义年数-5
+# 革新理念组 科技花费-10%
+# 宗教理念组 传教士+1
+
+# 外交类政策
+# 外交理念组 省份战争分数花费-10%，外交官+1
+# 间谍理念组 侵略扩张惩罚-10%
+# 探索理念组 殖民者+1
+# 影响理念组 来自附属国发展度的独立倾向-25%
+
+# 军事类政策
+# 贵族理念组 国家人力修正+10%，每年专制度+1
+# 财阀理念组 提升发展度花费-10%，叛乱-1
+# 防守理念组 敌军损耗+1.5
+# 进攻理念组 每年陆军传统+0.5
+# 质量理念组 陆军损耗-30%
+# 数量理念组 部队募兵花费-15%
+
+# 行政类政策
+se_interaction_administrative = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = administrative_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = administrative_ideas
+	}
+	monthly_reform_progress_modifier = 0.2
+	diplomatic_reputation = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_economic = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = economic_ideas
+	}
+	merchants = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_expansion = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = expansion_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = expansion_ideas
+	}
+	diplomatic_upkeep = 2
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_humanist = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = humanist_ideas
+	}
+	years_of_nationalism = -5
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_innovativeness = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	technology_cost = -0.1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_religious = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = religious_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = religious_ideas
+	}
+	missionaries = 1
+	ai_will_do = { factor = 10 }
+}
+
+# 外交类政策
+se_interaction_diplomatic = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	province_warscore_cost = -0.10
+	diplomats = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_spy = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = spy_ideas
+	}
+	ae_impact = -0.10
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_exploration = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = exploration_ideas
+	}
+	colonists = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_influence = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = influence_ideas
+	}
+	liberty_desire_from_subject_development = -0.25
+	ai_will_do = { factor = 10 }
+}
+
+# 军事类政策
+se_interaction_aristocracy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	global_manpower_modifier = 0.10
+	yearly_absolutism = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_plutocracy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	development_cost = -0.10
+	global_unrest = -1
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_defensive = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = defensive_ideas
+	}
+	hostile_attrition = 1.5
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_offensive = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = offensive_ideas
+	}
+	army_tradition = 0.5
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_quality = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = quality_ideas
+	}
+	land_attrition = -0.3
+	ai_will_do = { factor = 10 }
+}
+
+se_interaction_quantity = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_interaction_ideas
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = se_interaction_ideas
+		full_idea_group = quantity_ideas
+	}
+	global_regiment_cost = -0.15
+	ai_will_do = { factor = 10 }
+}

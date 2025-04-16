@@ -1,0 +1,250 @@
+# 行政类政策
+# 行政理念组 核心花费-5%，顾问花费-10%
+# 经济理念组 商人团+1
+# 扩张理念组 自治领地最低自治度-10%
+# 人文理念组 叛乱-2
+# 革新理念组 科技花费−10%
+# 宗教理念组 传教士+1
+
+# 外交类政策
+# 外交理念组 外交官+1，外交声誉+1
+# 间谍理念组 间谍网建造+75%
+# 探索理念组 殖民者+1
+# 影响理念组 附属国独立倾向-25%
+
+# 军事类政策
+# 贵族理念组 骑兵比例+20%
+# 财阀理念组 雇佣兵花费-40%
+# 防守理念组 陆军士气+15%
+# 进攻理念组 围城能力+20%
+# 质量理念组 训练度+10%
+# 数量理念组 国家人力修正+40%
+
+# 行政类政策
+se_core_assimilation_pact = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = administrative_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = administrative_ideas
+	}
+	core_creation = -0.05
+	advisor_cost = -0.10
+	ai_will_do = { factor = 10 }
+}
+
+se_hegemon_tax_supervision = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = economic_ideas 
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = economic_ideas
+	}
+	merchants = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_frontier_direct_rule = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = expansion_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = expansion_ideas
+	}
+	min_autonomy_in_territories = -0.1
+	ai_will_do = { factor = 10 }
+}
+
+se_pluralistic_assimilation = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = humanist_ideas
+	}
+	global_unrest = -2
+	ai_will_do = { factor = 10 }
+}
+
+se_tech_siphon_pact = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	technology_cost = -0.1
+	ai_will_do = { factor = 10 }
+}
+
+se_crusade_assimilation = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = religious_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = religious_ideas
+	}
+	missionaries = 1
+	ai_will_do = { factor = 10 }
+}
+
+# 外交类政策
+se_sovereign_submission_summit = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	diplomats = 1
+	diplomatic_reputation = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_shadow_subjugation_network = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = spy_ideas
+	}
+	spy_offence = 0.75
+	ai_will_do = { factor = 10 }
+}
+
+se_transoceanic_direct_rule = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = exploration_ideas
+	}
+	colonists = 1
+	ai_will_do = { factor = 10 }
+}
+
+se_rapid_annexation_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = influence_ideas
+	}
+	reduced_liberty_desire = 25
+	ai_will_do = { factor = 10 }
+}
+
+# 军事类政策
+se_iron_cavalry_allegiance = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	cav_to_inf_ratio = 0.20
+	ai_will_do = { factor = 10 }
+}
+
+se_plutocratic_conscription = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	mercenary_cost = -0.40
+	ai_will_do = { factor = 10 }
+}
+
+se_hegemon_iron_wall = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = defensive_ideas
+	}
+	land_morale = 0.15
+	ai_will_do = { factor = 10 }
+}
+
+se_final_siege_charter = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = offensive_ideas
+	}
+	siege_ability = 0.2
+	ai_will_do = { factor = 10 }
+}
+
+se_elite_reorganization_pact = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = quality_ideas
+	}
+	discipline = 0.1
+	ai_will_do = { factor = 10 }
+}
+
+se_human_wave_strategy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = se_hegemon_ideas
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = se_hegemon_ideas
+		full_idea_group = quantity_ideas
+	}
+	global_manpower_modifier = 0.4
+	ai_will_do = { factor = 10 }
+}

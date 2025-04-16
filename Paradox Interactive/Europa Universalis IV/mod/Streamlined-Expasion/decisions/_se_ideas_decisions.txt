@@ -1,0 +1,31 @@
+country_decisions = { 
+	se_allow_interaction_ideas = {
+		major = yes
+		potential = {
+			se_has_dip_advisor_3 = yes
+			OR = {
+				advisor = statesman
+				advisor = diplomat
+				advisor = se_diplomat
+			}
+			NOT = { has_country_flag = se_interaction_ideas_allowed }
+		}
+		allow = {
+			OR = {
+				statesman = 5
+				diplomat = 5
+				se_diplomat = 5
+			}
+			se_has_adm_advisor_3 = yes
+			se_has_dip_advisor_3 = yes
+			se_has_mil_advisor = yes
+		}
+		effect = {
+			add_dip_power = 10
+			set_country_flag = se_interaction_ideas_allowed
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
