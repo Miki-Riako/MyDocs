@@ -15,10 +15,6 @@ se_providential_submission_ultimatum = {
         is_hegemon = yes
         is_at_war = no
 		FROM = {
-            has_opinion = {
-                who = ROOT
-                value = 50
-            }
 			NOT = { coalition_target = ROOT }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -32,6 +28,22 @@ se_providential_submission_ultimatum = {
 			custom_trigger_tooltip = {
 				tooltip = FROM_MORE_DEV_THAN_ROOT_TT
 				FROM = { NOT = { total_development = root } }
+			}
+		}
+		if = {
+			limit = { has_active_policy = se_interaction_hegemon }
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 0
+				}
+			}
+		} else = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
 			}
 		}
 	}
@@ -48,6 +60,12 @@ se_providential_submission_ultimatum = {
 	}
 
     ai_acceptance = {
+		add_entry = {
+			name = se_interaction_hegemon
+			limit = { ROOT = { has_active_policy = se_interaction_hegemon } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = 20 }
+		}
         add_entry = {
             name = DIPLO_OPPINION
 			export_to_variable = {

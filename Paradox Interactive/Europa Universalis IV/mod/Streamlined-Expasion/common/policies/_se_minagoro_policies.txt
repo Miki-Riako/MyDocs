@@ -21,7 +21,7 @@
 # 数量理念组 免除强行军所需的军事点数花费，但陆军月度损耗+30%
 
 # 行政类政策
-se_skull_tax_system = {
+se_minagoro_administrative = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -36,7 +36,7 @@ se_skull_tax_system = {
 	ai_will_do = { factor = 10 }
 }
 
-se_war_economy = {
+se_minagoro_economic = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -51,7 +51,7 @@ se_war_economy = {
 	ai_will_do = { factor = 10 }
 }
 
-se_hellish_administration = {
+se_minagoro_expansion = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -66,7 +66,7 @@ se_hellish_administration = {
 	ai_will_do = { factor = 10 }
 }
 
-se_blood_unity = {
+se_minagoro_humanist = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -80,7 +80,7 @@ se_blood_unity = {
 	ai_will_do = { factor = 10 }
 }
 
-se_innovation_through_carnage = {
+se_minagoro_innovativeness = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -95,7 +95,7 @@ se_innovation_through_carnage = {
 	ai_will_do = { factor = 10 }
 }
 
-se_holy_annihilation = {
+se_minagoro_religious = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -110,7 +110,7 @@ se_holy_annihilation = {
 }
 
 # 外交类政策
-se_brutal_claims = {
+se_minagoro_diplomatic = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -125,7 +125,7 @@ se_brutal_claims = {
 	ai_will_do = { factor = 10 }
 }
 
-se_bloody_counterespionage = {
+se_minagoro_spy = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -139,7 +139,7 @@ se_bloody_counterespionage = {
 	ai_will_do = { factor = 10 }
 }
 
-se_scorched_colonization = {
+se_minagoro_exploration = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -149,12 +149,12 @@ se_scorched_colonization = {
 		full_idea_group = se_minagoro_ideas
 		full_idea_group = exploration_ideas
 	}
-	global_colonial_growth = 4
+	global_colonial_growth = 40
 	native_uprising_chance = 0.5
 	ai_will_do = { factor = 10 }
 }
 
-se_tyrannical_annexation = {
+se_minagoro_influence = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -169,7 +169,7 @@ se_tyrannical_annexation = {
 }
 
 # 军事类政策
-se_hellish_cavalry = {
+se_minagoro_aristocracy = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -184,7 +184,7 @@ se_hellish_cavalry = {
 	ai_will_do = { factor = 10 }
 }
 
-se_plundered_economy = {
+se_minagoro_plutocracy = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -199,7 +199,7 @@ se_plundered_economy = {
 	ai_will_do = { factor = 10 }
 }
 
-se_iron_wall_doctrine = {
+se_minagoro_defensive = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -213,7 +213,7 @@ se_iron_wall_doctrine = {
 	ai_will_do = { factor = 10 }
 }
 
-se_siege_of_terror = {
+se_minagoro_offensive = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -227,7 +227,7 @@ se_siege_of_terror = {
 	ai_will_do = { factor = 10 }
 }
 
-se_doomsday_maneuver = {
+se_minagoro_quality = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas
@@ -242,7 +242,7 @@ se_doomsday_maneuver = {
 	ai_will_do = { factor = 10 }
 }
 
-se_endless_march = {
+se_minagoro_quantity = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_minagoro_ideas

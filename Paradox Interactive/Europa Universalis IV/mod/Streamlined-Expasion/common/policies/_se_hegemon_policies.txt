@@ -21,7 +21,7 @@
 # 数量理念组 国家人力修正+40%
 
 # 行政类政策
-se_core_assimilation_pact = {
+se_hegemon_administrative = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -36,11 +36,11 @@ se_core_assimilation_pact = {
 	ai_will_do = { factor = 10 }
 }
 
-se_hegemon_tax_supervision = {
+se_hegemon_economic = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
-		has_idea_group = economic_ideas 
+		has_idea_group = economic_ideas
 	}
 	allow = {
 		full_idea_group = se_hegemon_ideas
@@ -50,7 +50,7 @@ se_hegemon_tax_supervision = {
 	ai_will_do = { factor = 10 }
 }
 
-se_frontier_direct_rule = {
+se_hegemon_expansion = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -64,7 +64,7 @@ se_frontier_direct_rule = {
 	ai_will_do = { factor = 10 }
 }
 
-se_pluralistic_assimilation = {
+se_hegemon_humanist = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -78,7 +78,7 @@ se_pluralistic_assimilation = {
 	ai_will_do = { factor = 10 }
 }
 
-se_tech_siphon_pact = {
+se_hegemon_innovativeness = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -92,7 +92,7 @@ se_tech_siphon_pact = {
 	ai_will_do = { factor = 10 }
 }
 
-se_crusade_assimilation = {
+se_hegemon_religious = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -107,7 +107,7 @@ se_crusade_assimilation = {
 }
 
 # 外交类政策
-se_sovereign_submission_summit = {
+se_hegemon_diplomatic = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -122,7 +122,7 @@ se_sovereign_submission_summit = {
 	ai_will_do = { factor = 10 }
 }
 
-se_shadow_subjugation_network = {
+se_hegemon_spy = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -136,7 +136,7 @@ se_shadow_subjugation_network = {
 	ai_will_do = { factor = 10 }
 }
 
-se_transoceanic_direct_rule = {
+se_hegemon_exploration = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -150,7 +150,7 @@ se_transoceanic_direct_rule = {
 	ai_will_do = { factor = 10 }
 }
 
-se_rapid_annexation_act = {
+se_hegemon_influence = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -165,7 +165,7 @@ se_rapid_annexation_act = {
 }
 
 # 军事类政策
-se_iron_cavalry_allegiance = {
+se_hegemon_aristocracy = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -179,7 +179,7 @@ se_iron_cavalry_allegiance = {
 	ai_will_do = { factor = 10 }
 }
 
-se_plutocratic_conscription = {
+se_hegemon_plutocracy = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -193,7 +193,7 @@ se_plutocratic_conscription = {
 	ai_will_do = { factor = 10 }
 }
 
-se_hegemon_iron_wall = {
+se_hegemon_defensive = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -207,7 +207,7 @@ se_hegemon_iron_wall = {
 	ai_will_do = { factor = 10 }
 }
 
-se_final_siege_charter = {
+se_hegemon_offensive = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -221,7 +221,7 @@ se_final_siege_charter = {
 	ai_will_do = { factor = 10 }
 }
 
-se_elite_reorganization_pact = {
+se_hegemon_quality = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas
@@ -235,7 +235,7 @@ se_elite_reorganization_pact = {
 	ai_will_do = { factor = 10 }
 }
 
-se_human_wave_strategy = {
+se_hegemon_quantity = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = se_hegemon_ideas

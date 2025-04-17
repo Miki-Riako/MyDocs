@@ -21,9 +21,17 @@ se_prepare_minagoro_invasion = {
 	}
 
 	on_accept = {
-		add_country_modifier = {
-			name = se_minagoro_invasion_preparing
-			duration = 365
+		if = {
+			limit = { has_active_policy = se_interaction_minagoro }
+			add_country_modifier = {
+				name = se_minagoro_invasion_preparing
+				duration = 180
+			}
+		} else = {
+			add_country_modifier = {
+				name = se_minagoro_invasion_preparing
+				duration = 365
+			}
 		}
 		every_neighbor_province = {
 			limit = {
