@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b236fb9f-bec7-4166-8e7a-3add65c99a4b" version="3">
+  <Properties>
+    <Name>SP Gensokyo</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>Touhou MOD</Teaser>
+    <Description>SP Gensokyo</Description>
+    <Authors>aranicar</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+  </Properties>
+  <!-- <Dependencies>
+    <Mod id="83ff1103-dc07-4bf2-aaa0-794b833c26f9" minversion="0" maxversion="999" title="FAL's Touhou Package" />
+  </Dependencies> -->
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="D22394C3DFAA731F3FAC20FE40D118C2" import="1">Art/HeroYukariImage.dds</File>
+    <File md5="BAE975B6C2FE1AAFD4F6F3015CF00BD3" import="1">Art/IconAtlas/BorderAlphaAtlas128.dds</File>
+    <File md5="F74DE0C48E14417670E47246EE8C9ADC" import="1">Art/IconAtlas/BorderAlphaAtlas16.dds</File>
+    <File md5="5F3B656BE5FBAC453CC54820727F6F91" import="1">Art/IconAtlas/BorderAlphaAtlas24.dds</File>
+    <File md5="D8726B62B9D07A9B3DC8529DDC3007C3" import="1">Art/IconAtlas/BorderAlphaAtlas32.dds</File>
+    <File md5="4277E9149B6E0F7CD1D38E053BC37579" import="1">Art/IconAtlas/BorderAlphaAtlas48.dds</File>
+    <File md5="4463CF4B186C24CA80D66169DFADD1C0" import="1">Art/IconAtlas/BorderAlphaAtlas64.dds</File>
+    <File md5="2FDAFEBD3204BEAB40233A3C16B14A76" import="1">Art/IconAtlas/BorderAtlas128.dds</File>
+    <File md5="53A20EF804FC5F4769414463B5CE35DA" import="1">Art/IconAtlas/BorderAtlas256.dds</File>
+    <File md5="E232F30AE7AC64F514DE04532A6D9637" import="1">Art/IconAtlas/BorderAtlas32.dds</File>
+    <File md5="591083BF89755829C36B62FCD5417DE1" import="1">Art/IconAtlas/BorderAtlas45.dds</File>
+    <File md5="A1F70A78220AA986ADBE6AA3C8947B8A" import="1">Art/IconAtlas/BorderAtlas64.dds</File>
+    <File md5="11B87F5FB216731B778D6A8C0D25F26B" import="1">Art/IconAtlas/BorderAtlas80.dds</File>
+    <File md5="004C114BDF0A30873AF7E512558B5C37" import="1">Art/IconAtlas/HumanVillageIconAtlas128.dds</File>
+    <File md5="E2AFB0A71C52FB352DCF3629296B13C8" import="1">Art/IconAtlas/HumanVillageIconAtlas256.dds</File>
+    <File md5="AF248BE9ADCD37BEA2BFBB3C2F2C6CE0" import="1">Art/IconAtlas/HumanVillageIconAtlas32.dds</File>
+    <File md5="238EA0D69412DB5720839593651EFAB9" import="1">Art/IconAtlas/HumanVillageIconAtlas45.dds</File>
+    <File md5="38183E2AB181EB3115ADEB7E2C4FE4EE" import="1">Art/IconAtlas/HumanVillageIconAtlas64.dds</File>
+    <File md5="4164BFEED4B735C01015AC27E8A5C27D" import="1">Art/IconAtlas/HumanVillageIconAtlas80.dds</File>
+    <File md5="BA410CB91DEA87A05327E8F9FD4E2192" import="1">Art/IconAtlas/MoriyaIconAtlas128.dds</File>
+    <File md5="DFAC4C77439111C6E1CF5FC059D99071" import="1">Art/IconAtlas/MoriyaIconAtlas256.dds</File>
+    <File md5="7150479FBBAAE97CC4B7456346BD547D" import="1">Art/IconAtlas/MoriyaIconAtlas32.dds</File>
+    <File md5="A8D65914E87DB0E24096CD4AB4AB6C02" import="1">Art/IconAtlas/MoriyaIconAtlas45.dds</File>
+    <File md5="1CEDD5A4D308A8529EFF2900BE7381E9" import="1">Art/IconAtlas/MoriyaIconAtlas64.dds</File>
+    <File md5="D19B3B7B499DDC219D19EEFC08E9ABC3" import="1">Art/IconAtlas/MoriyaIconAtlas80.dds</File>
+    <File md5="2F29E5C103E61AF67646377E6B430EAC" import="1">Art/IconAtlas/ScarletAtlas128.dds</File>
+    <File md5="84F0441F4926FFC8C45A2D304510C867" import="1">Art/IconAtlas/ScarletAtlas256.dds</File>
+    <File md5="BBAB58D08FCB89A6111F9D4223387629" import="1">Art/IconAtlas/ScarletAtlas32.dds</File>
+    <File md5="15157F22C2B1B772B7D6D08F331CA4E1" import="1">Art/IconAtlas/ScarletAtlas45.dds</File>
+    <File md5="F5E4CADFAE9E7E7342EAE4A9F749318A" import="1">Art/IconAtlas/ScarletAtlas64.dds</File>
+    <File md5="607C1C9DD377D928F5B2DD6568312BF1" import="1">Art/IconAtlas/ScarletAtlas80.dds</File>
+    <File md5="3A1C20E2AAB0491A680ABA061C006738" import="1">Art/SV_yukari.dds</File>
+    <File md5="0F05636849FC08D57674DD94A2C1E7F3" import="1">Art/YukariHeroIcons256.dds</File>
+    <File md5="BD74C5056B6A14CFD43880AE20546FA2" import="1">Art/YukariHeroIcons45.dds</File>
+    <File md5="4667B1C4A9171549CCB2680D0F2847E7" import="1">Art/YukariHeroIcons64.dds</File>
+    <File md5="5FC08CF940CDDADD46E061E0E0B2D552" import="1">Art/YukariHeroIcons80.dds</File>
+    <File md5="5C70886861E7534F4BE6A5FE3A99C6F8" import="1">Art/YukarinDiplo.dds</File>
+    <File md5="A1F931C03076634E8B803155160DAC21" import="1">Art/YukarinDOM.dds</File>
+    <File md5="C629C7623977C42BF4614E32D7DC5087" import="1">Art/YukarinMap.dds</File>
+    <File md5="9A0F0B4D893F04F860B16B24B564B744" import="1">Art/YukarinModel/black_4x4.dds</File>
+    <File md5="3EA4A64A954FF9E29B88843B4678C84F" import="1">Art/YukarinModel/yukari.fxsxml</File>
+    <File md5="C07A9E6F81F8F8A9D4988321F59B5DD0" import="1">Art/YukarinModel/yukari.gr2</File>
+    <File md5="1F82532C6D4E4C34B6CE92D2D9FE7A27" import="1">Art/YukarinModel/yukari_main.dds</File>
+    <File md5="4A13090E5CE05BD3BBCF14B1508B50C4" import="1">Art/YukarinModel/yukari_stay_anim.gr2</File>
+    <File md5="AF6705121E2A54C019B511AA74BE2068" import="1">Lua/YukarinTrait.lua</File>
+    <File md5="E5742D24D2FB2A47D2A28718E449A073" import="1">Music/YukariHelp1.wav</File>
+    <File md5="D86A8EB841B0F437B1CC2628CAAF26F4" import="1">Music/YukariHelp2.wav</File>
+    <File md5="45BDD9B11446FDDF701E9954E92D2B70" import="1">Music/YukariHelp3.wav</File>
+    <File md5="245F50457BF85CD5149D87C6DABE79E2" import="1">Music/YukariHelp4.wav</File>
+    <File md5="4A1372F617C85D992B473783E358C0FF" import="1">Music/YukariMove1.wav</File>
+    <File md5="C0F13F6AAF545918827121777CC5042F" import="1">Music/YukariMove2.wav</File>
+    <File md5="5D6850A047B30191FA688FF48129196B" import="1">Music/YukariMove3.wav</File>
+    <File md5="F1E35F0560B397BF03B15D16E7CFEA80" import="1">Music/YukariMove4.wav</File>
+    <File md5="A46670D4D07946AA2F84FE6884330015" import="1">Music/YukarinPeace.mp3</File>
+    <File md5="F2F9DFE02D56E0593A4D7C60CCBE7226" import="1">Music/YukarinWar.mp3</File>
+    <File md5="FE1953503DE44B79734042A3D5604CF9" import="1">Music/YukariSC5.wav</File>
+    <File md5="71BBF1AB138A8F6244A0505E4834ED86" import="1">Music/YukariStart.wav</File>
+    <File md5="C02B95DBAC80372C4274D377D873C4F0" import="1">XML/Buildings/CIV_Border_Buildings.xml</File>
+    <File md5="03E087E6E6269741DBB4D89970459BB3" import="1">XML/Civilizations/CIV_Border.xml</File>
+    <File md5="3B0B4FA2499961BA2B14BB72A4447BAB" import="1">XML/Civilizations/CIV_Border_Trait.xml</File>
+    <File md5="3B69C0E047115A0C232DD44EDB2B2936" import="1">XML/GameInfo/Icon_Atlas_Border.xml</File>
+    <File md5="7995D39A77175EA5AE0AB72AF5F419E6" import="1">XML/Interface/CIV_Border_Colors.xml</File>
+    <File md5="5C014AD08BAB18B4FC2F36D84FB42F91" import="1">XML/Interface/CIV_Border_PlayerColors.xml</File>
+    <File md5="333C25CD93033ACD5EE0B114E0F65A3C" import="1">XML/Leaders/CIV_Leader_Yukarin.xml</File>
+    <File md5="1C7536E3AD3196042826D98ACDE449C1" import="1">XML/Leaders/Yukarin_Scene.xml</File>
+    <File md5="7B388663DFBDA06F5EB92D05BD384328" import="1">XML/Music/Yukarin_Music.xml</File>
+    <File md5="93773C58D2AA04EFBEDEE9E9B5F2603F" import="1">XML/NewText/GameText_Border.xml</File>
+    <File md5="CF21E8548FAECE5455497A98F8FF3D12" import="1">XML/Units/Hero-Yukarin.xml</File>
+    <File md5="2778E687625CC79AB715C9DB9A3CF928" import="1">XML/Units/UnitArtDef.xml</File>
+    <File md5="9AE515DF92D88051A6B6A4704243A6F7" import="1">XML/Units/UnitPromotions_Border.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Buildings/CIV_Border_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Civilizations/CIV_Border.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Civilizations/CIV_Border_Trait.xml</UpdateDatabase>
+      <UpdateDatabase>XML/GameInfo/Icon_Atlas_Border.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Interface/CIV_Border_Colors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Interface/CIV_Border_PlayerColors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Leaders/CIV_Leader_Yukarin.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Music/Yukarin_Music.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewText/GameText_Border.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/UnitPromotions_Border.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/UnitArtDef.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Hero-Yukarin.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/YukarinTrait.lua">
+      <Name>YukarinTrait</Name>
+      <Description>YukarinTrait</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

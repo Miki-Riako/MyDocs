@@ -1,0 +1,53 @@
+namespace = incidents_bur_inheritance
+normal_or_historical_nations = yes
+
+country_event = {
+	id = incidents_bur_inheritance.55555
+	title = "incidents_bur_inheritance.5.t"
+	desc = "incidents_bur_inheritance.5.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUR
+		is_subject_of_type = personal_union
+		is_at_war = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			overlord = {
+				save_event_target_as = burgundy_senior_partner
+			}
+			clr_country_flag = burgundy_during_imperial_incident
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = { #Be integrated
+		name = "incidents_bur_inheritance.5.a"
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			ai = yes
+		}
+		hidden_effect = {
+			overlord = {
+				country_event = {
+					id = incidents_bur_inheritance.501
+					days = 10
+				}
+			}
+		}
+		tooltip = {
+			overlord = {
+				inherit = BUR
+			}
+		}
+	}
+}

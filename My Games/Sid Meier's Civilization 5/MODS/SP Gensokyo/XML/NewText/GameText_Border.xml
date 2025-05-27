@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_CIV_GENSOKYO_DESC">
+			<Text>幻想乡联合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_GENSOKYO_SHORT_DESC">
+			<Text>幻想乡联合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_GENSOKYO_ADJECTIVE">
+			<Text>幻想乡联合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_GENSOKYO_DAWN_TEXT">
+			<Text>要说最像妖怪的妖怪，就必须要提到八云紫的名字。这个妖怪，由于其危险的与根源相关的能力、神出鬼没而性格不近人情、行为原理与人类完全相异等等的原因，是一个没人愿意与她为敌的妖怪。[NEWLINE]外表和人类没有区别。喜欢华丽的衣服、撑着一把大洋伞。[NEWLINE]主要活动时间是夜晚、白天睡觉。是个典型的妖怪。另外，尽管都说冬天一直在冬眠，因为只是其本人所谈及而且实际在何处居住无法确认，所以真伪的程度无法确定。[NEWLINE]古时候，幻想乡缘起阿一所著的妖怪录中也有着这种相似的妖怪登场。那个时代她的身影就已经出现了。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_YUKARIN">
+			<Text>八云紫</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_NAME">
+			<Text>八云紫</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_SUBTITLE">
+			<Text>神隐的主犯</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_TITLES_1">
+			<Text>Border of Phantasm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_TITLES_2">
+			<Text>The Gap Youkai</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_LIVED">
+			<Text>???-???</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_HEADING_1">
+			<Text>About</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_TEXT_1">
+			<Text>The being that manipulates the borders between anything and everything.  Uncanny and enigmatic, her actions and those of her two shikigami rarely make much sense.  Extremely secretive in her elaborate plans and stratagies, she may appear friendly and cooperative, until you find her knife in your back.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_HEADING_2">
+			<Text>Age</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_YUKARIN_TEXT_2">
+			<Text>Her age is not canon, but probably true.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TRAIT_UNITED_GENSOKYO">
+			<Text>
+				万象默示录：文化UA，每个时代获得1个免费的政策，建造奇观时的[ICON_PRODUCTION]产能+25%[NEWLINE]
+				山川的恩泽：经济UA，每座山脉为城市+1[ICON_PRODUCTION]产能，浅海和深海+1[ICON_RESEARCH]科研，沿河+1[ICON_FOOD]粮食与+1[ICON_GOLD]金币，湖水地形+1[ICON_PEACE]信仰与+1[ICON_CULTURE]文化[NEWLINE]
+				幻想大结界：军事UA，所有单位在境内[ICON_STRENGTH]战斗力+50%[NEWLINE]
+				魔导的启示：科技UA，创建宗教时可以额外解锁一条信条，每座城市中每25点[ICON_PEACE]信仰会增加5点[ICON_RESEARCH]科研产出[NEWLINE]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_UNITED_GENSOKYO_SHORT">
+			<Text>幻想乡联合</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_HOMELAND_GUARDIAN_GENSOKYO">
+			<Text>保卫幻想乡</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HOMELAND_GUARDIAN_GENSOKYO_HELP">
+			<Text>境内作战+50%力量</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_WORKER">
+			<Text>妖精女仆</Text>
+			<Plurality>2</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_WORKER_HEADING">
+			<Text>妖精女仆</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_WORKER_HELP">
+			<Text>替代工人，移动力[ICON_MOVES]+1，+25%工作效率。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_WORKER_TEXT">
+			<Text>
+				妖精女仆是幻想乡文明的独特单位，她们是这片土地上无处不在的自然化身——妖精，与服务精神相结合的奇妙产物。在幻想乡联合的引导下，这些平日里漫无目的、精力过剩甚至偶尔制造些小麻烦的妖精们，被赋予了全新的使命。穿上统一的女仆装束，她们将那份源于自然的无穷活力，投入到家园建设与日常维护之中。[NEWLINE][NEWLINE]
+				她们或许缺乏精湛的技艺，也鲜有个体拥有强大的力量，但妖精女仆胜在数量庞大、行动迅捷且任劳任怨（至少在有监督和新鲜事物吸引时是这样）。她们能以惊人的效率开垦荒地、修建基础设施、甚至利用微弱的妖精魔法为领地带来些许意想不到的增益。[NEWLINE][NEWLINE]
+				当然，指望她们像经验丰富的人类工匠那样一丝不苟是不现实的——偶尔的小失误、走神或是把工作场所变成新的游乐场也是她们“可爱”的一部分。但她们那几乎无穷无尽的“可补充性”以及对环境的天然亲和，使她们成为幻想乡早期扩张和发展的基石。[NEWLINE][NEWLINE]
+				当成群结队的妖精女仆在您的领土上辛勤（或者说，活泼地）工作时，请记住，她们不仅是建设者，更是幻想乡生生不息的奇迹与日常的缩影。她们的存在本身，就是一道独特的风景线，预示着一个充满活力与无限可能的文明正在崛起。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_SETTLER">
+			<Text>妖怪开拓队</Text>
+			<Plurality>2</Plurality>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_SETTLER_HEADING">
+			<Text>妖怪开拓队</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_SETTLER_HELP">
+			<Text>替代移民，除了正常的移民功能外，还能够重金购买城邦。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_GENSOKYO_SETTLER_TEXT">
+			<Text>
+				妖怪开拓队是幻想乡文明赖以扩张其独特影响力的核心力量，他们取代了传统意义上的开拓移民。这支队伍并非仅仅为了寻找无人之地插下旗帜，更是肩负着将幻想乡的意志与生活方式（无论多么奇特）播撒到更广阔天地的使命。队伍中依旧是那些形形色色、精力充沛的妖怪们——从擅长寻路的向导型妖怪，到能够快速平整土地的力量型妖怪，再到深谙“交流”之道的智慧型（或狡黠型）妖怪。[NEWLINE][NEWLINE]
+				作为开拓者，他们首要的任务自然是建立新的据点，将荒野化为幻想乡文明的延伸。他们所建立的城镇，从一开始就可能带有一些妖怪们带来的独特“风味”，或许是更快的资源采集速度，也可能是对周围环境的特殊适应性。[NEWLINE][NEWLINE]
+				然而，妖怪开拓队最为与众不同之处，在于他们那非同寻常的“外交”手段。当他们遇到独立的城邦势力时，并不总是需要刀兵相向或漫长的文化渗透。凭借着妖怪们独特的影响力、奇货可居的“交易品”（或许是珍稀的自然资源，或许是某种妖怪间的契约），甚至是某些城邦难以拒绝的“提议”，妖怪开拓队拥有直接将城邦纳入幻想乡版图的能力——也就是“购买”或以其他非传统方式将其收编。这种方式往往迅速而高效，但也可能伴随着一定的代价或后续的“整合”挑战。[NEWLINE][NEWLINE]
+				派遣妖怪开拓队，意味着您不仅在投资一片新的土地，更是在进行一场高风险高回报的“收购”。他们是建设者，也是谈判者（尽管谈判方式可能十分“妖怪”）。他们的存在，确保了幻想乡的扩张之路既充满生机，又时常伴随着令人意想不到的转折与机遇。
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_MONUMENT">
+			<Text>[ICON_CULTURE]御柱与鸟居之社</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_MONUMENT_HELP">
+			<Text>替代纪念碑，额外降低政策所需要的文化阈值5%。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_MONUMENT_PEDIA">
+			<Text>
+				在幻想乡的每一个角落，无论是人类的村落还是妖怪的聚居地，都能见到这样的所在。它不仅仅是简单的石碑或木刻，更是连接着此地居民与幻想乡无数神明、先灵及自然意志的纽带。古老的御柱象征着山岳的崇拜与自然的伟力，它们由强大的妖怪或虔诚的信徒们协力立起，作为一方水土安宁的守护；而层叠的鸟居则标示出神圣空间的界限，引导着人们走向内心的平和与对传统的敬畏。[NEWLINE][NEWLINE]
+				在这里，故事被传颂，祭典被举行，智慧被积累。居民们于此聚集，共同追忆历史，探讨未来。这种独特的精神凝聚力，使得幻想乡的社会共识更容易形成，新的思想与生活方式能够更快地被民众所理解和接纳。因此，御柱与鸟居之社的存在，不仅奠定了幻想乡的文化基石，更悄然加速了整个文明适应与变革的步伐。它提醒着每一位居民：传统并非束缚，而是通往未来的坚实阶梯。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_GRANARY">
+			<Text>[ICON_FOOD]蓬莱丰饶之神乐</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_GRANARY_HELP">
+			<Text>替代粮仓，额外增加5%[ICON_FOOD]食物产出的同时降低全国市民2%的[ICON_HAPPINESS_4]不满，不会过期。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_GRANARY_PEDIA">
+			<Text>
+				这并非寻常的谷仓，而是一个充满生命力与喜悦的场所。在幻想乡，食物的丰足不仅仅依赖于勤劳的耕作，更与神秘的仪式和自然的恩惠紧密相连。蓬莱丰饶之神乐便是这种信念的体现，它结合了古老的神乐舞与某种源自“蓬莱”——那传说中永恒乐土——的秘术或祝福。[NEWLINE][NEWLINE]
+				定期举行的神乐表演不仅是向丰收之神祈愿的仪式，其乐声与舞姿本身似乎就蕴含着促进万物生长的力量，使得仓库中的粮食更加饱满，土地也更愿意慷慨地产出。更重要的是，这种充满希望与欢乐的氛围能够深入人心，抚平居民的焦虑与不满，为城市带来额外的和谐与稳定。在这里，居民们不仅能获得充足的食物与宽敞的居所，更能感受到一种源于生命本身的喜悦与满足。一个拥有蓬莱丰饶之神乐的城市，注定会是一个人口兴旺、民心安定的乐园。
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_PALACE">
+			<Text>幻想乡</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_PALACE_HELP">
+			<Text>替代宫殿，额外增加[ICON_CULTURE]文化和[ICON_PEACE]信仰，同时城市的[ICON_PRODUCTION]产能和[ICON_RESEARCH]科技+20%。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_PALACE_PEDIA">
+			<Text>
+				这是整个幻想乡联合的核心与象征。在这片被大结界守护的土地上，人类与妖怪、神明与幽灵共同编织着奇迹与日常。古老的信仰与蓬勃的生命力在此交融，化为源源不断的文化魅力与精神寄托。同时，这片土地上独特的和谐与智慧，也极大地激发了住民的创造力与求知欲，为王国的发展提供了坚实的物质与科技基础。幻想乡，是文明的摇篮，也是一切故事开始的地方。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_COLLEGE">
+			<Text>月之都科学技术大学院</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_COLLEGE_HELP">
+			<Text>替代国立大学，额外赠送一个科技，并且额外增加该城市[ICON_RESEARCH]科技+15%，增加100%宗教压力。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_GENSOKYO_COLLEGE_PEDIA">
+			<Text>
+				月之民的智慧与技术的结晶，这座巍峨的学院不仅是知识的殿堂，更是通往未来的桥梁。它继承了月之都千年来积累的先进科技与深奥魔导知识，建成之时便能引领王国攻克一项关键科技，极大推动文明的进程。学院内的贤者们致力于探索宇宙的终极真理，开辟新的发展道路。[NEWLINE][NEWLINE]
+				学院内的贤者们致力于探索宇宙的终极真理，他们对知识的渴求与城市中虔诚信徒的精神力量产生共鸣，使得每一个追随信仰的灵魂都能为科技的进步贡献力量。[NEWLINE][NEWLINE]
+				月之都科学技术大学院，是照亮前路的灯塔，引领我们走向更加辉煌的未来。
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPROVEMENT_GENSOKYO_FARM">
+			<Text>人里梯田</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_GENSOKYO_POLDER">
+			<Text>人里风车</Text>
+		</Row>
+
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_1">
+      <Text>幻想乡</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_2">
+      <Text>东深见</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_3">
+      <Text>酉新京都</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_4">
+      <Text>新东京</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_5">
+      <Text>星凑</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_6">
+      <Text>神山</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_7">
+      <Text>艺都</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_8">
+      <Text>天宫</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_9">
+      <Text>冬木</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_10">
+      <Text>风音</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_11">
+      <Text>音羽</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_12">
+      <Text>羽成</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_13">
+      <Text>星见</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_14">
+      <Text>雏见泽</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_15">
+      <Text>糸守</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_16">
+      <Text>芝生</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_17">
+      <Text>米花</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_18">
+      <Text>神滨</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_19">
+      <Text>希望峰</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NAME_GENSOKYO_20">
+      <Text>星海</Text>
+    </Row>
+
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_0">
+			<Text>Sukuwa Reta</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_1">
+			<Text>Rikka Takanashi</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_2">
+			<Text>Homura Akemi</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_3">
+			<Text>Keiko &apos;Silica&apos; Ayano</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_4">
+			<Text>Saginomiya Isumi</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_5">
+			<Text>Kazari Uiharu</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_6">
+			<Text>Ayumi Takahara</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_7">
+			<Text>Haruna</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_8">
+			<Text>Ryuko Matoi</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_GENSOKYO_9">
+			<Text>Akatsuki</Text>
+			<Gender>feminine</Gender>
+		</Row>
+	</Language_zh_CN>
+  <Language_en_US>
+    <Row Tag="TXT_KEY_LEADER_YUKARIN_FIRSTGREETING_1">
+      <Text>你好，我是幻想乡的管理者之一，希望你可以安分一点，别闹太大的事故。</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_YUKARIN_DEFEATED_1">
+      <Text>你赢了，如你所愿，最后的乐土也被你给清理掉了，希望你在外界过得愉快。</Text>
+    </Row>
+    <Row Tag="TXT_KEY_LEADER_YUKARIN_DECLAREWAR_1">
+      <Text>看来你想要破坏这里的乐园呢，那没办法了，只有把你驱逐出去。</Text>
+    </Row>
+  </Language_en_US>
+</GameData>

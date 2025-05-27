@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/23/2013 6:40:17 PM -->
+<GameData>
+	<PlayerColors>
+		<Row>
+			<Type>PLAYERCOLOR_GENSOKYO</Type>
+			<PrimaryColor>COLOR_GENSOKYO_GENSOKYO</PrimaryColor>
+			<SecondaryColor>COLOR_GENSOKYO_LAND</SecondaryColor>
+			<TextColor>COLOR_GENSOKYO_TEXT</TextColor>
+		</Row>
+	</PlayerColors>
+</GameData>

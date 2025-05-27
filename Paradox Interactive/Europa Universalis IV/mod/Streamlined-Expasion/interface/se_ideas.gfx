@@ -6,6 +6,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_idea_se_interaction_ideas"
+		texturefile = "gfx//interface//ideas//ideas_interaction_ideas.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_idea_se_minagoro_ideas"
 		texturefile = "gfx//interface//ideas//ideas_minagoro_ideas.tga"
 		noOfFrames = 1

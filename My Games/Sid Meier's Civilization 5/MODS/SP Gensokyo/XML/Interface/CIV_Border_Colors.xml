@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/23/2013 6:39:58 PM -->
+<GameData>
+	<Colors>
+		<Row>
+			<Type>COLOR_GENSOKYO_LAND</Type>
+			<Red>0.76</Red>
+			<Green>0.30</Green>
+			<Blue>0.96</Blue>
+			<Alpha>1</Alpha>
+		</Row>
+		<Row>
+			<Type>COLOR_GENSOKYO_GENSOKYO</Type>
+			<Red>0.89</Red>
+			<Green>0.80</Green>
+			<Blue>0.93</Blue>
+			<Alpha>0.8</Alpha>
+		</Row>
+		<Row>
+			<Type>COLOR_GENSOKYO_TEXT</Type>
+			<Red>0.95</Red>
+			<Green>0.85</Green>
+			<Blue>0.96</Blue>
+			<Alpha>0.9</Alpha>
+		</Row>
+	</Colors>
+</GameData>

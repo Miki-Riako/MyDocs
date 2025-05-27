@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- <Table name="Traits">
+		<Column name="AddReformationBelief" type="boolean" default="false"/>
+	</Table> -->
+
+	<Traits>
+		<Row>
+			<Type>TRAIT_UNITED_GENSOKYO</Type>
+			<Description>TXT_KEY_TRAIT_UNITED_GENSOKYO</Description>
+			<ShortDescription>TXT_KEY_TRAIT_UNITED_GENSOKYO_SHORT</ShortDescription>
+
+			<FreeSocialPoliciesPerEra>1</FreeSocialPoliciesPerEra>
+			<WonderProductionModifier>25</WonderProductionModifier>
+			<FreeBuilding>BUILDING_TB_GENSOKYO</FreeBuilding>
+			<BonusReligiousBelief>true</BonusReligiousBelief>
+			<!-- <AddReformationBelief>true</AddReformationBelief> -->
+		</Row>
+	</Traits>
+
+	<Trait_FreePromotionUnitCombats>
+		<!-- <Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<PromotionType>PROMOTION_GOODY_HUT_PICKER</PromotionType>
+		</Row> -->
+
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>	
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_UNITED_GENSOKYO</TraitType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_GENSOKYO</PromotionType>
+		</Row>
+	</Trait_FreePromotionUnitCombats>
+</GameData>

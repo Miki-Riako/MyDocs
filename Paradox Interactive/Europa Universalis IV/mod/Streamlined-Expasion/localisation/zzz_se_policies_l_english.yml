@@ -32,8 +32,8 @@
  se_hegemon_quantity: "ºNwm*mAmbeu"
  desc_se_hegemon_quantity: "ÆNÎNýV„vR—t^”^SVkXs^ÕXŸlÿ^ýV„v¾|•êS—(WgTöeIR6erRcƒ‰Š0"
 
- se_interactioninistrative: "¾|ŽrY²NÕlHh"
- desc_se_interactioninistrative: "ÇSØšHe„vLˆ?ežRõN4ZŸq„vY²NKbµkøvÓuTÿbìNNÅNýw R?eœ^9ei—„vÛzÿôfýwÐcGSbìN(WNLu‚ðSN„vðXgÿUS°súQýw›RNqVÍT›Rv^XR„výV¶RbVaŒ0"
+ se_interaction_administrative: "¾|ŽrY²NÕlHh"
+ desc_se_interaction_administrative: "ÇSØšHe„vLˆ?ežRõN4ZŸq„vY²NKbµkøvÓuTÿbìNNÅNýw R?eœ^9ei—„vÛzÿôfýwÐcGSbìN(WNLu‚ðSN„vðXgÿUS°súQýw›RNqVÍT›Rv^XR„výV¶RbVaŒ0"
  se_interaction_economic: "Y²NFU¡RÓbUS"
  desc_se_interaction_economic: "bìN„vY²NªR›R:NFUNib.Vú”s^†NSï0Ùy˜?eVrˆcCg>mc˜Y„vFUºNÿ)R(ubìN„výVE–sQû|»SnxÝO°e„v8f:gOÿÎNwÌRýV:VuQ0"
  se_interaction_expansion: "^ßWsQû|ªRàz"
@@ -44,8 +44,8 @@
  desc_se_interaction_innovativeness: "ÛeknŽNOSjONÜÁ‰0Ù›NOS®‹Ÿ±RåNåwÆ‹qQ«N:NÍ‘¹p„vY²N²NAmÿv^(WbìN„v»lýV¹eeu-NÇ‘(ui—°e¹eÕlÿôv¥c	g©RŽNôfëV0ôfÏuNm„vŽb/gÛek0"
  se_interaction_religious: "áOðNlbcY²NäN"
  desc_se_interaction_religious: "sS¿O/f.O­dwt„v^y#W‹NNÿmNýwÎNN×O„vzfga-N×SÊv0Ùy˜cäNŒèbDnåN/ecôfY„v.OYeëXÿTöebìN„vY²N˜RSªR›RnxÝOÖNìN„våTjOMQ×SNÅV‰„v?e»lr^„˜0"
- se_interactionlomatic: "'YY²Nbeu"
- desc_se_interactionlomatic: "Y²NŽbz‚„vÅTðSKNjO0íQPôfY„vO‚‚egYt•üuYBg„vsQû|ÿåNÊS(WŒTs^ag¦u-Nôf:V„v®‹÷Nýw›RÿbìN„vqVÍT›RN†˜W6eÊvSÇ¯u¹|„výV¶R¹eeu—VåNg'YS0"
+ se_interaction_diplomatic: "'YY²Nbeu"
+ desc_se_interaction_diplomatic: "Y²NŽbz‚„vÅTðSKNjO0íQPôfY„vO‚‚egYt•üuYBg„vsQû|ÿåNÊS(WŒTs^ag¦u-Nôf:V„v®‹÷Nýw›RÿbìN„vqVÍT›RN†˜W6eÊvSÇ¯u¹|„výV¶R¹eeu—VåNg'YS0"
  se_interaction_spy: "®V™YqVÍT›RfRô‹"
  desc_se_interaction_spy: "bŸRŽVŽVÖS³QŽN±›N*g«ˆwÁ‰ŒT*g«ˆŠô‹„v‹Nir0Ùy˜fRô‹SÅ`¥b6eÆ–NY²NÍdµcøvÓuTÿObìNýwôf‹Y0W„˜KmÍS”^v^çT™Y0W¡rtýVE–‚º‹ÿÎNwÏQ‰µOeu'`ib.V&^eg„vb—qVÍT0"
  se_interaction_exploration: "yr¸‹ØR¢clQøS"

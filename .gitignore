@@ -14,5 +14,14 @@ Paradox Interactive/Stellaris/*
 !Paradox Interactive/Stellaris/mod/
 !Paradox Interactive/Stellaris/mod/**
 
+!My Games/
+My Games/*
+!My Games/Sid Meier's Civilization 5/
+My Games/Sid Meier's Civilization 5/*
+!My Games/Sid Meier's Civilization 5/MODS/
+My Games/Sid Meier's Civilization 5/MODS/*
+!My Games/Sid Meier's Civilization 5/MODS/SP Gensokyo
+!My Games/Sid Meier's Civilization 5/MODS/SP Gensokyo/**
+
 **/*.mod
 **/*.zip
