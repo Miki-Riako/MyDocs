@@ -3,7 +3,8 @@
 个人自用，一些自己存放用于保存在云端的零碎文档，开源用以参考借鉴。
 
 ---
-utils.sh
+`utils.sh`
+
 一些自己写的sh脚本，感兴趣者可以自己复制到 .bashrc 或别的配置中。或者下载该文件后，直接在 .bashrc 中添加：
 ```sh
 source "/[[该文件的目录]]/utils.sh"
@@ -28,13 +29,15 @@ source "/[[该文件的目录]]/utils.sh"
 
 ---
 
-6 steps to a successful research pr.txt
+`6 steps to a successful research pr.txt`
+
 写PR的经验，忘记从哪里下载的了，感觉言简意赅很好用。
 
 ---
 
 `Paradox Interactive/`
 `My Games/`
+
 这些是本人制作的多个游戏mod的版本控制。
 对相关游戏的 mod 制作感兴趣者可以参考学习。
 
